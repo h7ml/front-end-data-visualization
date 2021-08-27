@@ -23,7 +23,7 @@ const chartDom = ref(null)
 // 数据和配置项
 const option = {
   title: {
-    text: '自定义主题',
+    text: '自定义主题 JS版',
   },
   xAxis: { // x轴
     data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]

@@ -14,7 +14,7 @@ const chartDom = ref(null)
 // 数据和配置项
 const option = {
   title: {
-    text: '自定义主题',
+    text: '自定义主题 JSON版',
     textStyle: {
       color: '#fff'
     }
