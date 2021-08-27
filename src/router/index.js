@@ -142,6 +142,15 @@ const routes = [
               navState: true,
               navName: '定位'
             }
+          },
+          {
+            path: 'ECharts-Scatter',
+            name: 'EChartsScatter',
+            component: () => import('@/views/ECharts/Demo/pages/Axis/Scatter.vue'),
+            meta: {
+              navState: true,
+              navName: '坐标系 - 散点图'
+            }
           }
         ]
       }
