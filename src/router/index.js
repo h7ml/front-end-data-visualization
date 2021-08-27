@@ -107,6 +107,15 @@ const routes = [
               navName: '自定义主题 JSON版'
             }
           },
+          {
+            path: 'ECharts-RendererSVG',
+            name: 'EChartsRendererSVG',
+            component: () => import('@/views/ECharts/Demo/pages/RendererSVG/RendererSVG.vue'),
+            meta: {
+              navState: true,
+              navName: 'SVG渲染'
+            }
+          }
         ]
       }
     ]
