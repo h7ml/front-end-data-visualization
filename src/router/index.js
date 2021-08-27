@@ -1,11 +1,16 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import CSS from '@/views/CSS/index.vue'
+import Home from '@/views/Home/index.vue'
 
 const routes = [
   {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
     path: '/css',
     name: 'CSS',
-    component: CSS,
+    component: () => import('@/views/CSS/index.vue'),
     meta: {
       navState: true,
       navName: 'CSS',

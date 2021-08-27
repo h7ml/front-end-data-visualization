@@ -7,35 +7,38 @@
       ]"
       @click="changeMenu"
     ></i>
-    <h2 class="root__header__title">前端可视化</h2>
+    <h2 class="root__header__title" @click="toHome">前端可视化</h2>
   </header>
 </template>
 
 <script>
-import { ref, onBeforeUnmount } from 'vue'
-import RootBus from "./RootBus"
-
 export default {
   name: 'RootHeader',
-  setup () {
-    
-    const isCollapse = ref(RootBus.isCollapse)
-    function changeMenu() {
-      // console.log(bus.$emit)
-      // RootBus.$emit("change-menu-isCollapse");
-      RootBus.isCollapse.value = !RootBus.isCollapse.value
-    }
-
-    onBeforeUnmount(() => {
-      // RootBus.$off("change-menu-isCollapse")
-    })
-
-    return {
-      isCollapse,
-      changeMenu
-    }
-  }
 }
+</script>
+
+<script setup>
+import { ref, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
+import RootBus from "./RootBus"
+
+const router = useRouter()
+    
+const isCollapse = ref(RootBus.isCollapse)
+function changeMenu() {
+  // console.log(bus.$emit)
+  // RootBus.$emit("change-menu-isCollapse");
+  RootBus.isCollapse.value = !RootBus.isCollapse.value
+}
+
+onBeforeUnmount(() => {
+  // RootBus.$off("change-menu-isCollapse")
+})
+
+function toHome() {
+  router.push('/')
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -58,6 +61,7 @@ export default {
     -o-background-clip: test;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    user-select: none;
   }
 }
 </style>
