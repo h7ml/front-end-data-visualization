@@ -30,7 +30,8 @@ const option = {
 // 渲染函数
 function chartInit() {
   // 指定ECharts容器元素
-  const chart = echarts.init(chartDom.value)
+  // const chart = echarts.init(chartDom.value) // 默认主题
+  const chart = echarts.init(chartDom.value, 'dark') // 深色主题
   // 设置图表
   chart.setOption(option)
 }
