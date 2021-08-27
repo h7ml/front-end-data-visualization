@@ -3,14 +3,37 @@ import CSS from '@/views/CSS/index.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/css',
     name: 'CSS',
     component: CSS,
     meta: {
       navState: true,
       navName: 'CSS',
       icon: 'el-icon-medal'
-    }
+    },
+    children: [
+      {
+        path: 'css-demo',
+        name: 'CSSDemo',
+        component: () => import('@/views/CSS/Demo/index.vue'),
+        meta: {
+          navState: true,
+          navName: 'Demo',
+          icon: 'el-icon-medal'
+        },
+        children: [
+          {
+            path: 'gradientText',
+            name: 'CradientText',
+            component: () => import('@/views/CSS/Demo/pages/GradientText/GradientText.vue'),
+            meta: {
+              navState: true,
+              navName: '渐变文字'
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     path: '/svg',
