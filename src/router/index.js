@@ -67,7 +67,7 @@ const routes = [
     meta: {
       navState: true,
       navName: 'ECharts',
-      icon: 'el-icon-medal'
+      icon: 'el-icon-s-data'
     },
     children: [
       {
@@ -77,7 +77,7 @@ const routes = [
         meta: {
           navState: true,
           navName: 'Demo',
-          icon: 'el-icon-medal'
+          icon: 'el-icon-s-shop'
         },
         children: [
           {
