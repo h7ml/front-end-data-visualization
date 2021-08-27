@@ -55,6 +55,39 @@ const routes = [
       icon: 'el-icon-medal'
     }
   },
+  {
+    path: '/eCharts',
+    name: 'ECharts',
+    component: () => import('../views/ECharts/index.vue'),
+    meta: {
+      navState: true,
+      navName: 'ECharts',
+      icon: 'el-icon-medal'
+    },
+    children: [
+      {
+        path: 'echarts-demo',
+        name: 'EChartsDemo',
+        component: () => import('@/views/ECharts/Demo/index.vue'),
+        meta: {
+          navState: true,
+          navName: 'Demo',
+          icon: 'el-icon-medal'
+        },
+        children: [
+          {
+            path: 'ECharts-Stated',
+            name: 'EChartsStated',
+            component: () => import('@/views/ECharts/Demo/pages/Stated/Stated.vue'),
+            meta: {
+              navState: true,
+              navName: '起步'
+            }
+          }
+        ]
+      }
+    ]
+  },
   // {
   //   path: '/demo',
   //   name: 'Demo',
