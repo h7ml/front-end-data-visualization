@@ -89,7 +89,15 @@ const routes = [
               navName: '起步'
             }
           },
-          // ThemeBuilder
+          {
+            path: 'ECharts-ThemeBuilderJS',
+            name: 'EChartsThemeBuilderJS',
+            component: () => import('@/views/ECharts/Demo/pages/ThemeBuilder/ThemeBuilderJS.vue'),
+            meta: {
+              navState: true,
+              navName: '自定义主题 JS版'
+            }
+          },
           {
             path: 'ECharts-ThemeBuilderJSON',
             name: 'EChartsThemeBuilderJSON',
