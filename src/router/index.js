@@ -115,6 +115,15 @@ const routes = [
               navState: true,
               navName: 'SVG渲染'
             }
+          },
+          {
+            path: 'ECharts-Dataset',
+            name: 'EChartsDataset',
+            component: () => import('@/views/ECharts/Demo/pages/Dataset/Dataset.vue'),
+            meta: {
+              navState: true,
+              navName: 'Dataset'
+            }
           }
         ]
       }
