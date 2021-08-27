@@ -124,6 +124,15 @@ const routes = [
               navState: true,
               navName: 'Dataset'
             }
+          },
+          {
+            path: 'ECharts-Plugins',
+            name: 'EChartsPlugins',
+            component: () => import('@/views/ECharts/Demo/pages/Plugins/Plugins.vue'),
+            meta: {
+              navState: true,
+              navName: '插件'
+            }
           }
         ]
       }
