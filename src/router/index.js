@@ -38,7 +38,7 @@ const routes = [
   {
     path: '/svg',
     name: 'SVG',
-    component: () => import('../views/SVG/index.vue'),
+    component: () => import('@/views/SVG/index.vue'),
     meta: {
       navState: true,
       navName: 'SVG',
@@ -48,7 +48,7 @@ const routes = [
   {
     path: '/canvas',
     name: 'Canvas',
-    component: () => import('../views/Canvas/index.vue'),
+    component: () => import('@/views/Canvas/index.vue'),
     meta: {
       navState: true,
       navName: 'Canvas',
@@ -58,7 +58,7 @@ const routes = [
   {
     path: '/eCharts',
     name: 'ECharts',
-    component: () => import('../views/ECharts/index.vue'),
+    component: () => import('@/views/ECharts/index.vue'),
     meta: {
       navState: true,
       navName: 'ECharts',
