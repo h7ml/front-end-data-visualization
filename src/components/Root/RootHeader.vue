@@ -2,12 +2,26 @@
   <header class="root__header">
     <i
       :class="[
-        'root__header__icon',
+        'root__header__collapseBtn',
         isCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'
       ]"
       @click="changeMenu"
     ></i>
-    <h2 class="root__header__title" @click="toHome">前端可视化</h2>
+    <div class="root__header__main">
+      <h2 class="root__header__title" @click="toHome">前端可视化</h2>
+      <div class="repository__x">
+        <el-tooltip
+          class="repository__item"
+          content="码云仓库"
+          placement="bottom"
+          effect="light"
+        >
+          <a href="https://gitee.com/k21vin/front-end-data-visualization">
+            <i class="iconfont icon-gitee2"></i>
+          </a>
+        </el-tooltip>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -43,14 +57,22 @@ function toHome() {
 
 <style lang="scss" scoped>
 .root__header {
+  height: 60px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  &__icon {
+  &__collapseBtn {
     font-size: 26px;
     margin-right: 10px;
     color: #409eff;
+  }
+
+  &__main {
+    flex: 1;
+    display: flex;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   &__title {
@@ -62,6 +84,17 @@ function toHome() {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     user-select: none;
+    margin-right: 10px;
+  }
+
+  .repository__x {
+    .repository__item {
+      margin-left: 10px;
+    }
+    a {
+      color: #999;
+      text-decoration: none;
+    }
   }
 }
 </style>
