@@ -133,6 +133,15 @@ const routes = [
               navState: true,
               navName: '插件'
             }
+          },
+          {
+            path: 'ECharts-Absolute',
+            name: 'EChartsAbsolute',
+            component: () => import('@/views/ECharts/Demo/pages/Absolute/Absolute.vue'),
+            meta: {
+              navState: true,
+              navName: '定位'
+            }
           }
         ]
       }
