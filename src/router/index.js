@@ -14,7 +14,7 @@ const routes = [
     meta: {
       navState: true,
       navName: 'CSS',
-      icon: 'el-icon-medal'
+      icon: 'el-icon-s-management'
     },
     children: [
       {
@@ -24,7 +24,7 @@ const routes = [
         meta: {
           navState: true,
           navName: 'Demo',
-          icon: 'el-icon-medal'
+          icon: 'el-icon-s-shop'
         },
         children: [
           {
@@ -47,7 +47,7 @@ const routes = [
     meta: {
       navState: true,
       navName: 'SVG',
-      icon: 'el-icon-medal'
+      icon: 'el-icon-s-management'
     }
   },
   {
@@ -57,7 +57,7 @@ const routes = [
     meta: {
       navState: true,
       navName: 'Canvas',
-      icon: 'el-icon-medal'
+      icon: 'el-icon-s-management'
     }
   },
   {
