@@ -50,7 +50,13 @@ function chartInit() {
         stack: '总量',
         barWidth: 10,
         itemStyle: {
-          color: '#45c946'
+          color: new echarts.graphic.LinearGradient(
+            0, 0, 1, 1,
+            [
+              { offset: 0, color: '#45cca6' },
+              { offset: 1, color: '#45ffa6' }
+            ]
+          )
         }
       },
       {
@@ -89,7 +95,7 @@ function chartInit() {
                   layout: 'cover'
                 },
                 style: { // 样式
-                  fill: '#45c946', // 填充色
+                  fill: '#45ee46', // 填充色
                 }
               },
               {
@@ -104,7 +110,7 @@ function chartInit() {
                   layout: 'cover'
                 },
                 style: { // 样式
-                  fill: '#45c946', // 填充色
+                  fill: '#45ee46', // 填充色
                 }
               }
             ]

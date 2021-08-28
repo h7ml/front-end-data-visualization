@@ -40,7 +40,13 @@ function chartInit() {
         type: 'line',
         data: [620, 432, 220, 534, 790, 430, 220, 320, 532, 320, 834, 690, 530, 220, 620],
         areaStyle: { // 用面积的方式进行展示
-          color: 'purple'
+          color: new echarts.graphic.LinearGradient(
+            0, 0, 0, 1, 
+            [
+              { offset: 0, color: "rgba(255, 191, 0, 1)" },
+              { offset: 1, color: "rgba(255, 191, 0, 0.1)" }
+            ]
+          )
         },
         lineStyle: { // 设置线的样式
           width: 0

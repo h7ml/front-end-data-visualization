@@ -42,6 +42,15 @@ function chartInit() {
         type: 'bar',
         data: [410, 82, 200, 334, 390, 330, 220, 150, 82, 200, 134, 290, 330, 150],
         barWidth: '60%', // 控制柱状图的宽度
+        itemStyle: {
+          color: new echarts.graphic.LinearGradient(
+            0, 0, 0, 1,
+            [
+              { offset: 0, color: '#aaffff' },
+              { offset: 1, color: '#188df0' }
+            ]
+          )
+        }
       }
     ],
     grid: { // 布局位置
