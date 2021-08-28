@@ -1,3 +1,4 @@
+<!-- 累计销售额 -->
 <template>
   <div>
     <CommonCard
