@@ -24,9 +24,7 @@ import { CommonCard, echarts } from './commonCardMixin.js'
 const chartDom = ref(null)
 const chart = ref(null)
 
-onMounted(() => {
-  console.log(chartDom)
-  console.log(echarts)
+function chartInit() {
   chart.value = echarts.init(chartDom.value)
   chart.value.setOption({
     xAxis: {
@@ -60,5 +58,9 @@ onMounted(() => {
       right: 0
     }
   })
+}
+
+onMounted(() => {
+  chartInit()
 })
 </script>
