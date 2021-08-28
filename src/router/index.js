@@ -189,6 +189,15 @@ const routes = [
             }
           },
           {
+            path: 'ECharts-AreaFillGradient',
+            name: 'EChartsAreaFillGradient',
+            component: () => import('@/views/ECharts/Demo/pages/AreaFill/Gradient.vue'),
+            meta: {
+              navState: true,
+              navName: '渐变填充'
+            }
+          },
+          {
             path: 'ECharts-TypeCustom',
             name: 'EChartsTypeCustom',
             component: () => import('@/views/ECharts/Demo/pages/TypeCustom/Icon.vue'),
