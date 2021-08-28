@@ -182,7 +182,7 @@ const routes = [
           {
             path: 'ECharts-AreaFill',
             name: 'EChartsAreaFill',
-            component: () => import('@/views/ECharts/Demo/pages/AreaFill/AreaFill.vue'),
+            component: () => import('@/views/ECharts/Demo/pages/AreaFill/Fill.vue'),
             meta: {
               navState: true,
               navName: '面积填充'
