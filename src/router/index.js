@@ -169,6 +169,15 @@ const routes = [
               navState: true,
               navName: '坐标系 - 多坐标系'
             }
+          },
+          {
+            path: 'ECharts-BarYCategory',
+            name: 'EChartsBarYCategory',
+            component: () => import('@/views/ECharts/Demo/pages/BarYCategory/BarYCategory.vue'),
+            meta: {
+              navState: true,
+              navName: '条形图'
+            }
           }
         ]
       },
