@@ -171,6 +171,16 @@ const routes = [
             }
           }
         ]
+      },
+      {
+        path: 'datavReportDev',
+        name: 'DatavReportDev',
+        component: () => import('@/views/ECharts/DatavReportDev/index.vue'),
+        meta: {
+          navState: true,
+          navName: '数据报表',
+          icon: 'el-icon-s-grid'
+        }
       }
     ]
   },
