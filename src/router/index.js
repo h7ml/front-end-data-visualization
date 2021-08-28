@@ -180,6 +180,15 @@ const routes = [
             }
           },
           {
+            path: 'ECharts-AreaFill',
+            name: 'EChartsAreaFill',
+            component: () => import('@/views/ECharts/Demo/pages/AreaFill/AreaFill.vue'),
+            meta: {
+              navState: true,
+              navName: '面积填充'
+            }
+          },
+          {
             path: 'ECharts-TypeCustom',
             name: 'EChartsTypeCustom',
             component: () => import('@/views/ECharts/Demo/pages/TypeCustom/Icon.vue'),
