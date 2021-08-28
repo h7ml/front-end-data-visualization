@@ -160,6 +160,15 @@ const routes = [
               navState: true,
               navName: '坐标系 - 双坐标系'
             }
+          },
+          {
+            path: 'ECharts-More',
+            name: 'EChartsMore',
+            component: () => import('@/views/ECharts/Demo/pages/Axis/More.vue'),
+            meta: {
+              navState: true,
+              navName: '坐标系 - 多坐标系'
+            }
           }
         ]
       }
