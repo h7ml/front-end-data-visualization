@@ -1,9 +1,9 @@
 <template>
-  <div id="dataReportDev">
+  <el-card id="dataReportDev">
     <TopView />
     <SalseView />
     <BottomView />
-  </div>
+  </el-card>
 </template>
 
 <script setup>
@@ -17,8 +17,6 @@ import BottomView from './components/BottomView/BottomView.vue'
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  overflow-y: auto;
 }
 </style>
