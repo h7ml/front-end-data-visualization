@@ -3,22 +3,22 @@
     <el-row :gutter="20">
       <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6" class="top__view__item">
         <el-card shadow="hover">
-          鼠标悬浮时显示
+          <TotalSalse />
         </el-card>
       </el-col>
       <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6" class="top__view__item">
         <el-card shadow="hover">
-          鼠标悬浮时显示
+          <TotalOrders />
         </el-card>
       </el-col>
       <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6" class="top__view__item">
         <el-card shadow="hover">
-          鼠标悬浮时显示
+          <TodayUsers />
         </el-card>
       </el-col>
       <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6" class="top__view__item">
         <el-card shadow="hover">
-          鼠标悬浮时显示
+          <TotalUsers />
         </el-card>
       </el-col>
     </el-row>
@@ -26,7 +26,10 @@
 </template>
 
 <script setup>
-
+import TotalSalse from './TotalSalse.vue'
+import TotalOrders from './TotalOrders.vue'
+import TodayUsers from './TodayUsers.vue'
+import TotalUsers from './TotalUsers.vue'
 </script>
 
 <style lang="scss" scoped>
