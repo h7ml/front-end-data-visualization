@@ -12,7 +12,7 @@ const chartDom = ref(null)
 // 数据和配置项
 const option = {
   title: {
-    text: '散点图'
+    text: '双坐标系'
   },
   xAxis: { // x轴
     type: 'category' // 多坐标系的时候需要明确指定 x 轴的类型
