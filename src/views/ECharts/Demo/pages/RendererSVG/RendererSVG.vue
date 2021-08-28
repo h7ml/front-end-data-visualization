@@ -30,8 +30,7 @@ const option = {
 // 渲染函数
 function chartInit() {
   // 指定ECharts容器元素
-  // const chart = echarts.init(chartDom.value) // 默认主题
-  const chart = echarts.init(chartDom.value, '', {renderer: 'svg'}) // 深色主题
+  const chart = echarts.init(chartDom.value, 'light', {renderer: 'svg'}) // light是默认主题；可以使用renderer设置渲染模式，默认为canvas
   // 设置图表
   chart.setOption(option)
 }
