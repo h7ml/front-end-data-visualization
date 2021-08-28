@@ -6,7 +6,7 @@
       value="￥ 32,039,165"
     >
       <template #default>
-        <div class="compare-wrapper">
+        <div class="compare__wrapper">
           <div class="compare">
             <span>日同比</span>
             <span class="emphasis">7.33%</span>
@@ -32,7 +32,7 @@ import { CommonCard } from './commonCardMixin.js'
 </script>
 
 <style lang="scss" scoped>
-.compare-wrapper {
+.compare__wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
