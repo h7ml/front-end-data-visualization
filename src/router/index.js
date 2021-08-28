@@ -151,6 +151,15 @@ const routes = [
               navState: true,
               navName: '坐标系 - 散点图'
             }
+          },
+          {
+            path: 'ECharts-Double',
+            name: 'EChartsDouble',
+            component: () => import('@/views/ECharts/Demo/pages/Axis/Double.vue'),
+            meta: {
+              navState: true,
+              navName: '坐标系 - 双坐标系'
+            }
           }
         ]
       }
