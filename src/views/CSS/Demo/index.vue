@@ -1,7 +1,11 @@
 <template>
   <el-card :bdoy-style="{ width: '100%', height: '100%' }">
-    css demo
-    <router-view />
+    <template #header>
+      {{title}}
+    </template>
+    <template #default>
+      <router-view />
+    </template>
   </el-card>
 </template>
 
@@ -9,7 +13,7 @@
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-console.log(route.meta.navName)
+const title = route.meta.navName
 </script>
 
 <style lang="scss" scoped>
