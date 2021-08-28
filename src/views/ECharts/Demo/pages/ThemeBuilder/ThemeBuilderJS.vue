@@ -2,7 +2,17 @@
   <div id="chart" class="chart" ref="chartDom"></div>
   <aside>
     <p>自定义echarts主题说明：</p>
-    <p>1. 在Echarts官方编辑主题，并下载js资源文件。https://echarts.apache.org/zh/theme-builder.html</p>
+    <p>
+      1. 在
+        <el-link
+          href="https://echarts.apache.org/zh/theme-builder.html"
+          target="_blank"
+          type="primary"
+        >
+          「Echarts官方编辑主题」
+        </el-link>
+      ，并下载js资源文件。
+    </p>
     <p>2. 将下载下来的主题文件(js)放到 node_modules/echarts/theme 目录下</p>
     <p>3. 打开下载好的主题文件，搜索 “echarts.registerTheme” 即可找到主题名(可以自己修改改主题名)</p>
     <p>4. 在vue中引入</p>
