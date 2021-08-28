@@ -1,0 +1,1 @@
+import{q as a,s,o as t,b as d,i as e}from"./vendor.fc99c3d8.js";const n={};a("data-v-1144f962");const o=[e("div",{class:"gradient__text"},"渐变标题",-1)];s(),n.render=function(a,s){return t(),d("div",null,o)},n.__scopeId="data-v-1144f962";export{n as default};
