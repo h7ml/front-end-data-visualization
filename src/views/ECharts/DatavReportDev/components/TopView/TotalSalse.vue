@@ -6,11 +6,22 @@
       value="￥ 32,039,165"
     >
       <template #default>
-        <div class="compare"></div>
+        <div class="compare-wrapper">
+          <div class="compare">
+            <span>日同比</span>
+            <span class="emphasis">7.33%</span>
+            <div class="increase"></div>
+          </div>
+          <div class="compare">
+            <span>月同比</span>
+            <span class="emphasis">38.79%</span>
+            <div class="decrease"></div>
+          </div>
+        </div>
       </template>
       <template #footer>
         <span>昨日销售额</span>
-        <span class="money">￥ 30,000,000</span>
+        <span class="emphasis">￥ 30,000,000</span>
       </template>
     </CommonCard>
   </div>
@@ -21,16 +32,17 @@ import CommonCard from './commonCardMixin.js'
 </script>
 
 <style lang="scss" scoped>
-.compare {
+.compare-wrapper {
   height: 100%;
-  background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-span {
+.compare {
+  display: flex;
+  align-items: center;
   font-size: 12px;
-}
-.money {
-  margin-left: 5px;
-  color: #333;
-  font-weight: 700;
+  margin-top: 3px;
+  color: #666;
 }
 </style>
