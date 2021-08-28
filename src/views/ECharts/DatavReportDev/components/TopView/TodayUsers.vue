@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import CommonCard from './commonCardMixin.js'
+import { CommonCard } from './commonCardMixin.js'
 </script>
 
 <style lang="scss" scoped>
