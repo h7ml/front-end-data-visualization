@@ -178,6 +178,15 @@ const routes = [
               navState: true,
               navName: '条形图'
             }
+          },
+          {
+            path: 'ECharts-TypeCustom',
+            name: 'EChartsTypeCustom',
+            component: () => import('@/views/ECharts/Demo/pages/TypeCustom/Icon.vue'),
+            meta: {
+              navState: true,
+              navName: '自定义 - 图标'
+            }
           }
         ]
       },
