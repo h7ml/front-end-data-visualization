@@ -9,7 +9,7 @@
           target="_blank"
           type="primary"
         >
-          「Echarts官方编辑主题」
+          「Echarts官方编辑主题<span class="el-icon-link"></span>」
         </el-link>
       ，并下载js资源文件。
     </p>
