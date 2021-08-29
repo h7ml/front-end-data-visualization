@@ -311,6 +311,15 @@ const routes = [
               navState: true,
               navName: '绘制多边形'
             }
+          },
+          {
+            path: 'draw-label',
+            name: 'DrawLabel',
+            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawLabel.vue'),
+            meta: {
+              navState: true,
+              navName: '绘制文本'
+            }
           }
         ]
       }
