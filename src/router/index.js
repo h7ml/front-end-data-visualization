@@ -257,6 +257,15 @@ const routes = [
               navState: true,
               navName: '基础3D地图'
             }
+          },
+          {
+            path: '3DEarth',
+            name: '3DEarth',
+            component: () => import('@/views/BaiduMap/Demo/pages/3DMap/3DEarth.vue'),
+            meta: {
+              navState: true,
+              navName: '3D 地球'
+            }
           }
         ]
       }
