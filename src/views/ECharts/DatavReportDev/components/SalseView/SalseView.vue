@@ -40,9 +40,9 @@
           <div class="sales__view__list">
             <div class="sales__view__title">排行榜</div>
             <div class="list__item__wrapper">
-              <div class="list__item" v-for="item in rankData" :key="item.no">
+              <div class="list__item" v-for="(item, index) in rankData" :key="item.no">
                 <div
-                  :class="['list__item__no', +item.no <= 3 ? 'top__no' : '']"
+                  :class="['list__item__no', +item.no <= 3 ? 'top__no' + (index + 1) : '']"
                 >
                   {{ item.no }}
                 </div>
@@ -298,8 +298,22 @@ const rankData = ref([
           height: 20px;
           color: #333;
 
-          &.top__no {
-            background: #000;
+          &.top__no1 {
+            background: #ea5455;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: 500;
+          }
+
+          &.top__no2 {
+            background: #f07b3f;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: 500;
+          }
+
+          &.top__no3 {
+            background: #ffd460;
             border-radius: 50%;
             color: #fff;
             font-weight: 500;
