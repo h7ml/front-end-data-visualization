@@ -1,6 +1,6 @@
 <template>
   <div class="map__x">
-    <div id="container" ref="mapDom"></div>
+    <div id="container"></div>
   </div>
 </template>
 
