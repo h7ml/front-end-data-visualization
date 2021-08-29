@@ -36,21 +36,18 @@
       </template>
       <template #default>
         <div class="salse__view__chart__wrapper">
-          <ChartDom class="chart__dom" :options="chartOption" />
+          <ChartDom class="chart__dom" :options="salseChartOption" />
           <div class="sales__view__list">
             <div class="sales__view__title">排行榜</div>
             <div class="list__item__wrapper">
               <div class="list__item" v-for="item in rankData" :key="item.no">
                 <div
-                  :class="[
-                    'list__item__no',
-                    +item.no <= 3 ? 'top__no' : ''
-                  ]"
+                  :class="['list__item__no', +item.no <= 3 ? 'top__no' : '']"
                 >
-                  {{item.no}}
+                  {{ item.no }}
                 </div>
-                <div class="list__item__name">{{item.name}}</div>
-                <div class="list__item__money">{{item.money}}</div>
+                <div class="list__item__name">{{ item.name }}</div>
+                <div class="list__item__money">{{ item.money }}</div>
               </div>
             </div>
           </div>
@@ -61,144 +58,171 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
-import ChartDom from './ChartDom.vue'
+import { ref, reactive } from "vue";
+import ChartDom from "./ChartDom.vue";
+import * as echarts from "echarts";
 
-const activeIndex = ref('1')
+const activeIndex = ref("1");
 
 function onMenuSelect(index) {
-  activeIndex.value = index
+  activeIndex.value = index;
 }
 
-const radioSelect = ref('今日')
+const radioSelect = ref("今日");
 
 const datePicker = reactive({
-  date: '',
+  date: "",
   shortcuts: [
     {
-      text: '最近一周',
+      text: "最近一周",
       value: () => {
-        const end = new Date()
-        const start = new Date()
-        start.setTime(start.getTime() - 3600 * 1000 * 24 * 7)
-        return [start, end]
-      }
+        const end = new Date();
+        const start = new Date();
+        start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+        return [start, end];
+      },
     },
     {
-      text: '最近一个月',
+      text: "最近一个月",
       value: () => {
-        const end = new Date()
-        const start = new Date()
-        start.setTime(start.getTime() - 3600 * 1000 * 24 * 30)
-        return [start, end]
-      }
+        const end = new Date();
+        const start = new Date();
+        start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+        return [start, end];
+      },
     },
     {
-      text: '最近三个月',
+      text: "最近三个月",
       value: () => {
-        const end = new Date()
-        const start = new Date()
-        start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
-        return [start, end]
-      }
-    }
-  ]
-})
+        const end = new Date();
+        const start = new Date();
+        start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+        return [start, end];
+      },
+    },
+  ],
+});
 
-const chartOption = ref({
+// 销售额
+const salseChartOption = ref({
   title: {
-    text: '年度销售额',
+    text: "年度销售额",
     textStyle: {
       fontSize: 12,
-      color: "#666"
+      color: "#666",
     },
     top: 20,
-    left: 25
+    left: 25,
   },
   xAxis: {
-    type: 'category',
-    data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+    type: "category",
+    data: [ "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月" ],
     axisTick: {
       alignWithLabel: true,
       lineStyle: {
-        color: '#999'
-      }
+        color: "#999",
+      },
     },
     axisLine: {
       lineStyle: {
-        color: '#999'
-      }
+        color: "#999",
+      },
     },
     axisLabel: {
-      color: '#333'
-    }
+      color: "#333",
+    },
   },
   yAxis: {
     axisLine: {
-      show: false
+      show: false,
     },
     axisTick: {
-      show: false
+      show: false,
     },
     splitLine: {
       lineStyle: {
-        type: 'dotted',
-        color: '#eee'
-      }
+        type: "dotted",
+        color: "#eee",
+      },
+    },
+  },
+  series: [
+    {
+      type: "bar",
+      barWidth: "35%",
+      data: [200, 250, 300, 350, 186, 462, 452, 219, 626, 437, 515, 656],
+    },
+  ],
+  color: new echarts.graphic.LinearGradient(
+    0, 0, 0, 1, 
+    [
+      { offset: 0, color: "#fa709a" },
+      { offset: 1, color: "#fee140" }
+    ]
+  ),
+  emphasis: {
+    itemStyle: {
+      color: new echarts.graphic.LinearGradient(
+        0, 0, 0, 1, 
+        [
+          { offset: 0, color: "#f83600" },
+          { offset: 1, color: "#f9d423" }
+        ]
+      ),
+    },
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
     }
   },
-  series: [{
-    type: 'bar',
-    barWidth: '35%',
-    data: [200, 250, 300, 350, 186, 462, 452, 219, 626, 437, 515, 656],
-  }],
-  color: ['#3398DB'],
   grid: {
-      top: 70,
-      bottom: 50,
-      left: 60,
-      right: 60
-    }
-})
+    top: 70,
+    bottom: 50,
+    left: 60,
+    right: 60,
+  },
+});
 
+// 排行榜数据
 const rankData = ref([
   {
     no: 1,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 2,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 3,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 4,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 5,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 6,
-    name: '麦当劳',
-    money: '323,234'
+    name: "麦当劳",
+    money: "323,234",
   },
   {
     no: 7,
-    name: '麦当劳',
-    money: '323,234'
-  }
-])
-
+    name: "麦当劳",
+    money: "323,234",
+  },
+]);
 </script>
 
 <style lang="scss" scoped>
