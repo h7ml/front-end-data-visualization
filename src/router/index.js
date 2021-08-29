@@ -320,6 +320,15 @@ const routes = [
               navState: true,
               navName: '绘制文本'
             }
+          },
+          {
+            path: 'draw-info-window',
+            name: 'DrawInfoWindow',
+            component: () => import('@/views/BaiduMap/Demo/pages/Layer/InfoWindow.vue'),
+            meta: {
+              navState: true,
+              navName: '包含信息的窗口'
+            }
           }
         ]
       }
