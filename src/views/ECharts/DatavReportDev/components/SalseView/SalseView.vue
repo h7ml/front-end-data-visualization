@@ -113,12 +113,12 @@ const shortcuts = reactive([
   align-items: center;
   justify-content: flex-end;
 
-  :deep .salse__view__date__picker {
+  :deep(.salse__view__date__picker) {
     margin-left: 20px;
   }
 }
 
-:deep .el-card__header {
+:deep(.el-card__header) {
   border-bottom: none;
   padding: 0;
 }
