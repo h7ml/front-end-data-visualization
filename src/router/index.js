@@ -275,6 +275,15 @@ const routes = [
               navState: true,
               navName: '控件'
             }
+          },
+          {
+            path: 'CustomTheme',
+            name: 'CustomTheme',
+            component: () => import('@/views/BaiduMap/Demo/pages/CustomTheme/CustomTheme.vue'),
+            meta: {
+              navState: true,
+              navName: '自定义主题'
+            }
           }
         ]
       }
