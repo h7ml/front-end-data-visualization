@@ -284,6 +284,15 @@ const routes = [
               navState: true,
               navName: '自定义主题'
             }
+          },
+          {
+            path: 'draw-icon',
+            name: 'DrawIcon',
+            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawIcon.vue'),
+            meta: {
+              navState: true,
+              navName: '绘制图标'
+            }
           }
         ]
       }
