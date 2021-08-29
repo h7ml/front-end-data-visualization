@@ -81,6 +81,7 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
+import * as echarts from 'echarts'
 import ChartDom from './ChartDom.vue'
 
 // 搜索用户数 报表数据
@@ -110,10 +111,16 @@ const searchUsersNum = reactive({
       type: 'line',
       data: [128, 328, 168, 625, 154, 325, 168, 457, 669, 467],
       areaStyle: {
-        color: 'rgba(95, 187, 255, 0.5)'
+        color: new echarts.graphic.LinearGradient(
+          0, 0, 0, 1,
+          [
+            { offset: 0, color: '#ffecd2' },
+            { offset: 1, color: '#fcb69f' }
+          ]
+        )
       },
       lineStyle: {
-        color: 'rgba(95, 187, 255)'
+        color: '#fcb69f'
       },
       itemStyle: {
         opacity: 0
@@ -156,10 +163,16 @@ const searchVolume = reactive({
       type: 'line',
       data: [128, 328, 168, 625, 154, 325, 168, 457, 669, 467],
       areaStyle: {
-        color: 'rgba(95, 187, 255, 0.5)'
+        color: new echarts.graphic.LinearGradient(
+          0, 0, 0, 1,
+          [
+            { offset: 0, color: '#d4fc79' },
+            { offset: 1, color: '#96e6a1' }
+          ]
+        )
       },
       lineStyle: {
-        color: 'rgba(95, 187, 255)'
+        color: '#96e6a1'
       },
       itemStyle: {
         opacity: 0
@@ -196,9 +209,9 @@ const salesInfo = reactive({
 
 // 销售排行榜数据
 const mockData = [
-  { legendname: '粥粉面店', value: 67, percent: '15.40', itemStyle: {color: '#e7e702'}, name: '粥粉面店 | 15.40%' },
-  { legendname: '简餐便当', value: 97, percent: '22.30', itemStyle: {color: '#8d7fec'}, name: '简餐便当 | 22.30%' },
-  { legendname: '汉堡披萨', value: 92, percent: '21.50', itemStyle: {color: '#5085f2'}, name: '汉堡披萨 | 21.50%'}
+  { legendname: '粥粉面店', value: 67, percent: '15.40', itemStyle: {color: '#f79256'}, name: '粥粉面店 | 15.40%' },
+  { legendname: '简餐便当', value: 97, percent: '22.30', itemStyle: {color: '#7dcfb6'}, name: '简餐便当 | 22.30%' },
+  { legendname: '汉堡披萨', value: 92, percent: '21.50', itemStyle: {color: '#1d4e89'}, name: '汉堡披萨 | 21.50%'}
 ]
 
 // 销售排行榜图表数据
@@ -235,23 +248,19 @@ const categoryOptions = reactive({
       type: 'pie',
       data: mockData,
       label: {
-        normal: {
-          show: true,
-          position: 'outside',
-          formatter: params => {
-            // console.log(params)
-            return params.data.legendname
-          }
+        show: true,
+        position: 'outside',
+        formatter: params => {
+          // console.log(params)
+          return params.data.legendname
         }
       },
       center: ['35%', '50%'],
       radius: ['45%', '60%'],
       labelLine: {
-        normal: {
-          length: 5,
-          length2: 3,
-          smooth: true
-        }
+        length: 5,
+        length2: 3,
+        smooth: true
       },
       clockwise: false,
       itemStyle: {
