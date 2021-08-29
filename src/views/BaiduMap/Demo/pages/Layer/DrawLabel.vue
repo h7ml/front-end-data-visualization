@@ -41,13 +41,13 @@ function initMap() {
   map.addOverlay(label.value)
 }
 
+onMounted(() => {
+  initMap()
+})
+
 onUnmounted(() => {
   // 组件销毁时删除监听事件
   label.value.removeEventListener('click', labelClick)
-})
-
-onMounted(() => {
-  initMap()
 })
 </script>
 
