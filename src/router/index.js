@@ -220,6 +220,39 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/baiduMap',
+    name: 'BaiduMap',
+    component: () => import('@/views/BaiduMap/index.vue'),
+    meta: {
+      navState: true,
+      navName: '百度地图',
+      icon: 'el-icon-s-management'
+    },
+    children: [
+      {
+        path: 'baiduMap-demo',
+        name: 'BaiduMapDemo',
+        component: () => import('@/views/BaiduMap/Demo/index.vue'),
+        meta: {
+          navState: true,
+          navName: 'Demo',
+          icon: 'el-icon-s-shop'
+        },
+        children: [
+          {
+            path: 'stated',
+            name: 'Stated',
+            component: () => import('@/views/BaiduMap/Demo/pages/Stated/Stated.vue'),
+            meta: {
+              navState: true,
+              navName: '起步'
+            }
+          }
+        ]
+      }
+    ]
+  },
   { // 404
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
