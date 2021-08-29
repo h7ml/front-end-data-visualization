@@ -162,6 +162,10 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .total__users__footer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   display: flex;
   align-items: center;
 

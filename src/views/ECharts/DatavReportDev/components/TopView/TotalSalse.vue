@@ -3,7 +3,7 @@
   <div>
     <CommonCard
       title="累计销售额"
-      value="￥ 32,039,165"
+      value="￥32,039,165"
     >
       <template #default>
         <div class="compare__wrapper">
