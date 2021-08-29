@@ -9,13 +9,13 @@
           <div class="chart__wrapper">
             <el-row :gutter="20">
               <el-col :span="12">
-                <KeyWordChart
+                <ChartDom
                   class="keyword__chart__x"
                   :options="searchUsersNum.options"
                 />
               </el-col>
               <el-col :span="12">
-                <KeyWordChart
+                <ChartDom
                   class="keyword__chart__x"
                   :options="searchVolume.options"
                 />
@@ -70,7 +70,9 @@
           </div>
         </template>
         <template #default>
-          <SalesRankingListChart :data="categoryOptions.data" />
+          <div class="chart__wrapper">
+            <ChartDom :options="categoryOptions.options" />
+          </div>
         </template>
       </el-card>
     </el-col>
@@ -79,8 +81,7 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
-import KeyWordChart from './KeyWordChart.vue'
-import SalesRankingListChart from './SalesRankingListChart.vue'
+import ChartDom from './ChartDom.vue'
 
 // 搜索用户数 报表数据
 const searchUsersNum = reactive({
@@ -187,14 +188,104 @@ function onPageChange(page) {
   console.log(page)
 }
 
+// 销售排行榜分类
 const salesInfo = reactive({
   radioSelect: '品类',
   radioTypes: ['品类', '商品']
 })
 
+// 销售排行榜数据
+const mockData = [
+  { legendname: '粥粉面店', value: 67, percent: '15.40', itemStyle: {color: '#e7e702'}, name: '粥粉面店 | 15.40%' },
+  { legendname: '简餐便当', value: 97, percent: '22.30', itemStyle: {color: '#8d7fec'}, name: '简餐便当 | 22.30%' },
+  { legendname: '汉堡披萨', value: 92, percent: '21.50', itemStyle: {color: '#5085f2'}, name: '汉堡披萨 | 21.50%'}
+]
+
 // 销售排行榜图表数据
 const categoryOptions = reactive({
-  data: []
+  options: {
+    title: [
+      {
+        text: '品类分布',
+        textStyle: {
+          fontSize: 14,
+          color: '#666'
+        },
+        top: 20,
+        left: 20
+      },
+      {
+        text: '累计订单量',
+        textStyle: {
+          fontSize: 14,
+          color: '#999'
+        },
+        subtextStyle: {
+          fontSize: 28,
+          color: '#333'
+        },
+        subtext: '320',
+        x: '34.5%',
+        y: '42.5%',
+        textAlign: 'center'
+      }
+    ],
+    series: [{
+      name: '品类分布',
+      type: 'pie',
+      data: mockData,
+      label: {
+        normal: {
+          show: true,
+          position: 'outside',
+          formatter: params => {
+            // console.log(params)
+            return params.data.legendname
+          }
+        }
+      },
+      center: ['35%', '50%'],
+      radius: ['45%', '60%'],
+      labelLine: {
+        normal: {
+          length: 5,
+          length2: 3,
+          smooth: true
+        }
+      },
+      clockwise: false,
+      itemStyle: {
+        borderWidth: 4,
+        borderColor: '#fff'
+      }
+    }],
+    legend: {
+      type: 'scroll',
+      orient: 'vertical',
+      height: 250,
+      top: 'middle',
+      left: '70%',
+      textStyle: {
+        color: '#8c8c8c'
+      }
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: params => {
+        const str = `
+          ${params.seriesName}
+          <br />
+          ${params.marker} ${params.data.legendname}
+          <br />
+          数量：${params.data.value}
+          <br />
+          占比：${params.data.percent}%
+        `
+
+        return str
+      }
+    }
+  }
 })
 </script>
 
