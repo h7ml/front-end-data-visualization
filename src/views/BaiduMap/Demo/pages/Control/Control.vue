@@ -19,7 +19,7 @@ function initMap() {
   map.centerAndZoom(point, 12) // 设置中心点和基础缩放级别
   // map.setMinZoom(8) // 设置最小缩放级别
   // map.setMaxZoom(16) // 设置最大缩放级别
-  map.enableScrollWheelZoom(true) // 允许缩放
+  map.enableScrollWheelZoom(true) // 允许滚轮缩放
   // map.setMapType(BMAP_NORMAL_MAP) // 设置成默认(普通地图)，其他类型：https://mapopen-pub-jsapi.bj.bcebos.com/jsapi/reference/jsapi_webgl_1_0.html#a5b0
   
   // 放大缩小控件

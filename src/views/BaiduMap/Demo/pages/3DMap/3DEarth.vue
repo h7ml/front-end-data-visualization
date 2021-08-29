@@ -11,7 +11,7 @@ function initMap() {
   const map = new BMapGL.Map('container') // 这里填入的是容器的 ID
   const point = new BMapGL.Point(116.404, 39.915)
   map.centerAndZoom(point, 1) // 设置中心点和基础缩放级别
-  map.enableScrollWheelZoom(true) // 允许拖拽
+  map.enableScrollWheelZoom(true) // 允许滚轮缩放
   map.setMapType(BMAP_EARTH_MAP) // 设置成3D球体，其他类型：https://mapopen-pub-jsapi.bj.bcebos.com/jsapi/reference/jsapi_webgl_1_0.html#a5b0
 }
 
