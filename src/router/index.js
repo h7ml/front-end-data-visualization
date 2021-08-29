@@ -302,6 +302,15 @@ const routes = [
               navState: true,
               navName: '绘制线段'
             }
+          },
+          {
+            path: 'draw-polygon',
+            name: 'DrawPolygon',
+            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawPolygon.vue'),
+            meta: {
+              navState: true,
+              navName: '绘制多边形'
+            }
           }
         ]
       }
