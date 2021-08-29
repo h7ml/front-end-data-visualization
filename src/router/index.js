@@ -293,6 +293,15 @@ const routes = [
               navState: true,
               navName: '绘制图标'
             }
+          },
+          {
+            path: 'draw-line',
+            name: 'DrawLine',
+            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawLine.vue'),
+            meta: {
+              navState: true,
+              navName: '绘制线段'
+            }
           }
         ]
       }
