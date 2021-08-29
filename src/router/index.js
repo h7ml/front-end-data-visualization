@@ -266,6 +266,15 @@ const routes = [
               navState: true,
               navName: '3D 地球'
             }
+          },
+          {
+            path: 'Control',
+            name: 'Control',
+            component: () => import('@/views/BaiduMap/Demo/pages/Control/Control.vue'),
+            meta: {
+              navState: true,
+              navName: '控件'
+            }
           }
         ]
       }
