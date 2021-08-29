@@ -29,7 +29,7 @@ const routes = [
         children: [
           {
             path: 'gradientText',
-            name: 'CradientText',
+            name: 'GradientText',
             component: () => import('@/views/CSS/Demo/pages/GradientText/GradientText.vue'),
             meta: {
               navState: true,
