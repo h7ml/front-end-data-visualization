@@ -248,6 +248,15 @@ const routes = [
               navState: true,
               navName: '起步'
             }
+          },
+          {
+            path: 'basic3D',
+            name: 'Basic3D',
+            component: () => import('@/views/BaiduMap/Demo/pages/3DMap/Basic3D.vue'),
+            meta: {
+              navState: true,
+              navName: '基础3D地图'
+            }
           }
         ]
       }
