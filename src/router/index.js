@@ -329,6 +329,15 @@ const routes = [
               navState: true,
               navName: '包含信息的窗口'
             }
+          },
+          {
+            path: 'animation-view',
+            name: 'AnimationView',
+            component: () => import('@/views/BaiduMap/Demo/pages/Animation/ViewAnimation.vue'),
+            meta: {
+              navState: true,
+              navName: '动画 View Animation'
+            }
           }
         ]
       }
