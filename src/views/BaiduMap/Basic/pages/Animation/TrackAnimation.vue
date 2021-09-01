@@ -21,11 +21,8 @@ function initMap() {
   let points = [
     new BMapGL.Point(116.418038, 39.91979),
     new BMapGL.Point(116.418267, 40.0592479),
-    new BMapGL.Point(116.307899, 40.057038),
-  ];
-	// for (let i = 0; i < path.length; i++) {
-	// 	point.push(new BMapGL.Point(path[i].lng, path[i].lat));
-	// }
+    new BMapGL.Point(116.307899, 40.057038)
+  ]
 
   const opts = {
     delay: 1000, // 延迟
