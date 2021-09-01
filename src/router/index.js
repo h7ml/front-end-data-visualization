@@ -71,19 +71,19 @@ const routes = [
     },
     children: [
       {
-        path: 'echarts-demo',
-        name: 'EChartsDemo',
-        component: () => import('@/views/ECharts/Demo/index.vue'),
+        path: 'echarts-basic',
+        name: 'EChartsBasic',
+        component: () => import('@/views/ECharts/Basic/index.vue'),
         meta: {
           navState: true,
-          navName: 'Demo',
+          navName: '基础',
           icon: 'el-icon-s-shop'
         },
         children: [
           {
             path: 'ECharts-Stated',
             name: 'EChartsStated',
-            component: () => import('@/views/ECharts/Demo/pages/Stated/Stated.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Stated/Stated.vue'),
             meta: {
               navState: true,
               navName: '起步'
@@ -92,7 +92,7 @@ const routes = [
           {
             path: 'ECharts-ThemeBuilderJS',
             name: 'EChartsThemeBuilderJS',
-            component: () => import('@/views/ECharts/Demo/pages/ThemeBuilder/ThemeBuilderJS.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/ThemeBuilder/ThemeBuilderJS.vue'),
             meta: {
               navState: true,
               navName: '自定义主题 JS版'
@@ -101,7 +101,7 @@ const routes = [
           {
             path: 'ECharts-ThemeBuilderJSON',
             name: 'EChartsThemeBuilderJSON',
-            component: () => import('@/views/ECharts/Demo/pages/ThemeBuilder/ThemeBuilderJSON.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/ThemeBuilder/ThemeBuilderJSON.vue'),
             meta: {
               navState: true,
               navName: '自定义主题 JSON版'
@@ -110,7 +110,7 @@ const routes = [
           {
             path: 'ECharts-RendererSVG',
             name: 'EChartsRendererSVG',
-            component: () => import('@/views/ECharts/Demo/pages/RendererSVG/RendererSVG.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/RendererSVG/RendererSVG.vue'),
             meta: {
               navState: true,
               navName: 'SVG渲染'
@@ -119,7 +119,7 @@ const routes = [
           {
             path: 'ECharts-Dataset',
             name: 'EChartsDataset',
-            component: () => import('@/views/ECharts/Demo/pages/Dataset/Dataset.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Dataset/Dataset.vue'),
             meta: {
               navState: true,
               navName: 'Dataset'
@@ -128,7 +128,7 @@ const routes = [
           {
             path: 'ECharts-Plugins',
             name: 'EChartsPlugins',
-            component: () => import('@/views/ECharts/Demo/pages/Plugins/Plugins.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Plugins/Plugins.vue'),
             meta: {
               navState: true,
               navName: '插件'
@@ -137,7 +137,7 @@ const routes = [
           {
             path: 'ECharts-Absolute',
             name: 'EChartsAbsolute',
-            component: () => import('@/views/ECharts/Demo/pages/Absolute/Absolute.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Absolute/Absolute.vue'),
             meta: {
               navState: true,
               navName: '定位'
@@ -146,7 +146,7 @@ const routes = [
           {
             path: 'ECharts-Scatter',
             name: 'EChartsScatter',
-            component: () => import('@/views/ECharts/Demo/pages/Axis/Scatter.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Axis/Scatter.vue'),
             meta: {
               navState: true,
               navName: '坐标系 - 散点图'
@@ -155,7 +155,7 @@ const routes = [
           {
             path: 'ECharts-Double',
             name: 'EChartsDouble',
-            component: () => import('@/views/ECharts/Demo/pages/Axis/Double.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Axis/Double.vue'),
             meta: {
               navState: true,
               navName: '坐标系 - 双坐标系'
@@ -164,7 +164,7 @@ const routes = [
           {
             path: 'ECharts-More',
             name: 'EChartsMore',
-            component: () => import('@/views/ECharts/Demo/pages/Axis/More.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/Axis/More.vue'),
             meta: {
               navState: true,
               navName: '坐标系 - 多坐标系'
@@ -173,7 +173,7 @@ const routes = [
           {
             path: 'ECharts-BarYCategory',
             name: 'EChartsBarYCategory',
-            component: () => import('@/views/ECharts/Demo/pages/BarYCategory/BarYCategory.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/BarYCategory/BarYCategory.vue'),
             meta: {
               navState: true,
               navName: '条形图'
@@ -182,7 +182,7 @@ const routes = [
           {
             path: 'ECharts-AreaFill',
             name: 'EChartsAreaFill',
-            component: () => import('@/views/ECharts/Demo/pages/AreaFill/Fill.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/AreaFill/Fill.vue'),
             meta: {
               navState: true,
               navName: '面积填充'
@@ -191,7 +191,7 @@ const routes = [
           {
             path: 'ECharts-AreaFillGradient',
             name: 'EChartsAreaFillGradient',
-            component: () => import('@/views/ECharts/Demo/pages/AreaFill/Gradient.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/AreaFill/Gradient.vue'),
             meta: {
               navState: true,
               navName: '渐变填充'
@@ -200,7 +200,7 @@ const routes = [
           {
             path: 'ECharts-TypeCustom',
             name: 'EChartsTypeCustom',
-            component: () => import('@/views/ECharts/Demo/pages/TypeCustom/Icon.vue'),
+            component: () => import('@/views/ECharts/Basic/pages/TypeCustom/Icon.vue'),
             meta: {
               navState: true,
               navName: '自定义 - 图标'
@@ -231,19 +231,19 @@ const routes = [
     },
     children: [
       {
-        path: 'baiduMap-demo',
-        name: 'BaiduMapDemo',
-        component: () => import('@/views/BaiduMap/Demo/index.vue'),
+        path: 'baiduMap-basic',
+        name: 'BaiduMapBasic',
+        component: () => import('@/views/BaiduMap/Basic/index.vue'),
         meta: {
           navState: true,
-          navName: 'Demo',
+          navName: '基础',
           icon: 'el-icon-s-shop'
         },
         children: [
           {
             path: 'stated',
             name: 'Stated',
-            component: () => import('@/views/BaiduMap/Demo/pages/Stated/Stated.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Stated/Stated.vue'),
             meta: {
               navState: true,
               navName: '起步'
@@ -252,7 +252,7 @@ const routes = [
           {
             path: 'basic3D',
             name: 'Basic3D',
-            component: () => import('@/views/BaiduMap/Demo/pages/3DMap/Basic3D.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/3DMap/Basic3D.vue'),
             meta: {
               navState: true,
               navName: '基础3D地图'
@@ -261,7 +261,7 @@ const routes = [
           {
             path: '3DEarth',
             name: '3DEarth',
-            component: () => import('@/views/BaiduMap/Demo/pages/3DMap/3DEarth.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/3DMap/3DEarth.vue'),
             meta: {
               navState: true,
               navName: '3D 地球'
@@ -270,7 +270,7 @@ const routes = [
           {
             path: 'Control',
             name: 'Control',
-            component: () => import('@/views/BaiduMap/Demo/pages/Control/Control.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Control/Control.vue'),
             meta: {
               navState: true,
               navName: '控件'
@@ -279,7 +279,7 @@ const routes = [
           {
             path: 'CustomTheme',
             name: 'CustomTheme',
-            component: () => import('@/views/BaiduMap/Demo/pages/CustomTheme/CustomTheme.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/CustomTheme/CustomTheme.vue'),
             meta: {
               navState: true,
               navName: '自定义主题'
@@ -288,7 +288,7 @@ const routes = [
           {
             path: 'draw-icon',
             name: 'DrawIcon',
-            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawIcon.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Layer/DrawIcon.vue'),
             meta: {
               navState: true,
               navName: '绘制图标'
@@ -297,7 +297,7 @@ const routes = [
           {
             path: 'draw-line',
             name: 'DrawLine',
-            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawLine.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Layer/DrawLine.vue'),
             meta: {
               navState: true,
               navName: '绘制线段'
@@ -306,7 +306,7 @@ const routes = [
           {
             path: 'draw-polygon',
             name: 'DrawPolygon',
-            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawPolygon.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Layer/DrawPolygon.vue'),
             meta: {
               navState: true,
               navName: '绘制多边形'
@@ -315,7 +315,7 @@ const routes = [
           {
             path: 'draw-label',
             name: 'DrawLabel',
-            component: () => import('@/views/BaiduMap/Demo/pages/Layer/DrawLabel.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Layer/DrawLabel.vue'),
             meta: {
               navState: true,
               navName: '绘制文本'
@@ -324,7 +324,7 @@ const routes = [
           {
             path: 'draw-info-window',
             name: 'DrawInfoWindow',
-            component: () => import('@/views/BaiduMap/Demo/pages/Layer/InfoWindow.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Layer/InfoWindow.vue'),
             meta: {
               navState: true,
               navName: '包含信息的窗口'
@@ -333,7 +333,7 @@ const routes = [
           {
             path: 'animation-view',
             name: 'AnimationView',
-            component: () => import('@/views/BaiduMap/Demo/pages/Animation/ViewAnimation.vue'),
+            component: () => import('@/views/BaiduMap/Basic/pages/Animation/ViewAnimation.vue'),
             meta: {
               navState: true,
               navName: '动画 View Animation'
