@@ -77,7 +77,7 @@ const currentPath = computed(() => {
   height: 100%;
 
   &:not(.el-menu--collapse) {
-    width: 220px;
+    width: 260px;
   }
 }
 </style>

@@ -336,7 +336,16 @@ const routes = [
             component: () => import('@/views/BaiduMap/Basic/pages/Animation/ViewAnimation.vue'),
             meta: {
               navState: true,
-              navName: '动画 View Animation'
+              navName: '动画 ViewAnimation'
+            }
+          },
+          {
+            path: 'animation-track',
+            name: 'TrackAnimation',
+            component: () => import('@/views/BaiduMap/Basic/pages/Animation/TrackAnimation.vue'),
+            meta: {
+              navState: true,
+              navName: '轨迹动画 TrackAnimation'
             }
           }
         ]
