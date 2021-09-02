@@ -347,6 +347,15 @@ const routes = [
               navState: true,
               navName: '轨迹动画 TrackAnimation'
             }
+          },
+          {
+            path: 'scatterDiagram',
+            name: 'ScatterDiagram',
+            component: () => import('@/views/BaiduMap/Basic/pages/ScatterDiagram/ScatterDiagram.vue'),
+            meta: {
+              navState: true,
+              navName: '散点图'
+            }
           }
         ]
       }
