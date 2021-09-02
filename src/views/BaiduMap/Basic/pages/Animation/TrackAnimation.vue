@@ -8,6 +8,7 @@
 import { onMounted } from 'vue'
 
 // 要使用 TrackAnimation 动画，需要引入 TrackAnimation.js
+// https://api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js
 // TrackAnimation.js 在 index.html 中已引入
 
 function initMap() {
