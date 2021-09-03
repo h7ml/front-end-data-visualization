@@ -6,5 +6,10 @@ const { resolve } = require('path')
 export default defineConfig({
   base: '/front-end-data-visualization/', // 部署到码云的仓库名，部署时用到
   plugins: [vue()],
-  alias: [{ find: '@', replacement: resolve(__dirname, 'src') }]
+  server: { // https://cn.vitejs.dev/config/#server-options
+    host: '0.0.0.0'
+  },
+  resolve: {
+    alias: [{ find: '@', replacement: resolve(__dirname, 'src') }] // https://cn.vitejs.dev/config/#resolve-alias
+  }
 })
