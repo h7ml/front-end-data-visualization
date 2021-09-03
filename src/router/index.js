@@ -7,7 +7,7 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
+  { // CSS
     path: '/css',
     name: 'CSS',
     component: () => import('@/views/CSS/index.vue'),
@@ -18,19 +18,19 @@ const routes = [
     },
     children: [
       {
-        path: 'css-demo',
-        name: 'CSSDemo',
-        component: () => import('@/views/CSS/Demo/index.vue'),
+        path: 'css-pureness',
+        name: 'CSSPureness',
+        component: () => import('@/views/CSS/pureness/index.vue'),
         meta: {
           navState: true,
-          navName: 'Demo',
+          navName: '纯CSS',
           icon: 'el-icon-s-shop'
         },
         children: [
           {
             path: 'gradientText',
             name: 'GradientText',
-            component: () => import('@/views/CSS/Demo/pages/GradientText/GradientText.vue'),
+            component: () => import('@/views/CSS/pureness/pages/GradientText/GradientText.vue'),
             meta: {
               navState: true,
               navName: '渐变文字'
@@ -40,7 +40,7 @@ const routes = [
       }
     ]
   },
-  {
+  { // SVG
     path: '/svg',
     name: 'SVG',
     component: () => import('@/views/SVG/index.vue'),
@@ -50,7 +50,7 @@ const routes = [
       icon: 'el-icon-s-management'
     }
   },
-  {
+  { // Canvas
     path: '/canvas',
     name: 'Canvas',
     component: () => import('@/views/Canvas/index.vue'),
@@ -60,7 +60,7 @@ const routes = [
       icon: 'el-icon-s-management'
     }
   },
-  {
+  { // ECharts
     path: '/eCharts',
     name: 'ECharts',
     component: () => import('@/views/ECharts/index.vue'),
@@ -220,7 +220,7 @@ const routes = [
       }
     ]
   },
-  {
+  { // BMap
     path: '/baiduMap',
     name: 'BaiduMap',
     component: () => import('@/views/BaiduMap/index.vue'),
