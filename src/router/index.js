@@ -44,6 +44,15 @@ const routes = [
               navState: true,
               navName: 'Material风格输入框'
             }
+          },
+          {
+            path: 'carousel',
+            name: 'Carousel',
+            component: () => import('@/views/CSS/Pure/pages/Carousel/Carousel.vue'),
+            meta: {
+              navState: true,
+              navName: '走马灯（手动控制）'
+            }
           }
         ]
       }
