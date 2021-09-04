@@ -374,6 +374,15 @@ const routes = [
               navState: true,
               navName: '飞线图'
             }
+          },
+          {
+            path: 'flyLine2',
+            name: 'FlyLine2',
+            component: () => import('@/views/BaiduMap/Basic/pages/FlyLine/FlyLine2.vue'),
+            meta: {
+              navState: true,
+              navName: '飞线图2'
+            }
           }
         ]
       }
