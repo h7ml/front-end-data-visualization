@@ -18,9 +18,9 @@ const routes = [
     },
     children: [
       {
-        path: 'css-pureness',
-        name: 'CSSPureness',
-        component: () => import('@/views/CSS/pureness/index.vue'),
+        path: 'css-pure',
+        name: 'CSSPure',
+        component: () => import('@/views/CSS/Pure/index.vue'),
         meta: {
           navState: true,
           navName: '纯CSS',
@@ -30,10 +30,19 @@ const routes = [
           {
             path: 'gradientText',
             name: 'GradientText',
-            component: () => import('@/views/CSS/pureness/pages/GradientText/GradientText.vue'),
+            component: () => import('@/views/CSS/Pure/pages/GradientText/GradientText.vue'),
             meta: {
               navState: true,
               navName: '渐变文字'
+            }
+          },
+          {
+            path: 'materialInput',
+            name: 'MaterialInput',
+            component: () => import('@/views/CSS/Pure/pages/MaterialInput/MaterialInput.vue'),
+            meta: {
+              navState: true,
+              navName: 'Material风格输入框'
             }
           }
         ]
