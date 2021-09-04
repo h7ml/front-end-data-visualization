@@ -392,6 +392,15 @@ const routes = [
               navState: true,
               navName: '3D建筑'
             }
+          },
+          {
+            path: '3DArchitecture2',
+            name: '3DArchitecture2',
+            component: () => import('@/views/BaiduMap/Basic/pages/3DArchitecture/3DArchitecture2.vue'),
+            meta: {
+              navState: true,
+              navName: '3D建筑（墨卡托投影坐标）'
+            }
           }
         ]
       }
