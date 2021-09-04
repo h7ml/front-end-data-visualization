@@ -383,6 +383,15 @@ const routes = [
               navState: true,
               navName: '飞线图2'
             }
+          },
+          {
+            path: '3DArchitecture',
+            name: '3DArchitecture',
+            component: () => import('@/views/BaiduMap/Basic/pages/3DArchitecture/3DArchitecture.vue'),
+            meta: {
+              navState: true,
+              navName: '3D建筑'
+            }
           }
         ]
       }
