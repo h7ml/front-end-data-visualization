@@ -10,10 +10,11 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const title = route.meta.navName
+const title = computed(() => route.meta.navName)
 </script>
 
 <style lang="scss" scoped>
