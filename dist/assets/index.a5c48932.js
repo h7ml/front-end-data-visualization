@@ -1,1 +1,0 @@
-import{l as a,r as e,c as s,w as t,o as r,h as o,t as d,p as n,a as u}from"./vendor.e18d4800.js";const c={setup(c){const h=a().meta.navName;return(a,c)=>{const l=e("router-view"),i=e("el-card");return r(),s(i,{"bdoy-style":{width:"100%",height:"100%"}},{header:t((()=>[o(d(n(h)),1)])),default:t((()=>[u(l)])),_:1})}}};export{c as default};
