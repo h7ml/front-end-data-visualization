@@ -12,7 +12,7 @@
       <div class="repository__x">
         <el-tooltip
           class="repository__item"
-          content="码云仓库"
+          content="码云仓库，欢迎 Star"
           placement="bottom"
           effect="light"
         >
