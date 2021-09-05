@@ -1,1 +1,0 @@
-import{q as a,s,o as t,b as l,i as e}from"./vendor.0765038b.js";const n={};a("data-v-253053b5");const i=[e("div",{class:"input__x"},[e("input",{type:"text",class:"input__fill",placeholder:"用户名"}),e("label",{class:"input__label"},"用户名")],-1)];s(),n.render=function(a,s){return t(),l("div",null,i)},n.__scopeId="data-v-253053b5";export{n as default};

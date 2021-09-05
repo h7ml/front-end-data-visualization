@@ -48,7 +48,7 @@ function chartInit() {
 
 onMounted(() => {
   chartInit()
-  store.commit('setCurrentPath', 'src/views/ECharts/Basic/pages/Absolute/Absolute.vue')
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/Absolute/Absolute.vue')
 })
 
 </script>

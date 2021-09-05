@@ -3,16 +3,16 @@ import storeECharts from './modules/storeECharts'
 
 export default createStore({
   state: {
-    currentPath: ''
+    componentPath: ''
   },
   getters: {
-    getCurrentPath(state) {
-      return state.currentPath
+    getComponentPath(state) {
+      return state.componentPath
     }
   },
   mutations: {
-    setCurrentPath(state, path) {
-      state.currentPath = path
+    setComponentPath(state, path) {
+      state.componentPath = path
     }
   },
   actions: {
