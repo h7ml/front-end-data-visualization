@@ -1,3 +1,4 @@
+<!-- ECharts - ECharts绘制地图 -->
 <template>
   <div>
     <div id="chart" class="chart" ref="chartDom"></div>
@@ -6,9 +7,12 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
 import * as echarts from 'echarts'
 import 'echarts/extension/bmap/bmap'
 import ashenTheme from '@/assets/bmap/ashenTheme.json'
+
+const store = useStore()
 
 // 要使用 echarts 渲染百度地图，需要引入百度地图2.0
 
@@ -117,6 +121,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/Map/Map.vue')
   chartInit()
 })
 
