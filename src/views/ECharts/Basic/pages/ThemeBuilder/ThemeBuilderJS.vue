@@ -1,3 +1,4 @@
+<!-- ECharts - 自定义主题JS版 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
   <aside>
@@ -24,8 +25,11 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
 import * as echarts from 'echarts'
 import vintage from 'echarts/theme/vintage2.js'
+
+const store = useStore()
 
 // echart元素
 const chartDom = ref(null)
@@ -58,6 +62,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/ThemeBuilder/ThemeBuilderJS.vue')
   chartInit()
 })
 
