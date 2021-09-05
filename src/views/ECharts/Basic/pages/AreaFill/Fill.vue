@@ -1,3 +1,4 @@
+<!-- ECharts - 面积填充 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
 </template>
@@ -5,6 +6,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import * as echarts from 'echarts'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 const options = {
   xAxis: {
@@ -52,6 +56,7 @@ function chartInit() {
 
 onMounted(() => {
   chartInit()
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/AreaFill/Fill.vue')
 })
 </script>
 
