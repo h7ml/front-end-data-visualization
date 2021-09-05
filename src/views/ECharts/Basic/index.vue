@@ -1,7 +1,7 @@
 <template>
   <el-card :bdoy-style="{ width: '100%', height: '100%' }">
     <template #header>
-      {{title}}
+      {{title}} - {{currentPath}}
     </template>
     <template #default>
       <router-view />
@@ -12,9 +12,14 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useStore } from 'vuex'
 
 const route = useRoute()
+const store = useStore()
+
 const title = computed(() => route.meta.navName)
+
+const currentPath = computed( () => store.getters.getCurrentPath )
 </script>
 
 <style lang="scss" scoped>
