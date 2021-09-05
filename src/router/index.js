@@ -223,6 +223,15 @@ const routes = [
               navState: true,
               navName: '自定义 - 图标'
             }
+          },
+          {
+            path: 'map',
+            name: 'Map',
+            component: () => import('@/views/ECharts/Basic/pages/Map/Map.vue'),
+            meta: {
+              navState: true,
+              navName: 'ECharts绘制地图'
+            }
           }
         ]
       },
