@@ -1,3 +1,4 @@
+<!-- ECharts - SVG渲染 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
 </template>
@@ -5,6 +6,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import * as echarts from 'echarts'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // echart元素
 const chartDom = ref(null)
@@ -36,6 +40,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/RendererSVG/RendererSVG.vue')
   chartInit()
 })
 
