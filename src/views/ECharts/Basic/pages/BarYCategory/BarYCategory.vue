@@ -1,3 +1,4 @@
+<!-- ECharts - 条形图 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
 </template>
@@ -5,6 +6,9 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import * as echarts from "echarts";
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 const options = {
   title: {
@@ -56,6 +60,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/BarYCategory/BarYCategory.vue')
   chartInit()
 })
 
