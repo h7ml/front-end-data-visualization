@@ -1,3 +1,4 @@
+<!-- ECharts - 渐变填充 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
 </template>
@@ -5,6 +6,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import * as echarts from 'echarts'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 const options = {
   color: ["#80FFA5", "#00DDFF", "#37A2FF", "#FF0087", "#FFBF00"],
@@ -201,6 +205,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/AreaFill/Gradient.vue')
   chartInit()
 })
 
