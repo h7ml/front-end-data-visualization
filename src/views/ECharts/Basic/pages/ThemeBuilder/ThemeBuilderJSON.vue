@@ -1,12 +1,16 @@
+<!-- ECharts - 自定义主题 JSON版 -->
 <template>
   <div id="chart" class="chart" ref="chartDom"></div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
 import * as echarts from 'echarts'
 // 引入主题
 import purplPassion from '@/assets/echarts/theme/purple-passion.project.json'
+
+const store = useStore()
 
 // echart元素
 const chartDom = ref(null)
@@ -42,6 +46,7 @@ function chartInit() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/ECharts/Basic/pages/ThemeBuilder/ThemeBuilderJSON.vue')
   chartInit()
 })
 
