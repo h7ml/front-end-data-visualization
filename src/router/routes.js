@@ -231,6 +231,15 @@ export const routes = [
               navState: true,
               navName: 'ECharts绘制地图'
             }
+          },
+          {
+            path: 'liquidFill',
+            name: 'LiquidFill',
+            component: () => import('@/views/ECharts/Basic/pages/LiquidFill/LiquidFill.vue'),
+            meta: {
+              navState: true,
+              navName: '水球图'
+            }
           }
         ]
       },
