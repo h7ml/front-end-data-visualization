@@ -10,7 +10,6 @@
     "axios": "^0.21.1",
     "echarts": "^5.2.0",
     "element-plus": "*",
-    "v-charts": "^1.19.0",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
