@@ -1,1 +1,0 @@
-import{q as a,s as t,o as e,b as s,i as r}from"./vendor.ce0b2847.js";const d={};a("data-v-4f21e047");const n=[r("div",{class:"gradient__text-vertical"},"垂直渐变文字",-1),r("div",{class:"gradient__text-horizontal"},"水平渐变文字",-1)];t(),d.render=function(a,t){return e(),s("div",null,n)},d.__scopeId="data-v-4f21e047";export{d as default};
