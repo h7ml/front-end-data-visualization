@@ -240,6 +240,15 @@ export const routes = [
               navState: true,
               navName: '水球图'
             }
+          },
+          {
+            path: 'wordCloud',
+            name: 'WordCloud',
+            component: () => import('@/views/ECharts/Basic/pages/WordCloud/WordCloud.vue'),
+            meta: {
+              navState: true,
+              navName: '词云'
+            }
           }
         ]
       },
