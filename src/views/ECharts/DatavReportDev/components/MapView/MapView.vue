@@ -4,24 +4,20 @@
       <BMapScatter class="BMapScatter__x" />
     </el-card>
     <div class="right__x">
-      <el-card shadow="hover" :body-style="{width: '100%', height: '190px'}">
+      <el-card shadow="hover" :body-style="{width: '100%', height: '230px', padding: '0'}">
         <template #header>
           <div class="title">用户月同比增长</div>
         </template>
         <template #default>
-          <div class="chart__wrapper">
-            <LiquidFill />
-          </div>
+          <LiquidFill />
         </template>
       </el-card>
-      <el-card shadow="hover" :body-style="{width: '100%', height: '190px'}">
+      <el-card shadow="hover" :body-style="{width: '100%', height: '230px', padding: '0'}">
         <template #header>
           <div class="title">热门搜索</div>
         </template>
         <template #default>
-          <div class="chart__wrapper">
-            <WordCloud />
-          </div>
+          <WordCloud />
         </template>
       </el-card>
     </div>
