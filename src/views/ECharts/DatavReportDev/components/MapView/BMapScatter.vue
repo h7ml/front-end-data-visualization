@@ -1,4 +1,3 @@
-<!-- 地图组件 -->
 <template>
   <div>
     <div id="chart" class="chart" ref="chartDom"></div>
@@ -439,14 +438,14 @@ const options = {
         value: 2 // 显示data子项的value下标为2的值
       },
       itemStyle: {
-        color: 'purple'
+        color: '#005792'
       },
       symbolSize: function(val) {
         return val[2] / 10
       },
       label: {
         show: false, // 可以使用true来显示，但这里打算使用 emphasis 来强调
-        color: 'purple',
+        color: '#005792',
         position: 'right',
         // formatter: '{b}',
         formatter: function(v) {
@@ -483,9 +482,9 @@ const options = {
         brushType: 'stroke'
       },
       itemStyle: {
-        color: 'purple',
+        color: '#fc345c',
         shadowBlur: 10, // 阴影
-        shadowColor: '#333', // 阴影的颜色
+        shadowColor: '#fc345c', // 阴影的颜色
       }
     }
   ]
