@@ -1,3 +1,4 @@
+<!-- BMap - 绘制文本 -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // label点击事件
 function labelClick(e) {
@@ -43,6 +47,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Layer/DrawLabel.vue')
 })
 
 onUnmounted(() => {

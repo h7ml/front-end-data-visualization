@@ -1,3 +1,4 @@
+<!-- BMap - 3D建筑（墨卡托投影坐标） -->
 <template>
   <div class="map__x">
     <div id="map_container"></div>
@@ -6,7 +7,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 import cqArchitecture from '@/assets/bmap/cqArchitecture.json'
+
+const store = useStore()
 
 // 需要将 墨卡托投影坐标 转换成 百度地图坐标系
 // 可以用百度地图提供的坐标转换api来实现：https://lbsyun.baidu.com/index.php?title=webapi/guide/changeposition
@@ -77,6 +81,7 @@ onMounted(() => {
   const map = initBMap()
   const data = initData()
   setData(map, data)
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/3DArchitecture/3DArchitecture2.vue')
 })
 </script>
 

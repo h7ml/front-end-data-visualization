@@ -1,3 +1,4 @@
+<!-- BMap - 绘制线段 -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 function initMap() {
   const map = new BMapGL.Map('container') // 这里填入的是容器的 ID
@@ -28,6 +32,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Layer/DrawLine.vue')
 })
 </script>
 

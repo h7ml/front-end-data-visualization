@@ -1,3 +1,4 @@
+<!-- BMap - 动画 ViewAnimation -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -8,6 +9,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // 百度地图 ViewAnimation 文档：https://mapopen-pub-jsapi.bj.bcebos.com/jsapi/reference/jsapi_webgl_1_0.html#a7b0
 
@@ -133,6 +137,7 @@ function handleCancel() {
 
 onMounted(() => {
   initMap()
+	store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Animation/ViewAnimation.vue')
 })
 </script>
 

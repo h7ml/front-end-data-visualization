@@ -1,3 +1,4 @@
+<!-- BMap - 飞线图 -->
 <template>
   <div class="map__x">
     <div id="map_container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 // 飞线图文档：https://mapv.baidu.com/gl/docs/FlyLineLayer.html
 // 贝塞尔曲线工具文档（内置工具）：https://mapv.baidu.com/gl/docs/BezierCurve.html
 
@@ -88,6 +92,7 @@ onMounted(() => {
   const map = initBMap()
   const data = initData()
   setData(map, data)
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/FlyLine/FlyLine.vue')
 })
 </script>
 

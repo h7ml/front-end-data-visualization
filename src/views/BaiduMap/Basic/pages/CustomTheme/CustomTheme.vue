@@ -1,3 +1,4 @@
+<!-- BMap - 自定义主题 -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // 个性化地图文档：https://lbsyun.baidu.com/index.php?title=jspopularGL/guide/custom
 // 个性化地图编辑器：https://lbsyun.baidu.com/apiconsole/custommap
@@ -23,6 +27,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/CustomTheme/CustomTheme.vue')
 })
 </script>
 

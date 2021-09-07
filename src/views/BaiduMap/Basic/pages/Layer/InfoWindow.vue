@@ -1,3 +1,4 @@
+<!-- BMap - 包含信息的窗口 -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,7 +7,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useStore } from 'vuex'
 import logo from '@/assets/logo.png'
+
+const store = useStore()
 
 const map = ref(null)
 const point = ref(null)
@@ -47,6 +51,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Layer/InfoWindow.vue')
 })
 
 onUnmounted(() => {

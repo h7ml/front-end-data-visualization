@@ -1,3 +1,4 @@
+<!-- BMap - 散点图 -->
 <template>
   <div class="map__x">
     <div id="map_container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // 使用 script src="https://mapv.baidu.com/gl/examples/static/common.js"
 // common.js 需要指定容器 id 为 map_container
@@ -96,6 +100,7 @@ onMounted(() => {
   const map = initBMap()
   const data = initData()
   setData(map, data)
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/ScatterDiagram/ScatterDiagram.vue')
 })
 </script>
 

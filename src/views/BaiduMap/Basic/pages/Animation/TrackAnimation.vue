@@ -1,3 +1,4 @@
+<!-- BMap - 轨迹动画 TrackAnimation -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // 要使用 TrackAnimation 动画，需要引入 TrackAnimation.js
 // https://api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js
@@ -40,6 +44,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Animation/TrackAnimation.vue')
 })
 </script>
 

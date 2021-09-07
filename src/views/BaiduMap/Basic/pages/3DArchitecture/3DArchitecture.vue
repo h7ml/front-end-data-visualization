@@ -1,3 +1,4 @@
+<!-- BMap - 3D建筑 -->
 <template>
   <div class="map__x">
     <div id="map_container"></div>
@@ -6,6 +7,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
+
 // 初始化百度地图
 function initBMap() {
   const cityCenter = mapv.utilCityCenter.getCenterByCityName('北京')
@@ -52,6 +57,7 @@ onMounted(() => {
   const map = initBMap()
   const data = initData()
   setData(map, data)
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/3DArchitecture/3DArchitecture.vue')
 })
 </script>
 

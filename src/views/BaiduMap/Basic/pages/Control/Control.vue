@@ -1,3 +1,4 @@
+<!-- BMap - 控件 -->
 <template>
   <div class="map__x">
     <div id="container"></div>
@@ -6,6 +7,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 // 控件文档：https://mapopen-pub-jsapi.bj.bcebos.com/jsapi/reference/jsapi_webgl_1_0.html#a2b0
 
@@ -47,6 +51,7 @@ function initMap() {
 
 onMounted(() => {
   initMap()
+  store.commit('setComponentPath', 'src/views/BaiduMap/Basic/pages/Control/Control.vue')
 })
 </script>
 
