@@ -36,6 +36,15 @@ export default {
             navState: true,
             navName: '弹窗 popup'
           }
+        },
+        {
+          path: 'ol-marker',
+          name: 'olMarker',
+          component: () => import('@/views/OpenLayers/Basic/pages/Marker/Marker.vue'),
+          meta: {
+            navState: true,
+            navName: '标记 marker'
+          }
         }
       ]
     }
