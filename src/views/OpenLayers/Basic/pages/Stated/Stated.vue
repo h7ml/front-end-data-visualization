@@ -18,7 +18,7 @@ const map = ref(null)
 function initMap () {
   // 地图实例
   map.value = new Map({
-    target: "map", // 对应页面里 id 为 map 的元素
+    target: 'map', // 对应页面里 id 为 map 的元素
     layers: [ // 图层
       new Tile({
         source: new OSM() // 图层数据源
