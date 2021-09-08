@@ -62,8 +62,9 @@ function toHome() {
   align-items: center;
 
   &__collapseBtn {
-    font-size: 26px;
     margin-right: 10px;
+    margin-top: 4px;
+    font-size: 26px;
     color: #409eff;
   }
 
@@ -71,7 +72,7 @@ function toHome() {
     flex: 1;
     display: flex;
     height: 60px;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 
