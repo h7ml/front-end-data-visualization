@@ -10,8 +10,8 @@ export default {
   },
   children: [
     {
-      path: 'openlayers-basic',
-      name: 'OpenLayersBasic',
+      path: 'ol-basic',
+      name: 'olBasic',
       component: () => import('@/views/OpenLayers/Basic/index.vue'),
       meta: {
         navState: true,
