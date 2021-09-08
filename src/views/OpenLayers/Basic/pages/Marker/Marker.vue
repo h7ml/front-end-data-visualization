@@ -5,7 +5,7 @@
     target="_blank"
     ref="viennaTxtCom"
     href="https://baike.baidu.com/item/%E7%BB%B4%E4%B9%9F%E7%BA%B3/6412?fr=aladdin"
-  >维也纳</a>
+  >维也纳（点击跳转）</a>
   <div class="marker" title="Marker" ref="markerCom"></div>
 </template>
 
