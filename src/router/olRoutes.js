@@ -63,6 +63,15 @@ export default {
             navState: true,
             navName: '切换地图容器'
           }
+        },
+        {
+          path: 'ol-Synchronization',
+          name: 'olSynchronization',
+          component: () => import('@/views/OpenLayers/Basic/pages/Synchronization/Synchronization.vue'),
+          meta: {
+            navState: true,
+            navName: '同步两个地图'
+          }
         }
       ]
     }
