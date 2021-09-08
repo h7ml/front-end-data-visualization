@@ -34,7 +34,14 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 
+const store = useStore()
+
+onMounted(() => {
+  store.commit('setComponentPath', 'src/views/SVG/Basic/pages/ViewportAndViewBox/ViewportAndViewBox.vue')
+})
 </script>
 
 <style lang="scss" scoped>
