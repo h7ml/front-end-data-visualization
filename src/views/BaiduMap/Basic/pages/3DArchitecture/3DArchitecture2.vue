@@ -8,7 +8,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useStore } from 'vuex'
-import cqArchitecture from '@/assets/bmap/cqArchitecture.json'
+import cqArchitecture from '@/assets/map/cqArchitecture.json'
 
 const store = useStore()
 

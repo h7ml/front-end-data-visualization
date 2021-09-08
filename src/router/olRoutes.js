@@ -65,7 +65,7 @@ export default {
           }
         },
         {
-          path: 'ol-Synchronization',
+          path: 'ol-synchronization',
           name: 'olSynchronization',
           component: () => import('@/views/OpenLayers/Basic/pages/Synchronization/Synchronization.vue'),
           meta: {
@@ -80,6 +80,15 @@ export default {
           meta: {
             navState: true,
             navName: '预加载 preload'
+          }
+        },
+        {
+          path: 'ol-VectorJSON',
+          name: 'olVectorJSON',
+          component: () => import('@/views/OpenLayers/Basic/pages/VectorJSON/VectorJSON.vue'),
+          meta: {
+            navState: true,
+            navName: '矢量图 JSON'
           }
         }
       ]

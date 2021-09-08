@@ -10,7 +10,7 @@ import { ref, onMounted } from 'vue'
 import { useStore } from 'vuex'
 import * as echarts from 'echarts'
 import 'echarts/extension/bmap/bmap'
-import ashenTheme from '@/assets/bmap/ashenTheme.json'
+import ashenTheme from '@/assets/map/ashenTheme.json'
 
 const store = useStore()
 
