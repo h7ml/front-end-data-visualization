@@ -90,6 +90,15 @@ export default {
             navState: true,
             navName: '矢量图 JSON'
           }
+        },
+        {
+          path: 'ol-VectorHigh',
+          name: 'olVectorHigh',
+          component: () => import('@/views/OpenLayers/Basic/pages/VectorHigh/VectorHigh.vue'),
+          meta: {
+            navState: true,
+            navName: '矢量图 高亮'
+          }
         }
       ]
     }
