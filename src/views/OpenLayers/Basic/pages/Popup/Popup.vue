@@ -1,3 +1,4 @@
+<!-- ol - 弹窗 -->
 <template>
 <div id="map" class="map-x" ref="mapCom"></div>
 <div ref="popupCom" class="popup">
