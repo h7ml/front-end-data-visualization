@@ -271,7 +271,7 @@ export const routes = [
     meta: {
       navState: true,
       navName: '百度地图',
-      icon: 'el-icon-s-management'
+      icon: 'el-icon-location'
     },
     children: [
       {
