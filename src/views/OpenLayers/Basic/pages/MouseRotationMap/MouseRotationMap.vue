@@ -1,3 +1,4 @@
+<!-- ol - 鼠标拖拽旋转/缩放 -->
 <template>
   <div id="map" class="map__x"></div>
   <div>按住Shift并使用鼠标拖拽可以旋转、缩放地图</div>
