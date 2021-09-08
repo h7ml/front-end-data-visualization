@@ -32,7 +32,7 @@ const maxZoom = 14 // 最大zoom
 function initMap () {
   // 地图实例
   map.value = new Map({
-    target: "map", // 对应页面里 id 为 map 的元素
+    target: 'map', // 对应页面里 id 为 map 的元素
     layers: [ // 图层
       new Tile({
         source: new OSM() // 图层数据源
@@ -71,7 +71,7 @@ function zoomOut() {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Stated/Stated.vue')
+  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Zoom/Zoom.vue')
   initMap()
 })
 </script>
