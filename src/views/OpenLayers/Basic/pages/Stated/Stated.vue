@@ -1,6 +1,6 @@
 <!-- ol - 起步 -->
 <template>
-  <div id="map" class="map-x"></div>
+  <div id="map" class="map__x"></div>
 </template>
 
 <script setup>
@@ -40,7 +40,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.map-x {
+.map__x {
   width: 600px;
   height: 600px;
   border: 1px solid #eee;

@@ -1,6 +1,6 @@
 <!-- ol - 缩放 -->
 <template>
-  <div id="map" class="map-x"></div>
+  <div id="map" class="map__x"></div>
   <div class="zoom__info">
     <p>当前zoom: {{currentZoom}}</p>
     <p>minZoom: {{minZoom}}</p>
@@ -77,7 +77,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.map-x {
+.map__x {
   width: 600px;
   height: 600px;
   border: 1px solid #eee;

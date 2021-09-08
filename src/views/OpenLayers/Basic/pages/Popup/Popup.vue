@@ -1,6 +1,6 @@
 <!-- ol - 弹窗 -->
 <template>
-<div id="map" class="map-x" ref="mapCom"></div>
+<div id="map" class="map__x" ref="mapCom"></div>
 <div ref="popupCom" class="popup">
   <span class="icon-close" @click="closePopup">✖</span>
   <div class="content">{{currentCoordinate}}</div>
@@ -83,7 +83,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.map-x {
+.map__x {
   width: 600px;
   height: 600px;
   border: 1px solid #eee;

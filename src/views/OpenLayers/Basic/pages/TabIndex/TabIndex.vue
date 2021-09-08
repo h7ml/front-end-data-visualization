@@ -1,6 +1,6 @@
 <!-- ol - 点击激活地图 -->
 <template>
-  <div tabindex="2" id="map" class="map-x"></div>
+  <div tabindex="2" id="map" class="map__x"></div>
   <div class="explain">
     <p>通过给地图容器设置 tabindex="2" 来控制默认不会选中地图。</p>
     <p>只有当鼠标点击地图时，才能进行缩放等操作。</p>
@@ -44,7 +44,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.map-x {
+.map__x {
   width: 600px;
   height: 600px;
   border: 1px solid #eee;
