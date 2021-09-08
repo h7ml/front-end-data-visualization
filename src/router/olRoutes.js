@@ -117,6 +117,15 @@ export default {
             navState: true,
             navName: '鼠标拖拽旋转/缩放'
           }
+        },
+        {
+          path: 'ol-viewAnimate',
+          name: 'olViewAnimate',
+          component: () => import('@/views/OpenLayers/Basic/pages/ViewAnimate/ViewAnimate.vue'),
+          meta: {
+            navState: true,
+            navName: '动画 animate'
+          }
         }
       ]
     }
