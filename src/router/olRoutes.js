@@ -45,6 +45,15 @@ export default {
             navState: true,
             navName: '缩放 zoom'
           }
+        },
+        {
+          path: 'ol-tabIndex',
+          name: 'olTabIndex',
+          component: () => import('@/views/OpenLayers/Basic/pages/TabIndex/TabIndex.vue'),
+          meta: {
+            navState: true,
+            navName: '点击激活地图 tabIndex'
+          }
         }
       ]
     }
