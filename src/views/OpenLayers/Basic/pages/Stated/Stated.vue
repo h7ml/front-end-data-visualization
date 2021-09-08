@@ -4,10 +4,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
 import { Map, View } from 'ol'
 import Tile from 'ol/layer/Tile'
 import OSM from 'ol/source/OSM'
 import 'ol/ol.css'
+
+const store = useStore()
 
 const map = ref(null)
 
@@ -30,6 +33,7 @@ function initMap () {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Stated/Stated.vue')
   initMap()
 })
 </script>

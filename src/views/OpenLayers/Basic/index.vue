@@ -37,7 +37,7 @@ const componentPath = computed( () => store.getters.getComponentPath )
     border-radius: 4px;
     line-height: 26px;
     color: #fff;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 
     &::selection {
       background: #d299c2;
