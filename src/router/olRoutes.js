@@ -27,6 +27,15 @@ export default {
             navState: true,
             navName: '起步'
           }
+        },
+        {
+          path: 'ol-popup',
+          name: 'olPopup',
+          component: () => import('@/views/OpenLayers/Basic/pages/Popup/Popup.vue'),
+          meta: {
+            navState: true,
+            navName: '弹窗 popup'
+          }
         }
       ]
     }
