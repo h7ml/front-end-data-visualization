@@ -47,7 +47,7 @@ function changeMap() {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Stated/Stated.vue')
+  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/ChangeTarget/ChangeTarget.vue')
   initMap()
 })
 </script>
