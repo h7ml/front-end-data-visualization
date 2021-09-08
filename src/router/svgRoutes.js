@@ -27,6 +27,15 @@ export default {
             navState: true,
             navName: 'Viewport 和 ViewBox'
           }
+        },
+        {
+          path: 'SVG-basicShapeLine',
+          name: 'SVGShapeLine',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Line.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 线段'
+          }
         }
       ]
     }
