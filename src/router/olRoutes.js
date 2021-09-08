@@ -11,7 +11,7 @@ export default {
   children: [
     {
       path: 'ol-basic',
-      name: 'olBasic',
+      name: 'OpenLayersBasic',
       component: () => import('@/views/OpenLayers/Basic/index.vue'),
       meta: {
         navState: true,
@@ -38,12 +38,12 @@ export default {
           }
         },
         {
-          path: 'ol-marker',
-          name: 'olMarker',
-          component: () => import('@/views/OpenLayers/Basic/pages/Marker/Marker.vue'),
+          path: 'ol-zoom',
+          name: 'olZoom',
+          component: () => import('@/views/OpenLayers/Basic/pages/Zoom/Zoom.vue'),
           meta: {
             navState: true,
-            navName: '标记 marker'
+            navName: '缩放 zoom'
           }
         }
       ]
