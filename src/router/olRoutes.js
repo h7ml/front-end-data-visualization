@@ -108,6 +108,15 @@ export default {
             navState: true,
             navName: '旋转 rotation'
           }
+        },
+        {
+          path: 'ol-mouseRotationMap',
+          name: 'olMouseRotationMap',
+          component: () => import('@/views/OpenLayers/Basic/pages/MouseRotationMap/MouseRotationMap.vue'),
+          meta: {
+            navState: true,
+            navName: '鼠标拖拽旋转/缩放'
+          }
         }
       ]
     }
