@@ -72,6 +72,15 @@ export default {
             navState: true,
             navName: '同步两个地图'
           }
+        },
+        {
+          path: 'ol-preloadMap',
+          name: 'olPreloadMap',
+          component: () => import('@/views/OpenLayers/Basic/pages/PreloadMap/PreloadMap.vue'),
+          meta: {
+            navState: true,
+            navName: '预加载 preload'
+          }
         }
       ]
     }
