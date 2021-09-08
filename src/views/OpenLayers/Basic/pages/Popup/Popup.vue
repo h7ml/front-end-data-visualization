@@ -1,7 +1,7 @@
 <template>
 <div id="map" class="map-x" ref="mapCom"></div>
 <div ref="popupCom" class="popup">
-  <span class="icon-close">✖</span>
+  <span class="icon-close" @click="closePopup">✖</span>
   <div class="content">{{currentCoordinate}}</div>
 </div>
 </template>
@@ -15,6 +15,9 @@ import XYZ from 'ol/source/XYZ' // 引入XYZ地图格式
 import Overlay from 'ol/Overlay'
 import 'ol/ol.css'
 
+// 本例用到 Overlay.setPosition
+// Overlay.setPosition文档：https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html#setPosition
+
 const store = useStore()
 
 // 地图容器
@@ -23,8 +26,8 @@ const mapCom = ref(null)
 // 弹窗容器
 const popupCom = ref(null)
 
-const map = ref(null)
-const currentCoordinate = ref('雷猴啊')
+const map = ref(null) // 地图实例
+const currentCoordinate = ref('') // 弹窗信息
 
 const overlay = ref(null)
 
@@ -66,6 +69,12 @@ function mapClick() {
   })
 }
 
+// 关闭弹窗
+function closePopup () {
+  overlay.value.setPosition(undefined) // setPosition 传入undefined会隐藏弹窗元素
+  currentCoordinate.value = ''
+}
+
 onMounted(() => {
   store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Popup/Popup.vue')
   initMap()
@@ -105,6 +114,7 @@ onMounted(() => {
     position: absolute;
     top: 0px;
     right: 8px;
+    cursor: pointer;
   }
 
   .content {
