@@ -83,7 +83,7 @@ export default {
           }
         },
         {
-          path: 'ol-VectorJSON',
+          path: 'ol-vectorJSON',
           name: 'olVectorJSON',
           component: () => import('@/views/OpenLayers/Basic/pages/VectorJSON/VectorJSON.vue'),
           meta: {
@@ -92,12 +92,21 @@ export default {
           }
         },
         {
-          path: 'ol-VectorHigh',
+          path: 'ol-vectorHigh',
           name: 'olVectorHigh',
           component: () => import('@/views/OpenLayers/Basic/pages/VectorHigh/VectorHigh.vue'),
           meta: {
             navState: true,
             navName: '矢量图 高亮'
+          }
+        },
+        {
+          path: 'ol-rotationMap',
+          name: 'olRotationMap',
+          component: () => import('@/views/OpenLayers/Basic/pages/RotationMap/RotationMap.vue'),
+          meta: {
+            navState: true,
+            navName: '旋转 rotation'
           }
         }
       ]
