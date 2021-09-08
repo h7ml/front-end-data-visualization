@@ -54,6 +54,15 @@ export default {
             navState: true,
             navName: '点击激活地图 tabIndex'
           }
+        },
+        {
+          path: 'ol-changeTarget',
+          name: 'olChangeTarget',
+          component: () => import('@/views/OpenLayers/Basic/pages/ChangeTarget/ChangeTarget.vue'),
+          meta: {
+            navState: true,
+            navName: '切换地图容器'
+          }
         }
       ]
     }
