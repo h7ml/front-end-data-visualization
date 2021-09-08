@@ -58,15 +58,15 @@ const currentZoom = computed(() => {
 
 // 放大1级
 function zoomIn() {
-  let view = map.value.getView()
-  let zoom = view.getZoom()
+  let view = map.value.getView() // 获取当前视图
+  let zoom = view.getZoom() // 获取当前缩放级别
   view.setZoom(zoom + 1)
 }
 
 // 缩小1级
 function zoomOut() {
-  let view = map.value.getView()
-  let zoom = view.getZoom()
+  let view = map.value.getView() // 获取当前视图
+  let zoom = view.getZoom() // 获取当前缩放级别
   view.setZoom(zoom - 1)
 }
 
