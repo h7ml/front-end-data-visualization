@@ -1,3 +1,4 @@
+<!-- ol - 热力图 -->
 <template>
   <div id="map" class="map__x" ref="map"></div>
 
