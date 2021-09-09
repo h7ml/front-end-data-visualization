@@ -30,6 +30,9 @@
       <li>stroke-width 边框宽度</li>
       <li>stroke-opacity 边框不透明度</li>
       <li>stroke-dasharray 点线或虚线</li>
+      <li>rx x方向的圆角半径，最大值是矩形宽度的一半</li>
+      <li>ry y方向的圆角半径，最大值是矩形高度的一半</li>
+      <li>如果只指定rx和ry中的一个值，则认为它们相等</li>
     </ul>
   </aside>
 </template>
