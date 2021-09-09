@@ -54,6 +54,15 @@ export default {
             navState: true,
             navName: '基础形状 - 圆 circle'
           }
+        },
+        {
+          path: 'SVG-basicShapeEllipse',
+          name: 'SVGShapeEllipse',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Ellipse.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 椭圆 ellipse'
+          }
         }
       ]
     }
