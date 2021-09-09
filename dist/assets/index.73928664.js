@@ -1,1 +1,0 @@
-import{l as a,m as s,r as e,c as t,w as r,o,h as d,t as n,p as u,a as c}from"./vendor.b2164b67.js";const h={setup(h){const l=a(),m=s((()=>l.meta.navName));return(a,s)=>{const h=e("router-view"),l=e("el-card");return o(),t(l,{"bdoy-style":{width:"100%",height:"100%"}},{header:r((()=>[d(n(u(m)),1)])),default:r((()=>[c(h)])),_:1})}}};export{h as default};
