@@ -13,17 +13,26 @@
 
 项目中用到 `vue^3.2` 、`vue-router`、`vuex` 做基础建设，使用了 `element plus` 做基础ui布局。
 
-可视化方面的笔记，用到哪个框架就会安装对应的依赖包。
-
-依赖包方面可以查看 `package.json` 文件。
+本项目是可视化方面的笔记，包含了：
+- `css特效`
+- `svg`
+- `canvas`
+- `ECharts`
+- `百度地图`
+- `OpenLayers`
 
 <br><br>
 
 ## 运行
 ```
+# 初始化项目，下载依赖包
 npm install
 
+# 启动开发环境（默认端口3000，可以调试）
 npm run dev
+
+# 启动生产环境（运行dist，默认端口5000，难以调试）
+npm run serve
 ```
 
 <br><br>
