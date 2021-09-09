@@ -45,6 +45,15 @@ export default {
             navState: true,
             navName: '基础形状 - 矩形 Rect'
           }
+        },
+        {
+          path: 'SVG-basicShapeCircle',
+          name: 'SVGShapeCircle',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Circle.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 圆 Circle'
+          }
         }
       ]
     }
