@@ -162,6 +162,15 @@ export default {
             navState: true,
             navName: '全屏控件 FullScreen'
           }
+        },
+        {
+          path: 'ol-zoomToExtent',
+          name: 'olZoomToExtent',
+          component: () => import('@/views/OpenLayers/Basic/pages/ZoomToExtent/ZoomToExtent.vue'),
+          meta: {
+            navState: true,
+            navName: '导览控件 ZoomToExtent'
+          }
         }
       ]
     }
