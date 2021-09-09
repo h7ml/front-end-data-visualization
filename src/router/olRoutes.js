@@ -207,6 +207,15 @@ export default {
             navState: true,
             navName: '图层组 LayerGroup'
           }
+        },
+        {
+          path: 'ol-setZIndex',
+          name: 'olSetZIndex',
+          component: () => import('@/views/OpenLayers/Basic/pages/SetZIndex/SetZIndex.vue'),
+          meta: {
+            navState: true,
+            navName: '控制图层层叠关系'
+          }
         }
       ]
     }
