@@ -171,6 +171,15 @@ export default {
             navState: true,
             navName: '导览控件 ZoomToExtent'
           }
+        },
+        {
+          path: 'ol-overviewMap',
+          name: 'olOverviewMap',
+          component: () => import('@/views/OpenLayers/Basic/pages/OverviewMap/OverviewMap.vue'),
+          meta: {
+            navState: true,
+            navName: '总览控件（鹰眼、小地图）'
+          }
         }
       ]
     }
