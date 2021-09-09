@@ -20,7 +20,14 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 
+const store = useStore()
+
+onMounted(() => {
+  store.commit('setComponentPath', 'src/views/SVG/Basic/pages/BasicShape/Circle.vue')
+})
 </script>
 
 <style lang="scss" scoped>

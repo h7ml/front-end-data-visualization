@@ -43,7 +43,7 @@ export default {
           component: () => import('@/views/SVG/Basic/pages/BasicShape/Rect.vue'),
           meta: {
             navState: true,
-            navName: '基础形状 - 矩形 Rect'
+            navName: '基础形状 - 矩形 rect'
           }
         },
         {
@@ -52,7 +52,7 @@ export default {
           component: () => import('@/views/SVG/Basic/pages/BasicShape/Circle.vue'),
           meta: {
             navState: true,
-            navName: '基础形状 - 圆 Circle'
+            navName: '基础形状 - 圆 circle'
           }
         }
       ]
