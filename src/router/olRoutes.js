@@ -144,6 +144,15 @@ export default {
             navState: true,
             navName: '热力图'
           }
+        },
+        {
+          path: 'ol-scaleLine',
+          name: 'olScaleLine',
+          component: () => import('@/views/OpenLayers/Basic/pages/ScaleLine/ScaleLine.vue'),
+          meta: {
+            navState: true,
+            navName: '比例尺控件 ScaleLine'
+          }
         }
       ]
     }
