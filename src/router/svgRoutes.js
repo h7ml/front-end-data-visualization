@@ -34,7 +34,16 @@ export default {
           component: () => import('@/views/SVG/Basic/pages/BasicShape/Line.vue'),
           meta: {
             navState: true,
-            navName: '基础形状 - 线段'
+            navName: '基础形状 - 线段 line'
+          }
+        },
+        {
+          path: 'SVG-basicShapeRect',
+          name: 'SVGShapeRect',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Rect.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 矩形 Rect'
           }
         }
       ]
