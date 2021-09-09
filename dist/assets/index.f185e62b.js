@@ -1,1 +1,0 @@
-import{r as e,o as r,c as a}from"./vendor.c4f0aeec.js";const c={};c.render=function(c,o){const s=e("router-view");return r(),a(s,{class:"main__x"})},c.__scopeId="data-v-5b064c2c";export{c as default};
