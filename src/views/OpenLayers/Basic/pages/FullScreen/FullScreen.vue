@@ -1,4 +1,4 @@
-<!-- ol - 起步 -->
+<!-- ol - 全屏控件 -->
 <template>
   <div id="map" class="map__x"></div>
 </template>
