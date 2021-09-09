@@ -153,6 +153,15 @@ export default {
             navState: true,
             navName: '比例尺控件 ScaleLine'
           }
+        },
+        {
+          path: 'ol-FullScreen',
+          name: 'olFullScreen',
+          component: () => import('@/views/OpenLayers/Basic/pages/FullScreen/FullScreen.vue'),
+          meta: {
+            navState: true,
+            navName: '全屏控件 FullScreen'
+          }
         }
       ]
     }

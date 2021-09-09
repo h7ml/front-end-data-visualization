@@ -50,7 +50,6 @@ const map = ref(null)
 function initMap () {
   scaleLineControl.value = new control.ScaleLine()
 
-
   // 地图实例
   map.value = new Map({
     target: 'map', // 对应页面里 id 为 map 的元素
