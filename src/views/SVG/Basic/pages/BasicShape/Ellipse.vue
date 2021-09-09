@@ -37,4 +37,10 @@ onMounted(() => {
   height: 200px;
   border: 1px solid #ccc;
 }
+
+.explain {
+  ul > li {
+    margin-bottom: 16px;
+  }
+}
 </style>

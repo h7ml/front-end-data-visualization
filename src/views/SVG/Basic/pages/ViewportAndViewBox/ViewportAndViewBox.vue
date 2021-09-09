@@ -27,10 +27,12 @@
   </svg>
 
   <aside class="explain">
-    <p>viewport 是 svg 图像的可见区域</p>
-    <p>viewBox 是用于在画布上绘制 svg 图形的坐标系统</p>
-    <p>viewBox 要是不指定，默认值是和 svg 的宽高一致的</p>
-    <p>比如宽高为 50px * 50px，不指定 viewBox，默认值为 viewBox="0 0 50 50"</p>
+    <ul>
+      <li>viewport 是 svg 图像的可见区域</li>
+      <li>viewBox 是用于在画布上绘制 svg 图形的坐标系统</li>
+      <li>viewBox 要是不指定，默认值是和 svg 的宽高一致的</li>
+      <li>比如宽高为 50px * 50px，不指定 viewBox，默认值为 viewBox="0 0 50 50"</li>
+    </ul>
   </aside>
 </template>
 
@@ -51,5 +53,11 @@ onMounted(() => {
   height: 50px;
   color: hotPink;
   border: 1px solid #ccc;
+}
+
+.explain {
+  ul > li {
+    margin-bottom: 16px;
+  }
 }
 </style>
