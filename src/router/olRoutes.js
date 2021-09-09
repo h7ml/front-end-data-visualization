@@ -180,6 +180,15 @@ export default {
             navState: true,
             navName: '总览控件（鹰眼、小地图）'
           }
+        },
+        {
+          path: 'ol-zoomSlider',
+          name: 'olZoomSlider',
+          component: () => import('@/views/OpenLayers/Basic/pages/ZoomSlider/ZoomSlider.vue'),
+          meta: {
+            navState: true,
+            navName: '缩放滑块控件 ZoomSlider'
+          }
         }
       ]
     }
