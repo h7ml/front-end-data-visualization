@@ -182,6 +182,15 @@ export default {
           }
         },
         {
+          path: 'ol-mousePosition',
+          name: 'olMousePosition',
+          component: () => import('@/views/OpenLayers/Basic/pages/MousePosition/MousePosition.vue'),
+          meta: {
+            navState: true,
+            navName: '鼠标位置控件'
+          }
+        },
+        {
           path: 'ol-zoomSlider',
           name: 'olZoomSlider',
           component: () => import('@/views/OpenLayers/Basic/pages/ZoomSlider/ZoomSlider.vue'),

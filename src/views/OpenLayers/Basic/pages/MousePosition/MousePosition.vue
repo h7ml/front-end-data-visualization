@@ -1,6 +1,10 @@
 <!-- ol - 总览控件 -->
 <template>
+  <!-- 地图组件 -->
   <div id="map" class="map__x"></div>
+
+  <!-- 鼠标当前位置 -->
+  <div ref="mousePositionTxt" class="mouse__position__txt"></div>
 </template>
 
 <script setup>
@@ -10,9 +14,12 @@ import { Map, View } from 'ol'
 import Tile from 'ol/layer/Tile'
 import BingMaps from 'ol/source/BingMaps'
 import * as control from 'ol/control'
+import * as coordinate from 'ol/coordinate';
 import 'ol/ol.css'
 
 const store = useStore()
+
+const mousePositionTxt = ref(null)
 
 const map = ref(null)
 
@@ -34,13 +41,17 @@ function initMap () {
       zoom: 6 // 地图缩放级别（打开页面时默认级别）
     }),
     controls: control.defaults().extend([
-      new control.ZoomSlider()
+      new control.MousePosition({
+        coordinateFormat: coordinate.createStringXY(4),
+        projection: 'EPSG:4326',
+        target: mousePositionTxt.value
+      })
     ])
   })
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/ZoomSlider/ZoomSlider.vue')
+  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/MousePosition/MousePosition.vue')
   initMap()
 })
 </script>
@@ -52,37 +63,11 @@ onMounted(() => {
   border: 1px solid #eee;
 }
 
-// 控制插件的样式和位置
-:deep(.ol-custom-overviewmap),
-:deep(.ol-custom-overviewmap.ol-uncollapsible) {
-  bottom: auto;
-  left: auto;
-  right: 0;
-  top: 0;
-}
-
-:deep(.ol-custom-overviewmap:not(.ol-collapsed)) {
-  border: 1px solid black;
-}
-
-:deep(.ol-custom-overviewmap .ol-overviewmap-map) {
-  border: none;
-  width: 300px;
-}
-
-:deep(.ol-custom-overviewmap .ol-overviewmap-box) {
-  border: 2px solid red;
-}
-
-:deep(.ol-custom-overviewmap:not(.ol-collapsed) button) {
-  bottom: auto;
-  left: auto;
-  right: 1px;
-  top: 1px;
-}
-
-:deep(.ol-rotate) {
-  top: 170px;
-  right: 0;
+.mouse__position__txt {
+  position: relative;
+  
+  :deep(.ol-mouse-position) {
+    position: static;
+  }
 }
 </style>
