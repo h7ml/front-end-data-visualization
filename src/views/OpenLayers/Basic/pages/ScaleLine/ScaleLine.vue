@@ -65,7 +65,6 @@ function initMap () {
     view: new View({ // 地图视图
       projection: "EPSG:4326", // 坐标系，有EPSG:4326和EPSG:3857
       center: [114.064839, 22.548857], // 深圳坐标
-      minZoom:10, // 地图缩放最小级别
       zoom: 12 // 地图缩放级别（打开页面时默认级别）
     }),
     controls: control.defaults().extend([
