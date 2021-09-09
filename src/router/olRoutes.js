@@ -198,6 +198,15 @@ export default {
             navState: true,
             navName: '缩放滑块控件 ZoomSlider'
           }
+        },
+        {
+          path: 'ol-LayerGroup',
+          name: 'olLayerGroup',
+          component: () => import('@/views/OpenLayers/Basic/pages/LayerGroup/LayerGroup.vue'),
+          meta: {
+            navState: true,
+            navName: '图层组 LayerGroup'
+          }
         }
       ]
     }

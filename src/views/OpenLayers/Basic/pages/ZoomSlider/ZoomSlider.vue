@@ -1,4 +1,4 @@
-<!-- ol - 总览控件 -->
+<!-- ol - 缩放滑块控件 -->
 <template>
   <div id="map" class="map__x"></div>
 </template>

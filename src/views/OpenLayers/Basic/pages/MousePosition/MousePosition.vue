@@ -1,4 +1,4 @@
-<!-- ol - 总览控件 -->
+<!-- ol - 鼠标位置控件 -->
 <template>
   <!-- 地图组件 -->
   <div id="map" class="map__x"></div>
