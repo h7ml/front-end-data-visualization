@@ -135,6 +135,15 @@ export default {
             navState: true,
             navName: '网格 Graticule'
           }
+        },
+        {
+          path: 'ol-heatmap',
+          name: 'olHeatmap',
+          component: () => import('@/views/OpenLayers/Basic/pages/Heatmap/Heatmap.vue'),
+          meta: {
+            navState: true,
+            navName: '热力图'
+          }
         }
       ]
     }
