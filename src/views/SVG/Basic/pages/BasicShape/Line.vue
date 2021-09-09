@@ -1,3 +1,4 @@
+<!-- 线段 -->
 <template>
   <svg class="svg__x">
     <!-- 水平线段 -->

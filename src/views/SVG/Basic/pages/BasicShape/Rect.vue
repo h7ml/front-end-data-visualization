@@ -1,3 +1,4 @@
+<!-- 矩形 -->
 <template>
   <svg class="svg__x" viewBox="0 0 500 200">
     <!-- 默认 -->

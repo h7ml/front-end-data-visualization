@@ -1,3 +1,4 @@
+<!-- 椭圆 -->
 <template>
   <svg class="svg__x">
     <ellipse cx="60" cy="60" rx="20" ry="40" fill="none" stroke="#f67280" />
