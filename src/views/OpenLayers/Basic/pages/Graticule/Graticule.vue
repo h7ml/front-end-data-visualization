@@ -48,7 +48,7 @@ function initMap () {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Stated/Stated.vue')
+  store.commit('setComponentPath', 'src/views/OpenLayers/Basic/pages/Graticule/Graticule.vue')
   initMap()
 })
 </script>
