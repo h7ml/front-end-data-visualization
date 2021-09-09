@@ -126,6 +126,15 @@ export default {
             navState: true,
             navName: '动画 animate'
           }
+        },
+        {
+          path: 'ol-graticule',
+          name: 'olGraticule',
+          component: () => import('@/views/OpenLayers/Basic/pages/Graticule/Graticule.vue'),
+          meta: {
+            navState: true,
+            navName: '网格 Graticule'
+          }
         }
       ]
     }
