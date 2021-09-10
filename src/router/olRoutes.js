@@ -252,6 +252,15 @@ export default {
             navState: true,
             navName: '切换图源'
           }
+        },
+        {
+          path: 'ol-simplenessLabel',
+          name: 'olSimplenessLabel',
+          component: () => import('@/views/OpenLayers/Basic/pages/SimplenessLabel/SimplenessLabel.vue'),
+          meta: {
+            navState: true,
+            navName: '简单的标记'
+          }
         }
       ]
     }
