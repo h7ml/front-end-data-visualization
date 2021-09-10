@@ -20,7 +20,6 @@ const myNameArr = computed(() => {
     let str = myName.value[i] !== ' '? myName.value[i] : '&nbsp;'
     arr.push(str)
   }
-  console.log(arr)
   return arr
 })
 </script>
