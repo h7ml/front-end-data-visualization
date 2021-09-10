@@ -24,6 +24,12 @@
   </div>
 </template>
 
+<script setup>
+import { useStore } from 'vuex'
+const store = useStore()
+store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Carousel/Carousel.vue')
+</script>
+
 <style scoped>
 /* 容器 */
 .carousel__x {

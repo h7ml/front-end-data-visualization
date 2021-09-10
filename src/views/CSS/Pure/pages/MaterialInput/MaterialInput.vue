@@ -7,6 +7,12 @@
   </div>
 </template>
 
+<script setup>
+import { useStore } from 'vuex'
+const store = useStore()
+store.commit('setComponentPath', 'src/views/CSS/Pure/pages/MaterialInput/MaterialInput.vue')
+</script>
+
 <style scoped>
 .input__x {
   position: relative;
