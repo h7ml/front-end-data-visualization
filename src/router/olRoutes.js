@@ -243,6 +243,15 @@ export default {
             navState: true,
             navName: '图层遮罩'
           }
+        },
+        {
+          path: 'ol-setSource',
+          name: 'olSetSource',
+          component: () => import('@/views/OpenLayers/Basic/pages/SetSource/SetSource.vue'),
+          meta: {
+            navState: true,
+            navName: '切换图源'
+          }
         }
       ]
     }
