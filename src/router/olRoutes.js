@@ -216,6 +216,15 @@ export default {
             navState: true,
             navName: '控制图层层叠关系'
           }
+        },
+        {
+          path: 'ol-setResolution',
+          name: 'olSetResolution',
+          component: () => import('@/views/OpenLayers/Basic/pages/SetResolution/SetResolution.vue'),
+          meta: {
+            navState: true,
+            navName: '不同分辨率显示不同图层'
+          }
         }
       ]
     }
