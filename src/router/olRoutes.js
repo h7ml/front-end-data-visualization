@@ -315,6 +315,15 @@ export default {
             navState: true,
             navName: '带箭头的线段'
           }
+        },
+        {
+          path: 'ol-snapGraph',
+          name: 'olSnapGraph',
+          component: () => import('@/views/OpenLayers/Basic/pages/SnapGraph/SnapGraph.vue'),
+          meta: {
+            navState: true,
+            navName: '修改已绘制的图形'
+          }
         }
       ]
     }
