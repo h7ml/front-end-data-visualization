@@ -1,25 +1,30 @@
 <template>
-  <div class="app__home" id="appHome">
-    <canvas id="canvas"></canvas>
+  <div class="app__home">
+    <div class="text">
+      <span
+        v-for="str in myNameArr"
+        :key="str"
+        v-html="str"
+      >
+      </span>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import can from './index.js'
-onMounted(() => {
-  can()
+import { ref, computed } from 'vue'
+const myName = ref(`I'm Kelvin`)
+const myNameArr = computed(() => {
+  let arr = []
+  for(let i = 0; i < myName.value.length; i++) {
+    let str = myName.value[i] !== ' '? myName.value[i] : '&nbsp;'
+    arr.push(str)
+  }
+  console.log(arr)
+  return arr
 })
 </script>
 
 <style lang="scss" scoped>
-.app__home {
-  width: 100%;
-  height: 100%;
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
+@import url('./index.css');
 </style>
