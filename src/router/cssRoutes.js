@@ -6,7 +6,7 @@ export default {
   meta: {
     navState: true,
     navName: 'CSS',
-    icon: 'el-icon-s-management'
+    icon: 'el-icon-s-open'
   },
   children: [
     {
