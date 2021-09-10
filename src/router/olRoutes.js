@@ -225,6 +225,15 @@ export default {
             navState: true,
             navName: '不同分辨率显示不同图层'
           }
+        },
+        {
+          path: 'ol-setExtent',
+          name: 'olSetExtent',
+          component: () => import('@/views/OpenLayers/Basic/pages/SetExtent/SetExtent.vue'),
+          meta: {
+            navState: true,
+            navName: '区域图层'
+          }
         }
       ]
     }
