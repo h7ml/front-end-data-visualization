@@ -38,4 +38,10 @@ body,
 .app__header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
+.app__main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 </style>
