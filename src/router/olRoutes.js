@@ -261,6 +261,15 @@ export default {
             navState: true,
             navName: '简单的标记'
           }
+        },
+        {
+          path: 'ol-brightMark',
+          name: 'olBrightMark',
+          component: () => import('@/views/OpenLayers/Basic/pages/BrightMark/BrightMark.vue'),
+          meta: {
+            navState: true,
+            navName: '定义标记颜色'
+          }
         }
       ]
     }
