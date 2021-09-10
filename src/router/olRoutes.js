@@ -270,6 +270,15 @@ export default {
             navState: true,
             navName: '定义标记颜色'
           }
+        },
+        {
+          path: 'ol-polymerization',
+          name: 'olPolymerization',
+          component: () => import('@/views/OpenLayers/Basic/pages/Polymerization/Polymerization.vue'),
+          meta: {
+            navState: true,
+            navName: '聚合数据'
+          }
         }
       ]
     }
