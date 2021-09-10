@@ -297,6 +297,15 @@ export default {
             navState: true,
             navName: '绘制图形'
           }
+        },
+        {
+          path: 'ol-freeDrawing',
+          name: 'olFreeDrawing',
+          component: () => import('@/views/OpenLayers/Basic/pages/FreeDrawing/FreeDrawing.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制图形'
+          }
         }
       ]
     }
