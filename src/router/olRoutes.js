@@ -288,6 +288,15 @@ export default {
             navState: true,
             navName: '绘制点、线、面'
           }
+        },
+        {
+          path: 'ol-drawGraph',
+          name: 'olDrawGraph',
+          component: () => import('@/views/OpenLayers/Basic/pages/DrawGraph/DrawGraph.vue'),
+          meta: {
+            navState: true,
+            navName: '绘制图形'
+          }
         }
       ]
     }
