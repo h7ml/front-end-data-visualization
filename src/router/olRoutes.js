@@ -234,6 +234,15 @@ export default {
             navState: true,
             navName: '区域图层'
           }
+        },
+        {
+          path: 'ol-coverageModal',
+          name: 'olCoverageModal',
+          component: () => import('@/views/OpenLayers/Basic/pages/CoverageModal/CoverageModal.vue'),
+          meta: {
+            navState: true,
+            navName: '图层遮罩'
+          }
         }
       ]
     }
