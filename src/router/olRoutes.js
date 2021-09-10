@@ -279,6 +279,15 @@ export default {
             navState: true,
             navName: '聚合数据'
           }
+        },
+        {
+          path: 'ol-basicDraw',
+          name: 'olBasicDraw',
+          component: () => import('@/views/OpenLayers/Basic/pages/BasicDraw/BasicDraw.vue'),
+          meta: {
+            navState: true,
+            navName: '绘制点、线、面'
+          }
         }
       ]
     }
