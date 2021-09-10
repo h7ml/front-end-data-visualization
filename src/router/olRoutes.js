@@ -306,6 +306,15 @@ export default {
             navState: true,
             navName: '自由绘制图形'
           }
+        },
+        {
+          path: 'ol-arrowLine',
+          name: 'olArrowLine',
+          component: () => import('@/views/OpenLayers/Basic/pages/ArrowLine/ArrowLine.vue'),
+          meta: {
+            navState: true,
+            navName: '带箭头的线段'
+          }
         }
       ]
     }
