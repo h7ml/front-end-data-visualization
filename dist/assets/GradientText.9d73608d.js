@@ -1,0 +1,1 @@
+import{q as a,s as t,o as e,b as s,i as d}from"./vendor.1e7a51da.js";const r={};a("data-v-4f21e047");const n=[d("div",{class:"gradient__text-vertical"},"垂直渐变文字",-1),d("div",{class:"gradient__text-horizontal"},"水平渐变文字",-1)];t(),r.render=function(a,t){return e(),s("div",null,n)},r.__scopeId="data-v-4f21e047";export{r as default};
