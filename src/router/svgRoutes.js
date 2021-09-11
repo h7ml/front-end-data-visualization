@@ -90,6 +90,15 @@ export default {
             navState: true,
             navName: '基础形状 - 线帽 Linecap'
           }
+        },
+        {
+          path: 'SVG-basicShapeLinejoin',
+          name: 'SVGShapeLinejoin',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Linejoin.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 线连接 Linejoin'
+          }
         }
       ]
     }
