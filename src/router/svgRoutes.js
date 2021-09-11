@@ -63,6 +63,15 @@ export default {
             navState: true,
             navName: '基础形状 - 椭圆 ellipse'
           }
+        },
+        {
+          path: 'SVG-basicShapePolygon',
+          name: 'SVGShapePolygon',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Polygon.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 多边形 polygon'
+          }
         }
       ]
     }
