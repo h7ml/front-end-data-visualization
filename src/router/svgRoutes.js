@@ -81,6 +81,15 @@ export default {
             navState: true,
             navName: '基础形状 - 折线 polyline'
           }
+        },
+        {
+          path: 'SVG-basicShapeLinecap',
+          name: 'SVGShapeLinecap',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Linecap.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 线帽 Linecap'
+          }
         }
       ]
     }
