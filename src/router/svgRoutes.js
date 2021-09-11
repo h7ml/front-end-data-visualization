@@ -72,6 +72,15 @@ export default {
             navState: true,
             navName: '基础形状 - 多边形 polygon'
           }
+        },
+        {
+          path: 'SVG-basicShapePolyline',
+          name: 'SVGShapePolyline',
+          component: () => import('@/views/SVG/Basic/pages/BasicShape/Polyline.vue'),
+          meta: {
+            navState: true,
+            navName: '基础形状 - 折线 polyline'
+          }
         }
       ]
     }
