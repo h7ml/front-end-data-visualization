@@ -3,6 +3,8 @@
 ## 项目介绍
 **[点击预览 「前端可视化笔记」](http://k21vin.gitee.io/front-end-data-visualization)**
 
+![](./preview.gif)
+
 <br>
 
 本项目是前端可视化笔记。
