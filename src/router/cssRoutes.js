@@ -45,6 +45,15 @@ export default {
             navState: true,
             navName: '走马灯（手动控制）'
           }
+        },
+        {
+          path: 'tapeEdge',
+          name: 'TapeEdge',
+          component: () => import('@/views/CSS/Pure/pages/TapeEdge/TapeEdge.vue'),
+          meta: {
+            navState: true,
+            navName: '缝边边框'
+          }
         }
       ]
     }
