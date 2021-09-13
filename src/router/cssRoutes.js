@@ -54,6 +54,15 @@ export default {
             navState: true,
             navName: '缝边边框'
           }
+        },
+        {
+          path: 'multilayerBorder',
+          name: 'MultilayerBorder',
+          component: () => import('@/views/CSS/Pure/pages/MultilayerBorder/MultilayerBorder.vue'),
+          meta: {
+            navState: true,
+            navName: '多重边框'
+          }
         }
       ]
     }
