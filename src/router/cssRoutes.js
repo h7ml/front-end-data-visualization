@@ -63,6 +63,15 @@ export default {
             navState: true,
             navName: '多重边框'
           }
+        },
+        {
+          path: 'filletedCorner',
+          name: 'FilletedCorner',
+          component: () => import('@/views/CSS/Pure/pages/FilletedCorner/FilletedCorner.vue'),
+          meta: {
+            navState: true,
+            navName: '内圆角'
+          }
         }
       ]
     }
