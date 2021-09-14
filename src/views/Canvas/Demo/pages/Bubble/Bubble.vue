@@ -6,9 +6,14 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 import bubble from './index.js'
+
+const store = useStore()
+
 onMounted(() => {
   bubble()
+  store.commit('setComponentPath', 'src/views/Canvas/Demo/pages/Bubble/Bubble.vue')
 })
 </script>
 

@@ -220,7 +220,6 @@ export default function () {
   var resizing;
 
   window.addEventListener('resize', function () {
-    console.log(123)
     clearTimeout(resizing);
     resizing = setTimeout(function () {
       canvasWidth = canvas.width = appHome.offsetWidth;
