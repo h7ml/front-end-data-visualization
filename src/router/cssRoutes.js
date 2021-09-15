@@ -72,6 +72,15 @@ export default {
             navState: true,
             navName: '内圆角'
           }
+        },
+        {
+          path: 'parallelogram',
+          name: 'Parallelogram',
+          component: () => import('@/views/CSS/Pure/pages/Parallelogram/Parallelogram.vue'),
+          meta: {
+            navState: true,
+            navName: '平行四边形'
+          }
         }
       ]
     }
