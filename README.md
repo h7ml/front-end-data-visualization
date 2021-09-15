@@ -1,7 +1,7 @@
 # 前端可视化笔记
 
 ## 项目介绍
-**[点击预览 「前端可视化笔记」](http://k21vin.gitee.io/front-end-data-visualization)**
+ **[:computer: 点击预览 「前端可视化笔记」 :rocket:  :rocket:  :rocket: ](http://k21vin.gitee.io/front-end-data-visualization)**
 
 ![](./preview.gif)
 
@@ -56,3 +56,8 @@ npm run serve
 ### 2、缺少 echarts/theme/vintage2.js
 
 因为笔记中记录了 “如何自定义 `ECharts` 主题”，所以在 `npm install` 后，需要把 `src/assets/echarts/theme` 目录下的 `vintage2.js` 文件拷贝到 `node_modules/echarts/theme` 目录下。
+
+<br><br>
+
+## 推荐仓库
+[:rocket: ol在vue2中运行，仓库地址  :rocket:  :rocket:  :rocket:  :rocket: ](https://gitee.com/k21vin/vue-openlayers)
