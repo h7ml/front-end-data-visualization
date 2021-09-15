@@ -11,7 +11,7 @@
 
 <br>
 
-项目使用 `vite^2.5.1` 搭建。
+项目使用 `vite^2.5.4` 搭建。
 
 项目中用到 `vue^3.2` 、`vue-router`、`vuex` 做基础建设，使用了 `element plus` 做基础ui布局。
 
