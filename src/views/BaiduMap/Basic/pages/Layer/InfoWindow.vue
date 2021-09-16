@@ -8,7 +8,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useStore } from 'vuex'
-import logo from '@/assets/logo.png'
+import logo from '@/assets/images/logo.png'
 
 const store = useStore()
 
