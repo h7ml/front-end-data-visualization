@@ -33,6 +33,6 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/FrostedGlass/FrostedG
   letter-spacing: 0.5em;
   backdrop-filter: blur(20px);
   color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3);
 }
 </style>
