@@ -81,6 +81,15 @@ export default {
             navState: true,
             navName: '平行四边形'
           }
+        },
+        {
+          path: 'frostedGlass',
+          name: 'FrostedGlass',
+          component: () => import('@/views/CSS/Pure/pages/FrostedGlass/FrostedGlass.vue'),
+          meta: {
+            navState: true,
+            navName: '毛玻璃'
+          }
         }
       ]
     }
