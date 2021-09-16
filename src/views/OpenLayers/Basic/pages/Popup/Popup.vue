@@ -8,6 +8,10 @@
 </template>
 
 <script setup>
+/**
+ * @作者 羊一止
+ * @本例讲解 https://juejin.cn/post/7008372799441993742/
+ */
 import { ref, onMounted } from 'vue'
 import { useStore } from 'vuex'
 import { Map, View } from 'ol'
