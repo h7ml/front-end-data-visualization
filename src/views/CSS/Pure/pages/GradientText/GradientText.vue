@@ -24,9 +24,10 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/GradientText/Gradient
 }
 
 .gradient__text-horizontal {
+  display: inline-block;
   font-size: 30px;
   font-weight: 600;
-  background-image: linear-gradient(90deg, #3ff9ff 0%, #409eff 50%, #78BEFF 100%);
+  background-image: linear-gradient(90deg, #3ff9ff 0%, #409eff 100%);
   -moz-background-clip: text;
   -webkit-background-clip: text;
   -o-background-clip: test;
