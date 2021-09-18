@@ -29,6 +29,15 @@ export default {
           }
         },
         {
+          path: 'zebraShadowText',
+          name: 'ZebraShadowText',
+          component: () => import('@/views/CSS/Pure/pages/ZebraShadowText/ZebraShadowText.vue'),
+          meta: {
+            navState: true,
+            navName: '斑马投影文字'
+          }
+        },
+        {
           path: 'materialInput',
           name: 'MaterialInput',
           component: () => import('@/views/CSS/Pure/pages/MaterialInput/MaterialInput.vue'),
