@@ -11,6 +11,10 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/ZebraShadowText/Zebra
 </script>
 
 <style lang='scss' scoped>
+/**
+ * @作者 羊一止
+ * @本例讲解 https://juejin.cn/post/7009637424611491848
+ */
 .zebra__shadow__text {
   font-size: 100px;
   font-weight: bold;
