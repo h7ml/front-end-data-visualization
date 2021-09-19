@@ -17,6 +17,7 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/ZebraShadowText/Zebra
   background-repeat: repeat;
   text-shadow: 6px -6px #000, 4px -4px #fff;
   font-weight: bold;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
