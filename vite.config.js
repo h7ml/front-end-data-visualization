@@ -11,5 +11,8 @@ export default defineConfig({
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, 'src') }] // https://cn.vitejs.dev/config/#resolve-alias
+  },
+  build: {
+    chunkSizeWarningLimit: 5000
   }
 })
