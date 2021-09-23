@@ -99,6 +99,15 @@ export default {
             navState: true,
             navName: '毛玻璃'
           }
+        },
+        {
+          path: 'photoFrame',
+          name: 'PhotoFrame',
+          component: () => import('@/views/CSS/Pure/pages/PhotoFrame/PhotoFrame.vue'),
+          meta: {
+            navState: true,
+            navName: '相框'
+          }
         }
       ]
     }
