@@ -108,6 +108,15 @@ export default {
             navState: true,
             navName: '相框'
           }
+        },
+        {
+          path: 'turnBorder',
+          name: 'TurnBorder',
+          component: () => import('@/views/CSS/Pure/pages/TurnBorder/TurnBorder.vue'),
+          meta: {
+            navState: true,
+            navName: '旋转边框'
+          }
         }
       ]
     }
