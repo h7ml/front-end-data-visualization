@@ -13,6 +13,7 @@
     "echarts-wordcloud": "^2.0.0",
     "element-plus": "*",
     "ol": "^6.6.1",
+    "three": "^0.133.1",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"

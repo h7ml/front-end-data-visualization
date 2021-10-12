@@ -17,9 +17,9 @@
 <script setup>
 
 setTimeout(() => {
-  console.clear()
   // console.log(import.meta.env)
   if (import.meta.env.MODE === 'production') {
+    console.clear()
     console.log(
       '%c WeChat: wx_k21vin %c\n 项目仓库：https:\/\/gitee.com/k21vin\/front-end-data-visualization',
       `
