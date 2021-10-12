@@ -6,7 +6,7 @@ export default {
   meta: {
     navState: true,
     navName: 'Three',
-    icon: 'el-icon-s-open'
+    icon: 'el-icon-cold-drink'
   },
   children: [
     {
