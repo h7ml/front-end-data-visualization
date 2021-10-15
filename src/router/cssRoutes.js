@@ -20,6 +20,15 @@ export default {
       },
       children: [
         {
+          path: 'batman',
+          name: 'Batman',
+          component: () => import('@/views/CSS/Pure/pages/Batman/Batman.vue'),
+          meta: {
+            navState: true,
+            navName: '蝙蝠侠'
+          }
+        },
+        {
           path: 'gradientText',
           name: 'GradientText',
           component: () => import('@/views/CSS/Pure/pages/GradientText/GradientText.vue'),
