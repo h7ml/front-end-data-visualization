@@ -5,6 +5,7 @@ import echartsRoutes from './echartsRoutes.js'
 import bmapRoutes from './bmapRoutes.js'
 import olRoutes from './olRoutes.js'
 import threeRoutes from './threeRoutes.js'
+import fabricRoutes from './fabricRoutes.js'
 import Home from '@/views/Home/index.vue'
 
 export const routes = [
@@ -20,6 +21,7 @@ export const routes = [
   bmapRoutes,
   olRoutes,
   threeRoutes,
+  fabricRoutes,
   { // 404
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
