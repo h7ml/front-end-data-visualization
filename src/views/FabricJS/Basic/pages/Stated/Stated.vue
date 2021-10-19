@@ -13,7 +13,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 import { fabric } from 'fabric'
+
+const store = useStore()
 
 function init1() {
   let canvas = new fabric.Canvas('canvas1') // 通过元素id绑定
@@ -46,6 +49,7 @@ function init2() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/Stated/Stated.vue')
   init1()
   init2()
 })

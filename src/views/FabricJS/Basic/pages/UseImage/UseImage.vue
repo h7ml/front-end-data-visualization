@@ -7,8 +7,11 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 import { fabric } from 'fabric'
 import logo from '@/assets/images/logo.png'
+
+const store = useStore()
 
 function init() {
   let canvas = new fabric.Canvas('canvas')
@@ -33,6 +36,7 @@ function init() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/UseImage/UseImage.vue')
   init()
 })
 </script>

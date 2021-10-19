@@ -37,7 +37,8 @@ const componentPath = computed( () => store.getters.getComponentPath)
     border-radius: 4px;
     line-height: 26px;
     color: #fff;
-    background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    // background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
   }
 }
 </style>

@@ -6,7 +6,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 import { fabric } from 'fabric'
+
+const store = useStore()
 
 function init() {
   let canvas = new fabric.Canvas('canvas')
@@ -42,6 +45,7 @@ function init() {
 }
 
 onMounted(() => {
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/BasicGraph/BasicGraph.vue')
   init()
 })
 </script>
