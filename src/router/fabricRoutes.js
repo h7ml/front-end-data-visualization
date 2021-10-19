@@ -54,6 +54,15 @@ export default {
             navState: true,
             navName: '绘制路径'
           }
+        },
+        {
+          path: 'fabric-animation',
+          name: 'Animation',
+          component: () => import('@/views/FabricJS/Basic/pages/Animation/Animation.vue'),
+          meta: {
+            navState: true,
+            navName: '动画'
+          }
         }
       ]
     }
