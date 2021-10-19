@@ -45,6 +45,15 @@ export default {
             navState: true,
             navName: '使用图片'
           }
+        },
+        {
+          path: 'fabric-draw-path',
+          name: 'DrawPath',
+          component: () => import('@/views/FabricJS/Basic/pages/DrawPath/DrawPath.vue'),
+          meta: {
+            navState: true,
+            navName: '绘制路径'
+          }
         }
       ]
     }
