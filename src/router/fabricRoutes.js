@@ -27,6 +27,15 @@ export default {
             navState: true,
             navName: '起步'
           }
+        },
+        {
+          path: 'fabric-basic-graph',
+          name: 'FabricBasicGraph',
+          component: () => import('@/views/FabricJS/Basic/pages/BasicGraph/BasicGraph.vue'),
+          meta: {
+            navState: true,
+            navName: '基础图形'
+          }
         }
       ]
     }
