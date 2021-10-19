@@ -10,8 +10,8 @@ export default {
   },
   children: [
     {
-      path: 'three-basic',
-      name: 'ThreeBasic',
+      path: 'fabric-basic',
+      name: 'FabricBasic',
       component: () => import('@/views/FabricJS/Basic/index.vue'),
       meta: {
         navState: true,
@@ -20,8 +20,8 @@ export default {
       },
       children: [
         {
-          path: 'three-stated',
-          name: 'ThreeStated',
+          path: 'fabric-stated',
+          name: 'FabricStated',
           component: () => import('@/views/FabricJS/Basic/pages/Stated/Stated.vue'),
           meta: {
             navState: true,
