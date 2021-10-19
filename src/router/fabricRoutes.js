@@ -36,6 +36,15 @@ export default {
             navState: true,
             navName: '基础图形'
           }
+        },
+        {
+          path: 'fabric-use-image',
+          name: 'FabricUseImage',
+          component: () => import('@/views/FabricJS/Basic/pages/UseImage/UseImage.vue'),
+          meta: {
+            navState: true,
+            navName: '使用图片'
+          }
         }
       ]
     }
