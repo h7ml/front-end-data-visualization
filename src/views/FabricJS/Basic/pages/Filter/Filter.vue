@@ -27,6 +27,7 @@ import gwen from '@/assets/images/gwen-spider-verse-ah.jpg'
  * RemoveColor 移除颜色
  * Resize 调整大小
  * Saturation 饱和
+ * Sepia 色偏
  */
 
 const store = useStore()
