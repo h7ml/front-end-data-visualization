@@ -63,6 +63,15 @@ export default {
             navState: true,
             navName: '动画'
           }
+        },
+        {
+          path: 'fabric-filter',
+          name: 'Filter',
+          component: () => import('@/views/FabricJS/Basic/pages/Filter/Filter.vue'),
+          meta: {
+            navState: true,
+            navName: '滤镜'
+          }
         }
       ]
     }
