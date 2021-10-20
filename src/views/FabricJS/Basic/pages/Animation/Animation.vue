@@ -9,6 +9,17 @@ import { onMounted } from 'vue'
 import { useStore } from 'vuex'
 import { fabric } from 'fabric'
 
+/**
+ * fabric内置动画
+ * easeOutBounce
+ * easeInCubic
+ * easeOutCubic
+ * easeInElastic
+ * easeOutElastic
+ * easeInBounce
+ * easeOutExpo
+ */
+
 const store = useStore()
 
 function init() {
