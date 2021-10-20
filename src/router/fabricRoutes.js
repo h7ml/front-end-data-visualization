@@ -72,6 +72,15 @@ export default {
             navState: true,
             navName: '滤镜'
           }
+        },
+        {
+          path: 'fabric-gradient',
+          name: 'Gradient',
+          component: () => import('@/views/FabricJS/Basic/pages/Gradient/Gradient.vue'),
+          meta: {
+            navState: true,
+            navName: '渐变'
+          }
         }
       ]
     }
