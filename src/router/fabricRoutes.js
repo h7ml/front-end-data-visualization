@@ -99,6 +99,15 @@ export default {
             navState: true,
             navName: '文本'
           }
+        },
+        {
+          path: 'fabric-event',
+          name: 'Event',
+          component: () => import('@/views/FabricJS/Basic/pages/Event/Event.vue'),
+          meta: {
+            navState: true,
+            navName: '事件'
+          }
         }
       ]
     }
