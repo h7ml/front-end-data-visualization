@@ -90,6 +90,15 @@ export default {
             navState: true,
             navName: '颜色转换/覆盖'
           }
+        },
+        {
+          path: 'fabric-text',
+          name: 'Text',
+          component: () => import('@/views/FabricJS/Basic/pages/Text/Text.vue'),
+          meta: {
+            navState: true,
+            navName: '文本'
+          }
         }
       ]
     }
