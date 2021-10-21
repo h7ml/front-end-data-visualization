@@ -81,6 +81,15 @@ export default {
             navState: true,
             navName: '渐变'
           }
+        },
+        {
+          path: 'fabric-color',
+          name: 'Color',
+          component: () => import('@/views/FabricJS/Basic/pages/Color/Color.vue'),
+          meta: {
+            navState: true,
+            navName: '颜色转换/覆盖'
+          }
         }
       ]
     }
