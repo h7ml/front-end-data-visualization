@@ -22,6 +22,11 @@ export const routes = [
   olRoutes,
   threeRoutes,
   fabricRoutes,
+  {
+    path: '/test',
+    name: 'Test',
+    component: () => import('../views/test/index.vue')
+  },
   { // 404
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
