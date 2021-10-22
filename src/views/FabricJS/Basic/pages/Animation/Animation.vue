@@ -32,6 +32,17 @@ function init() {
     fill: 'red'
   })
 
+  /*
+    animate(动画属性, 动画的结束值, [画的详细信息])
+
+    第三个参数是一个对象，包括: {
+      rom：允许指定可设置动画的属性的起始值（如果我们不希望使用当前值）。
+      duration：默认为500（ms）。可用于更改动画的持续时间。
+      onComplete：在动画结束时调用的回调。
+      easing：缓动功能。
+    }
+  */
+
   // rect.set('angle', 45)
 
   // 动画，旋转角度
@@ -49,10 +60,15 @@ function init() {
   // })
 
   // 左移动动画
-  rect.animate('left', '400', {
+  // rect.animate('left', '400', {
+  //   onChange:canvas.renderAll.bind(canvas), // 每次刷新的时候都会执行
+  //   duration: 2000, // 执行时间
+  //   easing: fabric.util.ease.easeInCubic, // 缓冲效果
+  // })
+
+  // 支持负值
+  rect.animate('angle', "-50", {
     onChange:canvas.renderAll.bind(canvas), // 每次刷新的时候都会执行
-    duration: 2000, // 执行时间
-    easing: fabric.util.ease.easeInCubic, // 缓冲效果
   })
 
   canvas.add(rect)
