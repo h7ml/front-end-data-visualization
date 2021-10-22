@@ -22,6 +22,8 @@
 - `ECharts`
 - `百度地图`
 - `OpenLayers`
+- `ThreeJS`
+- `FabricJS`
 
 <br><br>
 
