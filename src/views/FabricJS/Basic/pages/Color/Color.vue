@@ -28,7 +28,7 @@ function init() {
   console.log(color6)
   console.log(color7)
 
-  // 覆盖色
+  // 颜色叠加
   let color8 = color1.overlayWith(color4).toRgb()
 
   // 矩形

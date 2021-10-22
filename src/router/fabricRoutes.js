@@ -88,7 +88,7 @@ export default {
           component: () => import('@/views/FabricJS/Basic/pages/Color/Color.vue'),
           meta: {
             navState: true,
-            navName: '颜色转换/覆盖'
+            navName: '颜色转换/颜色叠加'
           }
         },
         {
