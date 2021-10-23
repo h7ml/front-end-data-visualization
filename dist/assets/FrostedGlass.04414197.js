@@ -1,1 +1,0 @@
-import{p as s,b as a,A as e,f as o,o as t,g as d}from"./vendor.ec101613.js";s("data-v-1b1dc596");const c={class:"box"},r=[d("div",{class:"frosted__glass"},"毛玻璃",-1)];a();const p={setup:s=>(e().commit("setComponentPath","src/views/CSS/Pure/pages/FrostedGlass/FrostedGlass.vue"),(s,a)=>(t(),o("div",c,r))),__scopeId:"data-v-1b1dc596"};export{p as default};
