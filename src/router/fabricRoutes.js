@@ -108,6 +108,15 @@ export default {
             navState: true,
             navName: '事件'
           }
+        },
+        {
+          path: 'fabric-groups',
+          name: 'Groups',
+          component: () => import('@/views/FabricJS/Basic/pages/Groups/Groups.vue'),
+          meta: {
+            navState: true,
+            navName: '分组'
+          }
         }
       ]
     }

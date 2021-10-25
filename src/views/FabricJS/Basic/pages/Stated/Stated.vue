@@ -8,6 +8,10 @@
       <div>不可交互</div>
       <canvas width="400" height="400" id="canvas2"></canvas>
     </div>
+    <div class="canvas_x">
+      <div>初始化画布样式</div>
+      <canvas id="canvas3"></canvas>
+    </div>
   </div>
 </template>
 
@@ -48,16 +52,37 @@ function init2() {
   canvas.add(rect) // 将图案添加到canvas里
 }
 
+function init3() {
+  let canvas = new fabric.Canvas('canvas3', {
+    width: 300,
+    height: 300,
+    backgroundColor: '#eee'
+  })
+
+  // 圆形
+  let circle = new fabric.Circle({
+    radius: 30,
+    top: 20,
+    left: 20,
+    fill: 'pink'
+  })
+  
+  canvas.add(circle)
+}
+
 onMounted(() => {
   store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/Stated/Stated.vue')
   init1()
   init2()
+  init3()
 })
 </script>
 
 <style lang="scss" scoped>
 .box {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .canvas_x {
   margin: 10px;
