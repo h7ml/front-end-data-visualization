@@ -117,6 +117,15 @@ export default {
             navState: true,
             navName: '分组'
           }
+        },
+        {
+          path: 'fabric-free-drawing',
+          name: 'FreeDrawing',
+          component: () => import('@/views/FabricJS/Basic/pages/FreeDrawing/FreeDrawing.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘画'
+          }
         }
       ]
     }
