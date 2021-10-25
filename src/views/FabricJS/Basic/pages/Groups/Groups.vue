@@ -154,7 +154,7 @@ function init() {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/Text/Text.vue')
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/Groups/Groups.vue')
   init()
 })
 </script>
