@@ -126,6 +126,15 @@ export default {
             navState: true,
             navName: '自由绘画'
           }
+        },
+        {
+          path: 'fabric-locking',
+          name: 'Locking',
+          component: () => import('@/views/FabricJS/Basic/pages/Locking/Locking.vue'),
+          meta: {
+            navState: true,
+            navName: '锁定'
+          }
         }
       ]
     }
