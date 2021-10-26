@@ -5,9 +5,9 @@
       <el-button type="primary" v-if="!isDrawing" @click="toggleIsDrawing">绘图模式</el-button>
       <el-button type="success" v-if="isDrawing" @click="toggleIsDrawing">框选模式</el-button>
       <el-button type="danger" @click="clearCanvas">清空画布</el-button>
-      <div v-show="isDrawing" class="control__x">
+      <!-- <div v-show="isDrawing" class="control__x">
         
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -25,6 +25,21 @@ const isDrawing = ref(true) // 是否开启绘图，true 开启；false 关闭
 function init() {
   canvas = new fabric.Canvas('canvas', {
     isDrawingMode: isDrawing.value, // 开启绘图模式
+  })
+
+  // 设置画笔颜色
+  canvas.freeDrawingBrush.color = '#11999e'
+
+  // 设置画笔粗细
+  canvas.freeDrawingBrush.width = 10
+
+  // 画笔投影
+  canvas.freeDrawingBrush.shadow = new fabric.Shadow({
+    blur: 10,
+    offsetX: 10,
+    offsetY: 10,
+    affectStroke: true,
+    color: '#30e3ca',
   })
 }
 
