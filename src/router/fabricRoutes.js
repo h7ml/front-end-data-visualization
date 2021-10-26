@@ -153,6 +153,15 @@ export default {
             navState: true,
             navName: '选中状态的样式'
           }
+        },
+        {
+          path: 'fabric-zoom-and-panning',
+          name: 'ZoomAndPanning',
+          component: () => import('@/views/FabricJS/Basic/pages/ZoomAndPanning/ZoomAndPanning.vue'),
+          meta: {
+            navState: true,
+            navName: '缩放和平移'
+          }
         }
       ]
     }
