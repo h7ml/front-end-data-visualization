@@ -144,6 +144,15 @@ export default {
             navState: true,
             navName: '修改边角状态'
           }
+        },
+        {
+          path: 'fabric-selected-style',
+          name: 'SelectedStyle',
+          component: () => import('@/views/FabricJS/Basic/pages/SelectedStyle/SelectedStyle.vue'),
+          meta: {
+            navState: true,
+            navName: '选中状态的样式'
+          }
         }
       ]
     }
