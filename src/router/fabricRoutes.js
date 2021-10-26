@@ -171,6 +171,15 @@ export default {
             navState: true,
             navName: '序列化'
           }
+        },
+        {
+          path: 'fabric-deserialization',
+          name: 'Deserialization',
+          component: () => import('@/views/FabricJS/Basic/pages/Deserialization/Deserialization.vue'),
+          meta: {
+            navState: true,
+            navName: '反序列化'
+          }
         }
       ]
     }
