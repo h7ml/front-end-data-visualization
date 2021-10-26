@@ -12,6 +12,10 @@
       <div>初始化画布样式</div>
       <canvas id="canvas3"></canvas>
     </div>
+    <div class="canvas_x">
+      <div>使用背景图</div>
+      <canvas width="400" height="400" id="canvas4"></canvas>
+    </div>
   </div>
 </template>
 
@@ -70,11 +74,20 @@ function init3() {
   canvas.add(circle)
 }
 
+function init4() {
+  let canvas = new fabric.Canvas('canvas4')
+  canvas.setBackgroundImage(
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:400:400:400:400.awebp",
+    canvas.renderAll.bind(canvas)
+  )
+}
+
 onMounted(() => {
   store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/Stated/Stated.vue')
   init1()
   init2()
   init3()
+  init4()
 })
 </script>
 
