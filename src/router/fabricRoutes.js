@@ -162,6 +162,15 @@ export default {
             navState: true,
             navName: '缩放和平移'
           }
+        },
+        {
+          path: 'fabric-serialization',
+          name: 'Serialization',
+          component: () => import('@/views/FabricJS/Basic/pages/Serialization/Serialization.vue'),
+          meta: {
+            navState: true,
+            navName: '序列化'
+          }
         }
       ]
     }
