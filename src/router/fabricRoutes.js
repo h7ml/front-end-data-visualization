@@ -135,6 +135,15 @@ export default {
             navState: true,
             navName: '锁定'
           }
+        },
+        {
+          path: 'fabric-changing-borders-corners',
+          name: 'ChangingBordersCorners',
+          component: () => import('@/views/FabricJS/Basic/pages/ChangingBordersCorners/ChangingBordersCorners.vue'),
+          meta: {
+            navState: true,
+            navName: '修改边角状态'
+          }
         }
       ]
     }
