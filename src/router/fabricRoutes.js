@@ -218,6 +218,15 @@ export default {
             navState: true,
             navName: '自定义控件'
           }
+        },
+        {
+          path: 'fabric-manage-selection',
+          name: 'FabricManageSelection',
+          component: () => import('@/views/FabricJS/Demo/pages/ManageSelection/ManageSelection.vue'),
+          meta: {
+            navState: true,
+            navName: '框选管理'
+          }
         }
       ]
     }
