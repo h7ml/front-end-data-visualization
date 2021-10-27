@@ -182,6 +182,27 @@ export default {
           }
         }
       ]
+    },
+    {
+      path: 'fabric-demo',
+      name: 'FabricDemo',
+      component: () => import('@/views/FabricJS/Demo/index.vue'),
+      meta: {
+        navState: true,
+        navName: '模板',
+        icon: 'el-icon-s-shop'
+      },
+      children: [
+        {
+          path: 'fabric-custom-control-render',
+          name: 'FabricCustomControlRender',
+          component: () => import('@/views/FabricJS/Demo/pages/CustomControlRender/CustomControlRender.vue'),
+          meta: {
+            navState: true,
+            navName: '自定义控件'
+          }
+        }
+      ]
     }
   ]
 }
