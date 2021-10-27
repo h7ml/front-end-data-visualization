@@ -35,6 +35,18 @@ function init() {
   })
   canvas.add(rect)
 
+  // 圆角矩形
+  let rect2 = new fabric.Rect({
+    left: 300,
+    top: 100,
+    fill: 'yellowgreen',
+    width: 100,
+    height: 100,
+    rx: 20,
+    ry: 20
+  })
+  canvas.add(rect2)
+
   // 圆形
   let circle = new fabric.Circle({
     radius: 50,
