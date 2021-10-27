@@ -227,6 +227,15 @@ export default {
             navState: true,
             navName: '框选管理'
           }
+        },
+        {
+          path: 'fabric-copy-paste',
+          name: 'FabricCopyPaste',
+          component: () => import('@/views/FabricJS/Demo/pages/CopyPaste/CopyPaste.vue'),
+          meta: {
+            navState: true,
+            navName: '复制粘贴'
+          }
         }
       ]
     }
