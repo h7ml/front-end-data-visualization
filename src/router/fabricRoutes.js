@@ -245,6 +245,15 @@ export default {
             navState: true,
             navName: '动画集'
           }
+        },
+        {
+          path: 'fabric-hovering',
+          name: 'FabricHovering',
+          component: () => import('@/views/FabricJS/Demo/pages/Hovering/Hovering.vue'),
+          meta: {
+            navState: true,
+            navName: '鼠标经过时'
+          }
         }
       ]
     }
