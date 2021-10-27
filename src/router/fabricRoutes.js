@@ -99,6 +99,14 @@ export default {
             navState: true,
             navName: '文本'
           }
+        },{
+          path: 'fabric-text-box',
+          name: 'Textbox',
+          component: () => import('@/views/FabricJS/Basic/pages/Textbox/Textbox.vue'),
+          meta: {
+            navState: true,
+            navName: '文本框'
+          }
         },
         {
           path: 'fabric-event',
