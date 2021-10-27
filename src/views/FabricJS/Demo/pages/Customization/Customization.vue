@@ -346,10 +346,36 @@ function init13() {
       left: 70
     })
   )
-  canvas.setBackgroundImage(
-    'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:200:200:200:200.awebp',
-    canvas.renderAll.bind(canvas)
-  )
+
+  // 方法1
+  // canvas.setBackgroundImage(
+  //   'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:200:200:200:200.awebp',
+  //   canvas.renderAll.bind(canvas),
+  //   {
+  //     angle: 10, // 旋转背景图
+  //   }
+  // )
+
+  // 方法2
+  // fabric.Image.fromURL(
+  //   'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:200:200:200:200.awebp',
+  //   img => {
+  //     console.log(img.width)
+  //     img.set({ // 缩放图片，使其完全填充满画布
+  //       scaleX: canvas.width / img.width,
+  //       scaleY: canvas.height / img.height
+  //     })
+  //     canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+  //       repeat: 'repeat'
+  //     })
+  //   }
+  // )
+
+  // 方法3 重复背景
+  canvas.setBackgroundColor({
+    source: 'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:40:40:40:40.awebp',
+    repeat: 'repeat'
+  }, canvas.renderAll.bind(canvas))
 }
 
 // 重叠影象
