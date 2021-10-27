@@ -164,6 +164,15 @@ export default {
           }
         },
         {
+          path: 'fabric-clip-path',
+          name: 'ClipPath',
+          component: () => import('@/views/FabricJS/Basic/pages/ClipPath/ClipPath.vue'),
+          meta: {
+            navState: true,
+            navName: '路径裁剪'
+          }
+        },
+        {
           path: 'fabric-serialization',
           name: 'Serialization',
           component: () => import('@/views/FabricJS/Basic/pages/Serialization/Serialization.vue'),
