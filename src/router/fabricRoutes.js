@@ -236,6 +236,15 @@ export default {
             navState: true,
             navName: '复制粘贴'
           }
+        },
+        {
+          path: 'fabric-animation-easing',
+          name: 'FabricAnimationEasing',
+          component: () => import('@/views/FabricJS/Demo/pages/AnimationEasing/AnimationEasing.vue'),
+          meta: {
+            navState: true,
+            navName: '动画集'
+          }
         }
       ]
     }
