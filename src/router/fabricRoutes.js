@@ -254,6 +254,15 @@ export default {
             navState: true,
             navName: '鼠标经过时'
           }
+        },
+        {
+          path: 'fabric-customization',
+          name: 'FabricCustomization',
+          component: () => import('@/views/FabricJS/Demo/pages/Customization/Customization.vue'),
+          meta: {
+            navState: true,
+            navName: '自定义对象操作方式'
+          }
         }
       ]
     }
