@@ -121,10 +121,10 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  console.log('onUnmounted')
-  // console.log(fabric.Object.prototype.controls.deleteControl)
-  fabric.Object.prototype.controls.deleteControl = new fabric.Control(null)
-  fabric.Object.prototype.controls.clone = new fabric.Control(null)
+  // fabric.Object.prototype.controls.deleteControl = new fabric.Control(null)
+  // fabric.Object.prototype.controls.clone = new fabric.Control(null)
+  delete fabric.Object.prototype.controls.deleteControl
+  delete fabric.Object.prototype.controls.clone
 })
 </script>
 
