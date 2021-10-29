@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { useStore } from 'vuex'
 import { fabric } from 'fabric'
 
@@ -118,6 +118,13 @@ fabric.Object.prototype.controls.clone = new fabric.Control({
 onMounted(() => {
   store.commit('setComponentPath', 'src/views/FabricJS/Demo/pages/CustomControlRender/CustomControlRender.vue')
   init()
+})
+
+onUnmounted(() => {
+  console.log('onUnmounted')
+  // console.log(fabric.Object.prototype.controls.deleteControl)
+  fabric.Object.prototype.controls.deleteControl = new fabric.Control(null)
+  fabric.Object.prototype.controls.clone = new fabric.Control(null)
 })
 </script>
 
