@@ -99,7 +99,17 @@ export default {
             navState: true,
             navName: '文本'
           }
-        },{
+        },
+        {
+          path: 'fabric-i-text',
+          name: 'IText',
+          component: () => import('@/views/FabricJS/Basic/pages/IText/IText.vue'),
+          meta: {
+            navState: true,
+            navName: '可编辑文本'
+          }
+        },
+        {
           path: 'fabric-text-box',
           name: 'Textbox',
           component: () => import('@/views/FabricJS/Basic/pages/Textbox/Textbox.vue'),
