@@ -1,0 +1,1 @@
+import{C as e,o as t,e as a}from"./vendor.ab263734.js";import{_ as o}from"./index.5de4ac7a.js";const s={class:"zebra__shadow__text"},r={setup(_){return e().commit("setComponentPath","src/views/CSS/Pure/pages/ZebraShadowText/ZebraShadowText.vue"),(d,n)=>(t(),a("div",s," Zebra "))}};var x=o(r,[["__scopeId","data-v-b7f9815e"]]);export{x as default};

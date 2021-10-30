@@ -1,0 +1,1 @@
+import{_ as e}from"./index.5de4ac7a.js";import{o as a,e as r}from"./vendor.ab263734.js";const _={},o={class:"parallelogram"};function s(t,c){return a(),r("div",o,"\u4E00\u4E2A\u5143\u7D20\u5B9E\u73B0\uFF0C\u80CC\u666F\u503E\u659C\uFF0C\u6587\u5B57\u4E0D\u503E\u659C")}var n=e(_,[["render",s],["__scopeId","data-v-adad63fe"]]);export{n as default};
