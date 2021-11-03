@@ -1,5 +1,13 @@
 # 前端可视化笔记
 
+## 个人博客
+
+我的博客：[学习委员](https://juejin.cn/user/2673620576140030/posts)
+
+如果您方便的话，请帮我的文章点点赞吧，求您了(破音
+
+我会不断更新文章，讲解本项目的各个 demo。
+
 ## 项目介绍
  **[:computer: 点击预览 「前端可视化笔记」 :rocket:  :rocket:  :rocket: ](http://k21vin.gitee.io/front-end-data-visualization)**
 
@@ -57,7 +65,7 @@ npm run serve
 
 ### 2、缺少 echarts/theme/vintage2.js
 
-因为笔记中记录了 “如何自定义 `ECharts` 主题”，所以在 `npm install` 后，需要把 `src/assets/echarts/theme` 目录下的 `vintage2.js` 文件拷贝到 `node_modules/echarts/theme` 目录下。
+因为笔记中记录了 **“如何自定义 `ECharts` 主题”**，所以在 `npm install` 后，需要把 `src/assets/echarts/theme` 目录下的 `vintage2.js` 文件拷贝到 `node_modules/echarts/theme` 目录下。
 
 <br><br>
 
