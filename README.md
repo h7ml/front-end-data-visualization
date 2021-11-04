@@ -4,9 +4,11 @@
 
 我的博客：[学习委员](https://juejin.cn/user/2673620576140030/posts)
 
-如果您方便的话，请帮我的文章点点赞吧，求您了(破音
+[如果您方便的话，请帮我的文章点点赞吧，求您了（破音 :sob:  :sob:  :sob:  :sob:  :sob:  :sob: ](https://juejin.cn/user/2673620576140030/posts)
 
-我会不断更新文章，讲解本项目的各个 demo。
+[我会不断更新文章，讲解本项目的各个 demo。](https://juejin.cn/user/2673620576140030/posts)
+
+<br><br>
 
 ## 项目介绍
  **[:computer: 点击预览 「前端可视化笔记」 :rocket:  :rocket:  :rocket: ](http://k21vin.gitee.io/front-end-data-visualization)**
