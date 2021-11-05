@@ -6,7 +6,7 @@
 
 [如果您方便的话，请帮我的文章点点赞吧，求您了（破音 :sob:  :sob:  :sob:  :sob:  :sob:  :sob: ](https://juejin.cn/user/2673620576140030/posts)
 
-[我会不断更新文章，讲解本项目的各个 demo。](https://juejin.cn/user/2673620576140030/posts)
+[万字长文带你 Fabricjs.js 从入门到________](https://juejin.cn/post/7026941253845516324)
 
 <br><br>
 
