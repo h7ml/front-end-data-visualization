@@ -1,1 +1,0 @@
-import{C as e,o as s,e as t}from"./vendor.ab263734.js";import{_ as a}from"./index.5de4ac7a.js";const o={class:"tape__edge"},_={setup(r){return e().commit("setComponentPath","src/views/CSS/Pure/pages/TapeEdge/TapeEdge.vue"),(p,d)=>(s(),t("div",o))}};var i=a(_,[["__scopeId","data-v-05aec3f7"]]);export{i as default};
