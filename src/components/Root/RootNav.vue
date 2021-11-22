@@ -75,6 +75,29 @@ const currentPath = computed(() => {
 <style lang="scss" scoped>
 .root__nav {
   height: 100%;
+  overflow: auto;
+  scrollbar-width: thin; /* 滚动条的宽度：auto；thin */
+  scrollbar-color: #bbcddf #f1f1f1;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #bbcddf;
+  }
+
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background-color: #5749d2;
+  // }
+
+  // &:hover {
+  //   scrollbar-color: #5749d2 #e4e4e4;
+  // }
 
   &:not(.el-menu--collapse) {
     width: 260px;
