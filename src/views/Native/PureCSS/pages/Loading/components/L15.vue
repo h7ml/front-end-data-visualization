@@ -78,36 +78,6 @@
   animation-delay: -2s, -2.5s;
 }
 
-.loading.la-sm {
-  width: 8px;
-  height: 8px;
-}
-
-.loading.la-sm > div {
-  width: 8px;
-  height: 8px;
-}
-
-.loading.la-2x {
-  width: 32px;
-  height: 32px;
-}
-
-.loading.la-2x > div {
-  width: 32px;
-  height: 32px;
-}
-
-.loading.la-3x {
-  width: 48px;
-  height: 48px;
-}
-
-.loading.la-3x > div {
-  width: 48px;
-  height: 48px;
-}
-
 @keyframes ball-circus-position {
   50% {
     left: 100%;

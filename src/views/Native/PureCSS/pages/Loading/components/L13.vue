@@ -107,42 +107,6 @@
   animation-delay: -0.5s, -0.125s;
 }
 
-.loading.la-sm {
-  width: 16px;
-  height: 16px;
-}
-
-.loading.la-sm > div:not(:nth-child(1)):before {
-  width: 4px;
-  height: 4px;
-  margin-top: -2px;
-  margin-left: -2px;
-}
-
-.loading.la-2x {
-  width: 64px;
-  height: 64px;
-}
-
-.loading.la-2x > div:not(:nth-child(1)):before {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-}
-
-.loading.la-3x {
-  width: 96px;
-  height: 96px;
-}
-
-.loading.la-3x > div:not(:nth-child(1)):before {
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  margin-left: -15px;
-}
-
 @keyframes ball-atom-position {
   50% {
     top: 100%;

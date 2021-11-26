@@ -53,39 +53,6 @@
   animation-delay: -0.5s;
 }
 
-.loading.la-sm {
-  width: 26px;
-  height: 8px;
-}
-
-.loading.la-sm > div {
-  width: 4px;
-  height: 4px;
-  margin: 2px;
-}
-
-.loading.la-2x {
-  width: 108px;
-  height: 36px;
-}
-
-.loading.la-2x > div {
-  width: 20px;
-  height: 20px;
-  margin: 8px;
-}
-
-.loading.la-3x {
-  width: 162px;
-  height: 54px;
-}
-
-.loading.la-3x > div {
-  width: 30px;
-  height: 30px;
-  margin: 12px;
-}
-
 @keyframes ball-beat {
   50% {
     opacity: 0.2;
