@@ -2,13 +2,14 @@
   <div class="loading__x">
     <div class="explain">
       <p>组件位置：在 src/views/CSS/Pure/pages/Loading/components 里面找对应的文件名吧~</p>
-      <p>我懒得分类了，看到喜欢的就复制吧~</p>
+      <p>收集了几十年的Loading动画，我懒得分类了，看到喜欢的就复制吧~</p>
     </div>
     <div class="main">
       <L1 />
       <L2 />
       <L3 />
       <L4 />
+      <L5 />
     </div>
   </div>
 </template>
@@ -19,6 +20,7 @@ import L1 from './components/L1.vue'
 import L2 from './components/L2.vue'
 import L3 from './components/L3.vue'
 import L4 from './components/L4.vue'
+import L5 from './components/L5.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
