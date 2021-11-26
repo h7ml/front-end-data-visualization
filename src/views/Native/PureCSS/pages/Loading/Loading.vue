@@ -19,6 +19,7 @@
       <L12 />
       <L13 />
       <L14 />
+      <L15 />
     </div>
   </div>
 </template>
@@ -41,6 +42,7 @@ import L11 from './components/L11.vue'
 import L12 from './components/L12.vue'
 import L13 from './components/L13.vue'
 import L14 from './components/L14.vue'
+import L15 from './components/L15.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')

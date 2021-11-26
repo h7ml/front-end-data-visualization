@@ -16,8 +16,6 @@
 .loading,
 .loading > div {
   position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -48,16 +46,10 @@
   height: 10px;
   margin: 4px;
   border-radius: 100%;
-  -webkit-animation: ball-beat 0.7s -0.15s infinite linear;
-  -moz-animation: ball-beat 0.7s -0.15s infinite linear;
-  -o-animation: ball-beat 0.7s -0.15s infinite linear;
   animation: ball-beat 0.7s -0.15s infinite linear;
 }
 
 .loading > div:nth-child(2n-1) {
-  -webkit-animation-delay: -0.5s;
-  -moz-animation-delay: -0.5s;
-  -o-animation-delay: -0.5s;
   animation-delay: -0.5s;
 }
 
@@ -97,13 +89,11 @@
 @keyframes ball-beat {
   50% {
     opacity: 0.2;
-    -webkit-transform: scale(0.75);
     transform: scale(0.75);
   }
 
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
