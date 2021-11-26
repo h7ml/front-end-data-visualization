@@ -23,6 +23,7 @@
       <L16 />
       <L17 />
       <L18 />
+      <L19 />
     </div>
   </div>
 </template>
@@ -49,6 +50,7 @@ import L15 from './components/L15.vue'
 import L16 from './components/L16.vue'
 import L17 from './components/L17.vue'
 import L18 from './components/L18.vue'
+import L19 from './components/L19.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
@@ -63,8 +65,8 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
 // 布局用的，这段和loading无关
 ::v-deep .com__box {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   border: 1px solid #ccc;
   margin: 10px;
   padding: 10px;
