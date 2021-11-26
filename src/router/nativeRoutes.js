@@ -126,6 +126,15 @@ export default {
             navState: true,
             navName: '旋转边框'
           }
+        },
+        {
+          path: 'loading',
+          name: 'Loading',
+          component: () => import('@/views/Native/PureCSS/pages/Loading/Loading.vue'),
+          meta: {
+            navState: true,
+            navName: 'Loading'
+          }
         }
       ]
     }
