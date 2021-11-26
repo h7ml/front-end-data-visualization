@@ -5,7 +5,8 @@
       <p>我懒得分类了，看到喜欢的就复制吧~</p>
     </div>
     <div class="main">
-      <L1></L1>
+      <L1 />
+      <L2 />
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 <script setup>
 import { useStore } from 'vuex'
 import L1 from './components/L1.vue'
+import L2 from './components/L2.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')

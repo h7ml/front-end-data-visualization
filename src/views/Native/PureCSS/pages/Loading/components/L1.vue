@@ -10,8 +10,8 @@
 
 <style lang="scss" scoped>
 .loading {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #000;
   border-top-color: transparent;
   border-radius: 100%;
