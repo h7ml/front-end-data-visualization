@@ -1,4 +1,4 @@
-import cssRoutes from './cssRoutes.js'
+import nativeRoutes from './nativeRoutes.js'
 import svgRoutes from './svgRoutes.js'
 import canvasRoutes from './canvasRoutes.js'
 import echartsRoutes from './echartsRoutes.js'
@@ -14,7 +14,7 @@ export const routes = [
     name: 'Home',
     component: Home
   },
-  cssRoutes,
+  nativeRoutes,
   svgRoutes,
   canvasRoutes,
   echartsRoutes,
