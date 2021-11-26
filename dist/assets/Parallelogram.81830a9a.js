@@ -1,0 +1,1 @@
+import{p as a,b as d,o as s,f as o}from"./vendor.02edd428.js";const r={};a("data-v-0d173032");const e={class:"parallelogram"};d(),r.render=function(a,d){return s(),o("div",e,"一个元素实现，背景倾斜，文字不倾斜")},r.__scopeId="data-v-0d173032";export{r as default};
