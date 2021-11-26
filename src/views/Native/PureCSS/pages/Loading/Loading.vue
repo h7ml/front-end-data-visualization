@@ -8,6 +8,7 @@
       <L1 />
       <L2 />
       <L3 />
+      <L4 />
     </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import { useStore } from 'vuex'
 import L1 from './components/L1.vue'
 import L2 from './components/L2.vue'
 import L3 from './components/L3.vue'
+import L4 from './components/L4.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
