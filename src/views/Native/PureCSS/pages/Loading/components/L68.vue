@@ -18,7 +18,7 @@
   width: 30px;
   height: 30px;
   position: relative;
-  animation: Animation2Container 1s ease infinite;
+  animation: animationContainer 1s ease infinite;
 }
 
 .shape {
@@ -53,7 +53,7 @@
   animation: animationShape4 0.5s ease infinite alternate;
 }
 
-@keyframes Animation2Container {
+@keyframes animationContainer {
   0% {
     transform: rotate(0);
   }
