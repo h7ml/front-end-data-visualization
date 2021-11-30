@@ -69,7 +69,7 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
 }
 
 // 布局用的，这段和loading无关
-::v-deep .com__box {
+:deep(.com__box) {
   display: block;
   width: 160px;
   height: 160px;
