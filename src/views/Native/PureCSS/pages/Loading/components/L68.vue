@@ -53,6 +53,16 @@
   animation: animationShape4 0.5s ease infinite alternate;
 }
 
+@keyframes Animation2Container {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes animationShape1 {
   0% {
     transform: translate(0, 0);
