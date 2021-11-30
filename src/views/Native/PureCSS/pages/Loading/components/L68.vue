@@ -9,7 +9,7 @@
     </div>
 
     <!-- 说明：组件名 -->
-    <h4 class="explain">L67.vue</h4>
+    <h4 class="explain">L68.vue</h4>
   </div>
 </template>
 
@@ -18,12 +18,13 @@
   width: 30px;
   height: 30px;
   position: relative;
-  transform: rotate(45deg);
+  animation: Animation2Container 1s ease infinite;
 }
 
 .shape {
   width: 10px;
   height: 10px;
+  border-radius: 50%;
   position: absolute;
 }
 
@@ -58,7 +59,7 @@
   }
 
   100% {
-    transform: translate(16px, 16px);
+    transform: translate(20px, 20px);
   }
 }
 
@@ -68,7 +69,7 @@
   }
 
   100% {
-    transform: translate(-16px, 16px);
+    transform: translate(-20px, 20px);
   }
 }
 
@@ -78,7 +79,7 @@
   }
 
   100% {
-    transform: translate(16px, -16px);
+    transform: translate(20px, -20px);
   }
 }
 
@@ -88,7 +89,7 @@
   }
 
   100% {
-    transform: translate(-16px, -16px);
+    transform: translate(-20px, -20px);
   }
 }
 </style>
