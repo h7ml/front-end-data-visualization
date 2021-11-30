@@ -4,7 +4,7 @@
     <div class="loading"></div>
 
     <!-- 说明：组件名 -->
-    <h4 class="explain">L89.vue</h4>
+    <h4 class="explain">L90.vue</h4>
   </div>
 </template>
 
@@ -12,8 +12,9 @@
 .loading {
   width: 48px;
   height: 48px;
-  border: 3px solid #ddd;
-  border-bottom-color: transparent;
+  border-width: 3px;
+  border-style: dashed solid solid dotted;
+  border-color: #ff3d00 #ff3d00 transparent #ff3d00;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -26,7 +27,7 @@
   left: 30px;
   top: 32px;
   border: 10px solid transparent;
-  border-right-color: #ddd;
+  border-right-color: #ff3d00;
   transform: rotate(-40deg);
 }
 
