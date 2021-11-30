@@ -18,7 +18,6 @@
   width: 30px;
   height: 30px;
   position: relative;
-  transform: rotate(45deg);
 }
 
 .shape {
