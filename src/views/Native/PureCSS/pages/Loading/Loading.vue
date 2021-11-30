@@ -44,6 +44,7 @@
       <L37 />
       <L38 />
       <L39 />
+      <L40 />
     </div>
   </div>
 </template>
@@ -91,6 +92,7 @@ import L36 from './components/L36.vue'
 import L37 from './components/L37.vue'
 import L38 from './components/L38.vue'
 import L39 from './components/L39.vue'
+import L40 from './components/L40.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
