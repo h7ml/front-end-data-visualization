@@ -16,7 +16,7 @@
   padding: 0px;
   opacity: 0.5;
   border: 3px solid #000;
-  animation: loader 1s ease-in-out infinite alternate;
+  animation: loading-animation 1s ease-in-out infinite alternate;
 }
 
 .loading:before {
@@ -41,7 +41,7 @@
   border: 3px solid #000;
 }
 
-@keyframes loader {
+@keyframes loading-animation {
   from {
     transform: rotate(0deg) scale(1, 1);
     border-radius: 0px;
@@ -49,18 +49,6 @@
 
   to {
     transform: rotate(360deg) scale(0, 0);
-    border-radius: 50px;
-  }
-}
-
-@-webkit-keyframes loader {
-  from {
-    -webkit-transform: rotate(0deg) scale(1, 1);
-    border-radius: 0px;
-  }
-
-  to {
-    -webkit-transform: rotate(360deg) scale(0, 0);
     border-radius: 50px;
   }
 }
