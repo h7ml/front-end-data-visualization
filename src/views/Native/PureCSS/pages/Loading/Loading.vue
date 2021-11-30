@@ -61,6 +61,7 @@
       <L54 />
       <L55 />
       <L56 />
+      <L57 />
     </div>
   </div>
 </template>
@@ -125,6 +126,7 @@ import L53 from './components/L53.vue'
 import L54 from './components/L54.vue'
 import L55 from './components/L55.vue'
 import L56 from './components/L56.vue'
+import L57 from './components/L57.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
