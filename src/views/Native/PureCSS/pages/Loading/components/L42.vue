@@ -8,7 +8,7 @@
     </div>
 
     <!-- 说明：组件名 -->
-    <h4 class="explain">L41.vue</h4>
+    <h4 class="explain">L24.vue</h4>
   </div>
 </template>
 
