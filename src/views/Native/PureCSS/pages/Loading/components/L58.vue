@@ -6,7 +6,7 @@
     </div>
 
     <!-- 说明：组件名 -->
-    <h4 class="explain">L57.vue</h4>
+    <h4 class="explain">L58.vue</h4>
   </div>
 </template>
 
