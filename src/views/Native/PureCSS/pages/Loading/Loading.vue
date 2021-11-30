@@ -32,6 +32,7 @@
       <L25 />
       <L26 />
       <L27 />
+      <L28 />
     </div>
   </div>
 </template>
@@ -67,6 +68,7 @@ import L24 from './components/L24.vue'
 import L25 from './components/L25.vue'
 import L26 from './components/L26.vue'
 import L27 from './components/L27.vue'
+import L28 from './components/L28.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
