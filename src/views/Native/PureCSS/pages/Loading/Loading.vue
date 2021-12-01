@@ -100,6 +100,7 @@
       <L93 />
       <L94 />
       <L95 />
+      <L96 />
     </div>
   </div>
 </template>
@@ -203,6 +204,7 @@ import L92 from './components/L92.vue'
 import L93 from './components/L93.vue'
 import L94 from './components/L94.vue'
 import L95 from './components/L95.vue'
+import L96 from './components/L96.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
