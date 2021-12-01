@@ -19,7 +19,7 @@
   position: relative;
   color: #ddd;
   left: -30px;
-  animation: animloader60 2s ease infinite;
+  animation: loading-animation 2s ease infinite;
 }
 
 .loading::after,
@@ -34,7 +34,7 @@
   position: absolute;
   left: 30px;
   top: 0;
-  animation: animloader60 2s 0.2s ease infinite;
+  animation: loading-animation 2s 0.2s ease infinite;
 }
 
 .loading::before {
@@ -42,7 +42,7 @@
   left: 60px;
 }
 
-@keyframes animloader60 {
+@keyframes loading-animation {
   0% {
     top: 0;
     color: #ddd;
