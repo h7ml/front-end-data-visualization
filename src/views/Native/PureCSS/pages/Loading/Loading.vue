@@ -104,6 +104,7 @@
       <L97 />
       <L98 />
       <L99 />
+      <L100 />
     </div>
   </div>
 </template>
@@ -211,6 +212,7 @@ import L96 from './components/L96.vue'
 import L97 from './components/L97.vue'
 import L98 from './components/L98.vue'
 import L99 from './components/L99.vue'
+import L100 from './components/L100.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
@@ -224,7 +226,6 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
 
 // 布局用的，这段和loading无关
 :deep(.com__box) {
-  display: block;
   width: 160px;
   height: 160px;
   border: 1px solid #ccc;
