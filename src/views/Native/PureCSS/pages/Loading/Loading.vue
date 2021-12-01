@@ -117,6 +117,7 @@
       <L110 />
       <L111 />
       <L112 />
+      <L113 />
     </div>
   </div>
 </template>
@@ -237,6 +238,7 @@ import L109 from './components/L109.vue'
 import L110 from './components/L110.vue'
 import L111 from './components/L111.vue'
 import L112 from './components/L112.vue'
+import L113 from './components/L113.vue'
 
 const store = useStore()
 store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
