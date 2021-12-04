@@ -2,6 +2,12 @@
   <div class="zebra__shadow__text">
     Zebra
   </div>
+  <div class="explain">
+    <p>
+      如果代码没看懂，可以看看这文章(顺便点个赞呗)：
+      <b><a href="https://juejin.cn/post/7009637424611491848" target="_blank">《纯CSS实现『斑马纹理投影文字』》</a></b>
+    </p>
+  </div>
 </template>
 
 <script setup>

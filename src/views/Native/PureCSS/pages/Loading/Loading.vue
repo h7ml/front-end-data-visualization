@@ -3,6 +3,10 @@
     <div class="explain">
       <p>组件位置：在 src/views/CSS/Pure/pages/Loading/components 里面找对应的文件名吧~</p>
       <p>收集了几十年的Loading动画，我懒得分类了，看到喜欢的就复制吧~</p>
+      <p>方便的话帮我点下着几篇文章吧，<b>点赞</b>那种可以吗(低声哭泣)</p>
+      <a href="https://juejin.cn/post/7037660617779445796" target="_blank">《纯css实现117个Loading效果（下）》</a>
+      <a href="https://juejin.cn/post/7037636080539009038" target="_blank">《纯css实现117个Loading效果（中）》</a>
+      <a href="https://juejin.cn/post/7037036742985121800" target="_blank">《纯css实现117个Loading效果（上）》</a>
     </div>
     <div class="main">
       <L1 />
@@ -253,6 +257,23 @@ store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
 </script>
 
 <style lang="scss" scoped>
+.loading__x > .explain {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #1e80ff;
+    font-weight: 600;
+
+    &:hover {
+      color: #f6416c;
+    }
+  }
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
