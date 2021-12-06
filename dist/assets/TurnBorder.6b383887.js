@@ -1,0 +1,1 @@
+import{p as a,b as s,o as r,f as n,g as o}from"./vendor.8623c498.js";const t={};a("data-v-585ff460");const d={class:"turn__border__x"},e=[o("span",null,"转转转转",-1)];s(),t.render=function(a,s){return r(),n("div",d,e)},t.__scopeId="data-v-585ff460";export{t as default};

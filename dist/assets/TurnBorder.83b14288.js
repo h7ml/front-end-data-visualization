@@ -1,1 +1,0 @@
-import{_}from"./index.79183bd5.js";import{o,e as s,s as r,v as t,f as a}from"./vendor.87a044ad.js";const d={},c=e=>(r("data-v-585ff460"),e=e(),t(),e),n={class:"turn__border__x"},p=c(()=>a("span",null,"\u8F6C\u8F6C\u8F6C\u8F6C",-1)),f=[p];function i(e,u){return o(),s("div",n,f)}var h=_(d,[["render",i],["__scopeId","data-v-585ff460"]]);export{h as default};
