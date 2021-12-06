@@ -137,6 +137,27 @@ export default {
           }
         }
       ]
+    },
+    {
+      path: 'threePiece',
+      name: 'ThreePiece',
+      component: () => import('@/views/Native/ThreePiece/index.vue'),
+      meta: {
+        navState: true,
+        navName: '三件套',
+        icon: 'el-icon-s-shop'
+      },
+      children: [
+        {
+          path: 'parallax',
+          name: 'Parallax',
+          component: () => import('@/views/Native/ThreePiece/pages/Parallax/Parallax.vue'),
+          meta: {
+            navState: true,
+            navName: '视差效果'
+          }
+        },
+      ]
     }
   ]
 }
