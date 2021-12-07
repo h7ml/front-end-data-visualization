@@ -74,8 +74,8 @@ function parallax(e) {
   // 在下次重绘之前调用指定的回调函数更新动画
   timeout = window.requestAnimationFrame(function () {
     // 通过 calcValue 根据鼠标当前位置和容器宽高比计算得出的值
-    let xValue = calcValue(x, pageX.offsetWidth)
-    let yValue = calcValue(y, pageX.offsetHeight)
+    let xValue = calcValue(x, window.innerWidth)
+    let yValue = calcValue(y, window.innerHeight)
 
     // 设置卡片容器的旋转角度
     cards.style.transform = "rotateX(" + yValue + "deg) rotateY(" + xValue + "deg)";
