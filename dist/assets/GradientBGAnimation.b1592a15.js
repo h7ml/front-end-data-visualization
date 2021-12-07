@@ -1,0 +1,1 @@
+import{p as a,b as s,o as t,f as o}from"./vendor.8623c498.js";const r={};a("data-v-08a35b26");const d={class:"gradient"};s(),r.render=function(a,s){return t(),o("div",d)},r.__scopeId="data-v-08a35b26";export{r as default};
