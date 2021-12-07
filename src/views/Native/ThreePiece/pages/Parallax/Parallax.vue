@@ -40,64 +40,74 @@ store.commit(
   "src/views/CSS/ThreePiece/pages/Parallax/Parallax.vue"
 )
 
+// 页面容器
+let pageX = null
+
+// 卡片容器
+let cards = null
+// 所有图片
+let images = null
+// 所有背景
+let backgrounds = null
+
+// 旋转角度系数
+let range = 40
+
+// 旋转公式（返回-20 ~ 20，保留1为小数）
+let calcValue = (a, b) => (a / b * range - range / 2).toFixed(1)
+
+// 默认返回 undefined
+let timeout = void 0
+
+// 视差动画函数
+// e：鼠标移动事件的参数
+function parallax(e) {
+  let x = e.x // 指针x轴位置
+  let y = e.y // 指针y轴位置
+
+  // 如果 timeout 已经存在，就取消一个先前通过调用 window.requestAnimationFrame() 方法添加到计划中的动画帧请求。
+  if (timeout) {
+    // 这是一个实验中的功能，此功能某些浏览器尚在开发中
+    window.cancelAnimationFrame(timeout);
+  }
+
+  // 在下次重绘之前调用指定的回调函数更新动画
+  timeout = window.requestAnimationFrame(function () {
+    // 通过 calcValue 根据鼠标当前位置和容器宽高比计算得出的值
+    let xValue = calcValue(x, pageX.offsetWidth)
+    let yValue = calcValue(y, pageX.offsetHeight)
+
+    // 设置卡片容器的旋转角度
+    cards.style.transform = "rotateX(" + yValue + "deg) rotateY(" + xValue + "deg)";
+
+    // 设置所有图片的位移
+    images.forEach(item => {
+      item.style.transform = "translateX(" + -xValue + "px) translateY(" + yValue + "px)"
+    })
+
+    // 设置所有背景图的位置
+    backgrounds.forEach(item => {
+      item.style.backgroundPosition = xValue * .45 + "px " + -yValue * .45 + "px"
+    })
+  })
+}
+
 onMounted(() => {
   // 页面容器
-  const pageX = document.querySelector('#pageX')
+  pageX = document.querySelector('#pageX')
   // 卡片容器
-  const cards = document.querySelector('.cards')
+  cards = document.querySelector('.cards')
   // 所有图片
-  const images = document.querySelectorAll('.card__img')
+  images = document.querySelectorAll('.card__img')
   // 所有背景
-  const backgrounds = document.querySelectorAll('.card__bg')
-
-  // 旋转角度系数
-  let range = 40
-
-  // 旋转公式（返回-20 ~ 20，保留1为小数）
-  let calcValue = (a, b) => (a / b * range - range / 2).toFixed(1)
-
-  // 默认返回 undefined
-  let timeout = void 0
-
-  // 视差动画函数
-  // e：鼠标移动事件的参数
-  function parallax(e) {
-    let x = e.x // 指针x轴位置
-    let y = e.y // 指针y轴位置
-
-    // 如果 timeout 已经存在，就取消一个先前通过调用 window.requestAnimationFrame() 方法添加到计划中的动画帧请求。
-    if (timeout) {
-      // 这是一个实验中的功能，此功能某些浏览器尚在开发中
-      window.cancelAnimationFrame(timeout);
-    }
-
-    // 在下次重绘之前调用指定的回调函数更新动画
-    timeout = window.requestAnimationFrame(function () {
-      // 通过 calcValue 根据鼠标当前位置和容器宽高比计算得出的值
-      let xValue = calcValue(x, pageX.offsetWidth)
-      let yValue = calcValue(y, pageX.offsetHeight)
-
-      // 设置卡片容器的旋转角度
-      cards.style.transform = "rotateX(" + yValue + "deg) rotateY(" + xValue + "deg)";
-
-      // 设置所有图片的位移
-      images.forEach(item => {
-        item.style.transform = "translateX(" + -xValue + "px) translateY(" + yValue + "px)"
-      })
-
-      // 设置所有背景图的位置
-      backgrounds.forEach(item => {
-        item.style.backgroundPosition = xValue * .45 + "px " + -yValue * .45 + "px"
-      })
-    })
-  }
+  backgrounds = document.querySelectorAll('.card__bg')
 
   // 监听鼠标在 pageX 容器移动
   pageX.addEventListener('mousemove', parallax, false)
 })
 
 onUnmounted(() => {
-  console.log(456)
+  pageX.removeEventListener('mousemove', parallax)
 })
 </script>
 
