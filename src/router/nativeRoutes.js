@@ -135,6 +135,15 @@ export default {
             navState: true,
             navName: 'Loading'
           }
+        },
+        {
+          path: 'GradientBGAnimation',
+          name: 'GradientBGAnimation',
+          component: () => import('@/views/Native/PureCSS/pages/GradientBGAnimation/GradientBGAnimation.vue'),
+          meta: {
+            navState: true,
+            navName: '动态渐变背景'
+          }
         }
       ]
     },
