@@ -11,11 +11,8 @@
 <style lang="scss" scoped>
 .loading {
   position: relative;
-  width: 100px;
-  height: 90px;
-  left: 10px;
-  top: 10px;
-
+  width: 60px;
+  height: 60px;
   animation: heart infinite 0.85s linear;
 }
 
