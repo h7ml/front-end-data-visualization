@@ -1,10 +1,16 @@
 <!-- 动态渐变背景 -->
 <template>
+	<div class="explain">
+    <p>图文讲解：<a href="https://juejin.cn/post/7040376300296470535" target="_blank">《纯CSS：动态渐变背景【一分钟学会】》</a></p>
+  </div>
+
   <div class="gradient"></div>
 </template>
 
 <script setup>
-
+import { useStore } from 'vuex'
+const store = useStore()
+store.commit('setComponentPath', 'src/views/CSS/Pure/pages/GradientBGAnimation/GradientBGAnimation.vue')
 </script>
 
 <style lang="scss" scoped>
