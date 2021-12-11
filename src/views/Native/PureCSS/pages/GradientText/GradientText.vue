@@ -8,7 +8,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/GradientText/GradientText.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/GradientText/GradientText.vue')
 </script>
 
 <style lang="scss" scoped>

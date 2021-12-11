@@ -13,7 +13,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/ZebraShadowText/ZebraShadowText.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/ZebraShadowText/ZebraShadowText.vue')
 </script>
 
 <style lang='scss' scoped>

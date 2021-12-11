@@ -7,7 +7,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/FrostedGlass/FrostedGlass.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/FrostedGlass/FrostedGlass.vue')
 </script>
 
 <style lang="scss" scoped>

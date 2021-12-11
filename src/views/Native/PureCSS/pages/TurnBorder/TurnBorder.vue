@@ -7,7 +7,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/TurnBorder/TurnBorder.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/TurnBorder/TurnBorder.vue')
 </script>
 
 <style lang="scss" scoped>

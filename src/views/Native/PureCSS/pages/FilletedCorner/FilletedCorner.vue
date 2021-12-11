@@ -5,7 +5,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/FilletedCorner/FilletedCorner.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/FilletedCorner/FilletedCorner.vue')
 </script>
 
 <style lang="scss" scoped>

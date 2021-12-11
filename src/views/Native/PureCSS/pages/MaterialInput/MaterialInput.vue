@@ -10,7 +10,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/MaterialInput/MaterialInput.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/MaterialInput/MaterialInput.vue')
 </script>
 
 <style scoped>

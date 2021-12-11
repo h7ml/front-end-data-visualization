@@ -27,7 +27,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Carousel/Carousel.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/Carousel/Carousel.vue')
 </script>
 
 <style scoped>

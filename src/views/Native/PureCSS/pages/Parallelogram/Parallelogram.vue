@@ -5,7 +5,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Parallelogram/Parallelogram.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/Parallelogram/Parallelogram.vue')
 </script>
 
 <style lang="scss" scoped>

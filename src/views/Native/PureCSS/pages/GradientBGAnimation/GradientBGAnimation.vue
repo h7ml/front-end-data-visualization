@@ -10,7 +10,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/GradientBGAnimation/GradientBGAnimation.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/GradientBGAnimation/GradientBGAnimation.vue')
 </script>
 
 <style lang="scss" scoped>

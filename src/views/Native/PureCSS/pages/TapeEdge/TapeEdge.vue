@@ -5,7 +5,7 @@
 <script setup>
 import { useStore } from 'vuex'
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/TapeEdge/TapeEdge.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/TapeEdge/TapeEdge.vue')
 </script>
 
 <style lang="scss" scoped>

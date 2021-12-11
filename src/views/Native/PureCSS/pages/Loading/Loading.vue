@@ -253,7 +253,7 @@ import L116 from './components/L116.vue'
 import L117 from './components/L117.vue'
 
 const store = useStore()
-store.commit('setComponentPath', 'src/views/CSS/Pure/pages/Loading/Loading.vue')
+store.commit('setComponentPath', 'src/views/CSS/PureCSS/pages/Loading/Loading.vue')
 </script>
 
 <style lang="scss" scoped>

@@ -15,7 +15,7 @@ import { useStore } from "vuex";
 const store = useStore();
 store.commit(
   "setComponentPath",
-  "src/views/CSS/Pure/pages/PhotoFrame/PhotoFrame.vue"
+  "src/views/CSS/PureCSS/pages/PhotoFrame/PhotoFrame.vue"
 );
 </script>
 
