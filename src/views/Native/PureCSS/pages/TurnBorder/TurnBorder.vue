@@ -5,7 +5,9 @@
 </template>
 
 <script setup>
-
+import { useStore } from 'vuex'
+const store = useStore()
+store.commit('setComponentPath', 'src/views/CSS/Pure/pages/TurnBorder/TurnBorder.vue')
 </script>
 
 <style lang="scss" scoped>
