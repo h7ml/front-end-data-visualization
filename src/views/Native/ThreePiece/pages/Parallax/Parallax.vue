@@ -1,4 +1,7 @@
 <template>
+  <div class="explain">
+    <p>本例实现原理：<a href="https://juejin.cn/post/7040283893106212895" target="_blank">《🏆视差特效的原理和实现方法》---- 帮我的文章点个赞吧~谢谢~</a></p>
+  </div>
   <div class="page__x" id="pageX">
     <div class="cards">
       <h3>Movies</h3>
@@ -308,5 +311,25 @@ h3 {
   font-weight: 700;
   /* 字体颜色 */
   color: #fff;
+}
+
+
+
+/* 实现原理文章推荐样式，这段CSS和本例特效无关，不需要管！！！ */
+.explain {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #1e80ff;
+    font-weight: 600;
+
+    &:hover {
+      color: #f6416c;
+    }
+  }
 }
 </style>
