@@ -84,6 +84,13 @@ function init() {
   })
   canvas.add(line)
 
+  // 虚线
+  let dottedLine = new fabric.Line([500, 10, 550, 300], {
+    stroke: '#221ffc',//笔触颜色
+    strokeDashArray:[10, 7], // 虚线
+  })
+  canvas.add(dottedLine)
+
   // 多边形，会自动闭合
   let polygon = new fabric.Polygon([
     {x: 100, y: 300},
