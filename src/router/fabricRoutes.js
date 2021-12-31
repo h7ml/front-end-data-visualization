@@ -128,6 +128,15 @@ export default {
           }
         },
         {
+          path: 'fabric-mousePoint',
+          name: 'MousePoint',
+          component: () => import('@/views/FabricJS/Basic/pages/MousePoint/MousePoint.vue'),
+          meta: {
+            navState: true,
+            navName: '鼠标位置'
+          }
+        },
+        {
           path: 'fabric-groups',
           name: 'Groups',
           component: () => import('@/views/FabricJS/Basic/pages/Groups/Groups.vue'),
