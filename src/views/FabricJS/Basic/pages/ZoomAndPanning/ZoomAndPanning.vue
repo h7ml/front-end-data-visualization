@@ -64,8 +64,8 @@ function init1() {
       vpt[4] += evt.clientX - canvas.lastPosX
       vpt[5] += evt.clientY - canvas.lastPosY
       canvas.requestRenderAll()
-      canvas.lastPosX  = evt.clientX
-      canvas.lastPosY  = evt.clientY
+      canvas.lastPosX = evt.clientX
+      canvas.lastPosY = evt.clientY
     }
   })
 
