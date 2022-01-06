@@ -155,6 +155,7 @@ function init8() {
     })
   )
   // 设置覆盖图像的画布
+  // 官方文档：http://fabricjs.com/docs/fabric.Canvas.html#setOverlayImage
   canvas.setOverlayImage( // setOverlayImage(image, callback, optionsopt)
     jailCellBars, // 图片，script开头import进来的
     canvas.renderAll.bind(canvas)
