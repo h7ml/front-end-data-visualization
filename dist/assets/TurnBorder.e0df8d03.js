@@ -1,1 +1,0 @@
-import{p as s,b as a,C as r,f as e,o,g as t}from"./vendor.8623c498.js";s("data-v-0c307794");const n={class:"turn__border__x"},c=[t("span",null,"转转转转",-1)];a();const d={setup:s=>(r().commit("setComponentPath","src/views/CSS/PureCSS/pages/TurnBorder/TurnBorder.vue"),(s,a)=>(o(),e("div",n,c))),__scopeId:"data-v-0c307794"};export{d as default};

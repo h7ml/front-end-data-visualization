@@ -1,1 +1,0 @@
-import{p as a,b as s,C as e,f as o,o as r}from"./vendor.8623c498.js";a("data-v-710d9254");const t={class:"parallelogram"};s();const l={setup:a=>(e().commit("setComponentPath","src/views/CSS/PureCSS/pages/Parallelogram/Parallelogram.vue"),(a,s)=>(r(),o("div",t,"一个元素实现，背景倾斜，文字不倾斜"))),__scopeId:"data-v-710d9254"};export{l as default};
