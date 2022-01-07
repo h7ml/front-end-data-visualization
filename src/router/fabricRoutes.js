@@ -282,6 +282,15 @@ export default {
             navState: true,
             navName: '自定义对象操作方式'
           }
+        },
+        {
+          path: 'fabric-context-menu',
+          name: 'FabricContextMenu',
+          component: () => import('@/views/FabricJS/Demo/pages/ContextMenu/ContextMenu.vue'),
+          meta: {
+            navState: true,
+            navName: '右键菜单'
+          }
         }
       ]
     }
