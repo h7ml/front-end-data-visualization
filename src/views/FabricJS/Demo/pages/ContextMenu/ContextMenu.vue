@@ -41,16 +41,16 @@ function init() {
 
   // 创建矩形元素
   const rect1 = new fabric.Rect({
-    left: 210,
-    top: 210,
+    left: 10,
+    top: 510,
     fill: 'orange',
     width: 40,
     height: 40
   })
 
   const rect2 = new fabric.Rect({
-    left: 110,
-    top: 110,
+    left: 510,
+    top: 10,
     fill: 'pink',
     width: 40,
     height: 40,
@@ -65,8 +65,16 @@ function init() {
     top: 20,
   })
 
+  let triangle = new fabric.Triangle({
+    width: 80, // 底边宽度
+    height: 100, // 底边到定点的距离
+    fill: 'blue',
+    left: 500,
+    top: 480
+  })
+
   // 将矩形添加到画布中
-  canvas.add(rect1, rect2, circle)
+  canvas.add(rect1, rect2, circle, triangle)
 
   // 按下鼠标
   canvas.on('mouse:down', canvasOnMouseDown)
