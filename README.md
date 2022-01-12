@@ -67,6 +67,8 @@ npm run serve
 ## 推荐仓库
 [:rocket: ol在vue2中运行，仓库地址  :rocket:  :rocket:  :rocket:  :rocket: ](https://gitee.com/k21vin/vue-openlayers)
 
+[:rocket: 原生环境使用fabrif.js，仓库地址  :rocket:  :rocket:  :rocket:  :rocket: ](https://gitee.com/k21vin/fabricjs-demo)
+
 <br><br>
 
 ## 推荐阅读
