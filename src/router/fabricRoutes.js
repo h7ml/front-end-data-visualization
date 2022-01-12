@@ -29,6 +29,15 @@ export default {
           }
         },
         {
+          path: 'fabric-setCanvasWH',
+          name: 'FabricSetCanvasWH',
+          component: () => import('@/views/FabricJS/Basic/pages/SetCanvasWH/SetCanvasWH.vue'),
+          meta: {
+            navState: true,
+            navName: '设置画布宽高'
+          }
+        },
+        {
           path: 'fabric-basic-graph',
           name: 'FabricBasicGraph',
           component: () => import('@/views/FabricJS/Basic/pages/BasicGraph/BasicGraph.vue'),
