@@ -48,6 +48,11 @@ import { fabric } from 'fabric'
 
 const store = useStore()
 
+// 默认宽高
+function init1() {
+  new fabric.Canvas('canvas1')
+}
+
 // 在元素上设置宽高
 function init2() {
   new fabric.Canvas('canvas2')
@@ -96,6 +101,7 @@ function setDimensions(width, height) {
 
 onMounted(() => {
   store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/SetCanvasWH/SetCanvasWH.vue')
+  init1()
   init2()
   init3()
   init4()
