@@ -300,6 +300,15 @@ export default {
             navState: true,
             navName: '右键菜单'
           }
+        },
+        {
+          path: 'fabric-changeImage',
+          name: 'FabricChangeImage',
+          component: () => import('@/views/FabricJS/Demo/pages/ChangeImage/ChangeImage.vue'),
+          meta: {
+            navState: true,
+            navName: '修改图片'
+          }
         }
       ]
     }
