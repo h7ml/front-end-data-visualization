@@ -309,6 +309,15 @@ export default {
             navState: true,
             navName: '修改图片'
           }
+        },
+        {
+          path: 'fabric-uploadImg',
+          name: 'FabricUploadImg',
+          component: () => import('@/views/FabricJS/Demo/pages/UploadImg/UploadImg.vue'),
+          meta: {
+            navState: true,
+            navName: '上传背景图'
+          }
         }
       ]
     }
