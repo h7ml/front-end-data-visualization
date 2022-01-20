@@ -14,7 +14,7 @@
       </el-upload>
 
       <!-- 保存按钮（序列化） -->
-      <el-button>保存：打开控制台查看</el-button>
+      <el-button @click="saveCanvas">保存：打开控制台查看</el-button>
     </div>
 
     <div>我没做任何文件格式强制限制，所以上传非图片格式是会报错的。</div>
@@ -57,6 +57,11 @@ function onProgress(file) {
 // 初始化画布
 function init() {
   canvas = new fabric.Canvas('canvas')
+}
+
+// 保存
+function saveCanvas() {
+  console.log(canvas.toJSON())
 }
 
 onMounted(() => {
