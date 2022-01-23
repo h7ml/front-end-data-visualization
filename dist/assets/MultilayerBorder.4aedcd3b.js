@@ -1,0 +1,1 @@
+import{A as e,o as r,e as t}from"./vendor.72e7bd49.js";import{_ as o}from"./index.423a375f.js";const s={class:"multilayer__border"},a={setup(_){return e().commit("setComponentPath","src/views/CSS/PureCSS/pages/MultilayerBorder/MultilayerBorder.vue"),(l,d)=>(r(),t("div",s))}};var n=o(a,[["__scopeId","data-v-3ab3c901"]]);export{n as default};

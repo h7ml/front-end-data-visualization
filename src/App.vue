@@ -21,7 +21,9 @@ setTimeout(() => {
   if (import.meta.env.MODE === 'production') {
     console.clear()
     console.log(
-      '%c WeChat: wx_k21vin %c\n 项目仓库：https:\/\/gitee.com/k21vin\/front-end-data-visualization',
+      `%c WeChat: wx_k21vin %c\n
+      项目仓库：https:\/\/gitee.com/k21vin\/front-end-data-visualization\n
+      图文教程(帮我文章点个赞呗~)：https://juejin.cn/user/2673620576140030/posts`,
       `
         padding: 10px 42px;
         font-size: 32px;
