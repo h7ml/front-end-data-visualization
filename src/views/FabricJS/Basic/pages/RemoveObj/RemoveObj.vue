@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import { useStore } from 'vuex'
 import { fabric } from 'fabric'
 
@@ -71,7 +71,3 @@ onMounted(() => {
   init()
 })
 </script>
-
-<style lang="scss" scoped>
-
-</style>
