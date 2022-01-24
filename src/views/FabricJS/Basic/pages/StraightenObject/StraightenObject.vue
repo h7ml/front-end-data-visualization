@@ -54,13 +54,13 @@ function fxStraightenObject() {
 
   // 方法2
   triangle.fxStraighten({
-      onChange() {
-        canvas.renderAll()
-      },
-      onComplete() {
-        canvas.renderAll()
-      }
-    })
+    onChange() {
+      canvas.renderAll()
+    },
+    onComplete() {
+      canvas.renderAll()
+    }
+  })
 }
 
 onMounted(() => {
