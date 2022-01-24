@@ -56,6 +56,15 @@ export default {
           }
         },
         {
+          path: 'fabric-StraightenObject',
+          name: 'FabricStraightenObject',
+          component: () => import('@/views/FabricJS/Basic/pages/StraightenObject/StraightenObject.vue'),
+          meta: {
+            navState: true,
+            navName: '摆正元素(对象)'
+          }
+        },
+        {
           path: 'fabric-use-image',
           name: 'FabricUseImage',
           component: () => import('@/views/FabricJS/Basic/pages/UseImage/UseImage.vue'),
