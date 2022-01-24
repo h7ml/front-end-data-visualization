@@ -64,7 +64,7 @@ function fxStraightenObject() {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/RemoveObj/RemoveObj.vue')
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/StraightenObject/StraightenObject.vue')
   init()
 })
 </script>

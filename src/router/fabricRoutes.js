@@ -56,12 +56,21 @@ export default {
           }
         },
         {
-          path: 'fabric-StraightenObject',
+          path: 'fabric-straightenObject',
           name: 'FabricStraightenObject',
           component: () => import('@/views/FabricJS/Basic/pages/StraightenObject/StraightenObject.vue'),
           meta: {
             navState: true,
             navName: '摆正元素(对象)'
+          }
+        },
+        {
+          path: 'fabric-centerObject',
+          name: 'FabricCenterObject',
+          component: () => import('@/views/FabricJS/Basic/pages/CenterObject/CenterObject.vue'),
+          meta: {
+            navState: true,
+            navName: '居中元素(对象)'
           }
         },
         {
