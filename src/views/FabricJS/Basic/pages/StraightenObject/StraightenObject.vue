@@ -37,13 +37,30 @@ function init() {
 
 // 摆正元素
 function straightenObject() {
-  canvas.straightenObject(triangle)
+  // 方法1
+  // canvas.straightenObject(triangle)
+
+  // 方法2
+  triangle.straighten()
+  canvas.renderAll()
 }
 
 // 摆正元素（有过渡动画）
 function fxStraightenObject() {
   // 该动画不受 FX_DURATION 影响
-  canvas.fxStraightenObject(triangle)
+
+  // 方法1
+  // canvas.fxStraightenObject(triangle)
+
+  // 方法2
+  triangle.fxStraighten({
+      onChange() {
+        canvas.renderAll()
+      },
+      onComplete() {
+        canvas.renderAll()
+      }
+    })
 }
 
 onMounted(() => {
