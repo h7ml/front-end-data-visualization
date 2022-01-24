@@ -47,6 +47,15 @@ export default {
           }
         },
         {
+          path: 'fabric-removeObj',
+          name: 'FabricRemoveObj',
+          component: () => import('@/views/FabricJS/Basic/pages/RemoveObj/RemoveObj.vue'),
+          meta: {
+            navState: true,
+            navName: '删除元素(对象)'
+          }
+        },
+        {
           path: 'fabric-use-image',
           name: 'FabricUseImage',
           component: () => import('@/views/FabricJS/Basic/pages/UseImage/UseImage.vue'),
