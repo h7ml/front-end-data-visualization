@@ -227,6 +227,15 @@ export default {
           }
         },
         {
+          path: 'fabric-absolutePan',
+          name: 'AbsolutePan',
+          component: () => import('@/views/FabricJS/Basic/pages/AbsolutePan/AbsolutePan.vue'),
+          meta: {
+            navState: true,
+            navName: '平移画布'
+          }
+        },
+        {
           path: 'fabric-clip-path',
           name: 'ClipPath',
           component: () => import('@/views/FabricJS/Basic/pages/ClipPath/ClipPath.vue'),
