@@ -236,6 +236,15 @@ export default {
           }
         },
         {
+          path: 'fabric-moveTo',
+          name: 'MoveTo',
+          component: () => import('@/views/FabricJS/Basic/pages/MoveTo/MoveTo.vue'),
+          meta: {
+            navState: true,
+            navName: '图层层级操作'
+          }
+        },
+        {
           path: 'fabric-clip-path',
           name: 'ClipPath',
           component: () => import('@/views/FabricJS/Basic/pages/ClipPath/ClipPath.vue'),

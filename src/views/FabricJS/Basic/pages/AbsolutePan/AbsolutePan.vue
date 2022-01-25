@@ -21,7 +21,6 @@ function init() {
   canvas = new fabric.Canvas('canvas')
 
   fabric.Image.fromURL(bg, img => {
-    console.log(img)
     canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas))
   })
 }
@@ -31,7 +30,7 @@ function absolutePan() {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/UseImage/UseImage.vue')
+  store.commit('setComponentPath', 'src/views/FabricJS/Basic/pages/AbsolutePan/AbsolutePan.vue')
   init()
 })
 </script>
