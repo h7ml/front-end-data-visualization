@@ -363,6 +363,15 @@ export default {
             navState: true,
             navName: '上传背景图'
           }
+        },
+        {
+          path: 'fabric-createRect',
+          name: 'FabricCreateRect',
+          component: () => import('@/views/FabricJS/Demo/pages/CreateRect/CreateRect.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制矩形'
+          }
         }
       ]
     }
