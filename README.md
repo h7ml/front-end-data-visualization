@@ -75,16 +75,15 @@ npm run serve
 
 ### 日常工作与团队合作
 
+- [《Vite 搭建 Vue2 项目（Vue2 + vue-router + vuex）》](https://juejin.cn/post/6988808776291713060)
 - [《前端规范落地，团队级的解决方案》](https://juejin.cn/post/7046171572129759262)
 - [《『前端必备』本地数据接口 —— json-server 从入门到膨胀》](https://juejin.cn/post/7043424909472563208)
 - [《前端需要的免费在线api接口》](https://juejin.cn/post/7041461420818432030)
-- [《Vite 搭建 Vue2 项目（Vue2 + vue-router + vuex）》](https://juejin.cn/post/6988808776291713060)
 
 <br>
 
 ### 前端特效
 
-- [《Fabric.js 从入门到________》](https://juejin.cn/post/7026941253845516324)
 - [《这18个网站能让你的页面背景炫酷起来》](https://juejin.cn/post/7044397764368662559)
 - [《纯CSS：动态渐变背景【一分钟学会】》](https://juejin.cn/post/7040376300296470535)
 - [《视差特效的原理和实现方法》](https://juejin.cn/post/7040283893106212895)
@@ -104,3 +103,16 @@ npm run serve
 - [《『 JS算法-力扣557题』反转字符串中的单词 III》](https://juejin.cn/post/7011336873788309541)
 - [《【JS】作用域（入门篇）》](https://juejin.cn/post/6957852122268794887)
 - [《如何用 CSS 选择符杀死队友》](https://juejin.cn/post/6915047570226020359)
+
+<br>
+
+### Fabric.js
+- [《Fabric.js 从入门到________》](https://juejin.cn/post/7026941253845516324)
+- [《Fabric.js 线性渐变和径向渐变》](https://juejin.cn/post/7022534821524013087)
+- [《Fabric.js 右键菜单》](https://juejin.cn/post/7051373700209180679)
+- [《Fabric.js 更换图片的3种方法（包括更换分组内的图片，以及存在缓存的情况）》](https://juejin.cn/post/7052719026874613773)
+- [《Fabric.js 3个api设置画布宽高》](https://juejin.cn/post/7053049468601499684)
+- [《Fabric.js 将本地图像上传到画布背景》](https://juejin.cn/post/7055201274693681160)
+- [《Fabric.js 删除元素（带过渡动画）》](https://juejin.cn/post/7056599707094614024)
+- [《Fabric.js 摆正元素的4种方法（带过渡动画）》](https://juejin.cn/post/7057392358391808008)
+- [《Fabric.js 自由绘制矩形（逐一分析4种操作方向带来的影响）》](https://juejin.cn/post/7058093223566114847)
