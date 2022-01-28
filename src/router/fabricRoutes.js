@@ -390,6 +390,15 @@ export default {
             navState: true,
             navName: '自由绘制椭圆形'
           }
+        },
+        {
+          path: 'fabric-createTriangle',
+          name: 'FabricCreateTriangle',
+          component: () => import('@/views/FabricJS/Demo/pages/CreateTriangle/CreateTriangle.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制三角形'
+          }
         }
       ]
     }
