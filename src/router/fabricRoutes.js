@@ -372,6 +372,15 @@ export default {
             navState: true,
             navName: '自由绘制矩形'
           }
+        },
+        {
+          path: 'fabric-createCircle',
+          name: 'FabricCreateCircle',
+          component: () => import('@/views/FabricJS/Demo/pages/CreateCircle/CreateCircle.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制圆形'
+          }
         }
       ]
     }
