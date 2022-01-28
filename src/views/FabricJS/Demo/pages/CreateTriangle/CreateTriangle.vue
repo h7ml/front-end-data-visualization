@@ -101,7 +101,7 @@ function canvasMouseUp(e) {
 }
 
 onMounted(() => {
-  store.commit('setComponentPath', 'src/views/FabricJS/Demo/pages/CreateEllipse/CreateEllipse.vue')
+  store.commit('setComponentPath', 'src/views/FabricJS/Demo/pages/CreateTriangle/CreateTriangle.vue')
   init()
 })
 </script>
