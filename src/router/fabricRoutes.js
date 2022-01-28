@@ -417,6 +417,15 @@ export default {
             navState: true,
             navName: '自由绘制折线'
           }
+        },
+        {
+          path: 'fabric-createPolygon',
+          name: 'FabricCreatePolygon',
+          component: () => import('@/views/FabricJS/Demo/pages/CreatePolygon/CreatePolygon.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制多边形'
+          }
         }
       ]
     }
