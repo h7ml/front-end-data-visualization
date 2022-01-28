@@ -399,6 +399,15 @@ export default {
             navState: true,
             navName: '自由绘制三角形'
           }
+        },
+        {
+          path: 'fabric-createLine',
+          name: 'FabricCreateLine',
+          component: () => import('@/views/FabricJS/Demo/pages/CreateLine/CreateLine.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制线段'
+          }
         }
       ]
     }
