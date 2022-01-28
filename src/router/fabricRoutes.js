@@ -381,6 +381,15 @@ export default {
             navState: true,
             navName: '自由绘制圆形'
           }
+        },
+        {
+          path: 'fabric-createEllipse',
+          name: 'FabricCreateEllipse',
+          component: () => import('@/views/FabricJS/Demo/pages/CreateEllipse/CreateEllipse.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制椭圆形'
+          }
         }
       ]
     }
