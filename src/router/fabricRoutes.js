@@ -408,6 +408,15 @@ export default {
             navState: true,
             navName: '自由绘制线段'
           }
+        },
+        {
+          path: 'fabric-createPolyline',
+          name: 'FabricCreatePolyline',
+          component: () => import('@/views/FabricJS/Demo/pages/CreatePolyline/CreatePolyline.vue'),
+          meta: {
+            navState: true,
+            navName: '自由绘制折线'
+          }
         }
       ]
     }
