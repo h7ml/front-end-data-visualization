@@ -144,6 +144,15 @@ export default {
             navState: true,
             navName: '动态渐变背景'
           }
+        },
+        {
+          path: 'BorderAnimation',
+          name: 'BorderAnimation',
+          component: () => import('@/views/Native/PureCSS/pages/BorderAnimation/BorderAnimation.vue'),
+          meta: {
+            navState: true,
+            navName: '边框动画'
+          }
         }
       ]
     },
