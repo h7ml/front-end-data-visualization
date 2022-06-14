@@ -1,0 +1,58 @@
+name: deploy
+on:
+  push:
+  workflow_dispatch:
+
+# 设置上海时区
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    name: build 🚀
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ latest ]
+    steps:
+      - name: Checkout codes
+        uses: actions/checkout@v2.3.4
+
+      - name: Setup node
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '16.15.0'
+
+      - name: Cache node modules
+        uses: actions/cache@v2.1.3
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Generate files
+        run: yarn build
+
+      - name: Deploy to github gh-pages 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.GIT_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+  sync:
+    name: sync gitee 🚀
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🚀
+        uses: actions/checkout@v2
+      - name: Sync front-end-data-visualization 🚀
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/h7ml
+          dst: gitee/h7ml
+          dst_key: ${{ secrets.PRIVATE_KEY }}
+          dst_token: ${{ secrets.GIT_TOKEN }}
+          static_list: "front-end-data-visualization"
+    needs: build
