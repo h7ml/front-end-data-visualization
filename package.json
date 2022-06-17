@@ -14,12 +14,14 @@
     "element-plus": "*",
     "fabric": "^4.6.0",
     "ol": "^6.6.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "three": "^0.133.1",
-    "vue": "^3.2.6",
+    "vue": "^3.2.31",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
     "@vitejs/plugin-vue": "^1.6.1",
     "@vue/compiler-sfc": "^3.2.6",
     "sass": "^1.39.0",
